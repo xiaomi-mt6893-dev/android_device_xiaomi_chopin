@@ -243,6 +243,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
+# Vibrator
+$(call soong_config_set, vibrator, vibratortargets, vibratoraidlV2target)
+PRODUCT_PACKAGES += \
+              vendor.qti.hardware.vibrator.service.chopin
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
