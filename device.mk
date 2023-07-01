@@ -35,6 +35,9 @@ PRODUCT_PACKAGES += \
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
