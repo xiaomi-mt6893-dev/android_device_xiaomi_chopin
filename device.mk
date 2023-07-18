@@ -55,6 +55,9 @@ PRODUCT_PACKAGES += \
         ueventd.mt6893.rc   
 
 
+PRODUCT_PACKAGES += \
+    init.recovery.mt6893.rc
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
