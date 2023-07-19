@@ -28,6 +28,12 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl.recovery \
     android.hardware.boot@1.2-service
 
+# Health
+PRODUCT_PACKAGES += \
+	   android.hardware.health@2.1-impl \
+	   android.hardware.health@2.1-impl.recovery \
+	   android.hardware.health@2.1-service
+
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
