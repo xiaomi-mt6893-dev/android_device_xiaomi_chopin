@@ -200,7 +200,14 @@ PRODUCT_PACKAGES += \
 # Secure Element
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor
-	
+
+# HIDL
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder.vendor \
+	android.hidl.allocator@1.0.vendor 	
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
