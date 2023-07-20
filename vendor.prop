@@ -29,3 +29,7 @@ vendor.audio.spkcal.copy.inhal=true
 vendor.audiohal.telephonytx.type=2
 persist.vendor.anr.enhancement=0
 persist.vendor.audio.misound.disable=true
+
+
+# AEE
+ro.vendor.have_aee_feature=0
