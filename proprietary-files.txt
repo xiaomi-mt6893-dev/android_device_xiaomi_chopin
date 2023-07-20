@@ -1,5 +1,9 @@
 # Unpinned blobs from chopin-user 13 TP1A.220624.014 V14.0.6.0.TKPMIXM release-keys
 
+# AEE
+vendor/lib/libaedv.so
+vendor/lib64/libaedv.so
+
 # Audio
 vendor/etc/aurisys_param/FV-SAM-MTKXX.dat
 vendor/etc/aurisys_param/Speech_AudioParam.xml
