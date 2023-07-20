@@ -165,7 +165,8 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \
     android.hardware.graphics.composer@2.3-service
 PRODUCT_PACKAGES += \
-    libdrm.vendor
+	libdrm.vendor \
+    libutils-v32
 
 # Power
 PRODUCT_PACKAGES += \
