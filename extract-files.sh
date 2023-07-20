@@ -73,6 +73,9 @@ function blob_fixup {
 		    vendor/lib64/hw/android.hardware.memtrack-impl-mediatek.so)
 		        "$PATCHELF" --replace-needed "android.hardware.memtrack-V1-ndk_platform.so" "android.hardware.memtrack-V1-ndk.so" "$2"
 			;;
+		   vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service)
+			"$PATCHELF" --replace-needed "android.hardware.power-V2-ndk_platform.so" "android.hardware.power-V2-ndk.so" "$2"
+			;;
 	    esac
     }
 
