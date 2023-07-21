@@ -260,9 +260,6 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     libsensorndkbridge
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
-
 # Vibrator
 $(call soong_config_set, vibrator, vibratortargets, vibratoraidlV2target)
 PRODUCT_PACKAGES += \
