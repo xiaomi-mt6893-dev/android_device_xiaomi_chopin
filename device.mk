@@ -215,7 +215,7 @@ PRODUCT_COPY_FILES += \
 # Rootdir
 PRODUCT_PACKAGES += \
 	 fstab.mt6893 \
-	 fstab.mt6893.ramdisk \
+	 fstab.mt6893.ramdisk 
 
 PRODUCT_PACKAGES += \
 	init.connectivity.rc \
@@ -225,7 +225,8 @@ PRODUCT_PACKAGES += \
 	init.mt6893.usb.rc \
 	init.project.rc \
 	init.sensor_2_0.rc \
-    ueventd.mt6893.rc   
+        ueventd.mt6893.rc \
+        init.target.rc 	
 
 
 PRODUCT_PACKAGES += \
