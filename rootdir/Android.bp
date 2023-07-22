@@ -80,3 +80,10 @@ prebuilt_etc {
     src: "etc/ueventd.mt6893.rc",
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "init.target.rc",
+    src: "etc/init.target.rc",
+    sub_dir: "init",
+    system_ext_specific: true,
+}
