@@ -68,9 +68,11 @@ function blob_fixup {
 	system/lib64/libsink.so)	
 			"${PATCHELF}" --add-needed "libshim_sink.so" "$2"
 			;;    
-	esac
-    }
-
+	vendor/lib*/libmtkcam_stdutils.so)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "$2"
+            ;;
+    esac
+}
 
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
