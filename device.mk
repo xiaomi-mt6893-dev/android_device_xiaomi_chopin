@@ -242,6 +242,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 		    vendor.mediatek.hardware.mtkpower@1.2.vendor
 
+# Properties
+include $(LOCAL_PATH)/vendor_logtag.mk
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor \
