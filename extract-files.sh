@@ -68,7 +68,10 @@ function blob_fixup {
     	vendor/lib64/libkeymaster4.so)	
 	    "${PATCHELF}" --add-needed "libshim_libkeymaster4.so" "${2}"
 	    ;;
-	    esac
+	system/lib64/libsink.so)	
+ 	    "${PATCHELF}" --add-needed "libshim_sink.so" "$2"
+	    ;;    
+	esac
     }
 
 # Initialize the helper
