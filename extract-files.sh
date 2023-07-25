@@ -65,8 +65,12 @@ function blob_fixup {
         vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)
             "$PATCHELF" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "$2"
             ;;
-    esac
-}
+	system/lib64/libsink.so)	
+			"${PATCHELF}" --add-needed "libshim_sink.so" "$2"
+			;;    
+	esac
+    }
+
 
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
