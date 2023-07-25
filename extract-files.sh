@@ -71,6 +71,10 @@ function blob_fixup {
 		   vendor/lib*/libmtkcam_stdutils.so)
 			"${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "$2"
 			;;
+		   system/lib64/libsink.so)
+			 "${PATCHELF}" --add-needed "libshim_sink.so" "$2"
+			 ;;
+
 	    esac
     }
 
