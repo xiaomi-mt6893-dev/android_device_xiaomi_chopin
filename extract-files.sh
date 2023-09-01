@@ -77,6 +77,9 @@ function blob_fixup {
         vendor/bin/hw/camerahalserver)
             sed -i 's/\/system\/lib64\/libion.so/\/vendor\/lib64\/libion.so/g' "${2}"
             ;;
+	vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
+            sed -i 's/start/enable/' "$2"
+            ;;
     esac
 }
 
