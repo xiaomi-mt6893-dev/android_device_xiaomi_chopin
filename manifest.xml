@@ -192,4 +192,9 @@
         <transport>hwbinder</transport>
         <fqname>@1.2::ISecureElement/SIM1</fqname>
     </hal>
+	  <hal format="hidl">
+        <name>vendor.xiaomi.hardware.citsensorservice</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::ICitSensorService/default</fqname>
+    </hal>
 </manifest>
