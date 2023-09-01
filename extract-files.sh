@@ -54,7 +54,7 @@ if [ -z "${SRC}" ]; then
 fi
 
 function blob_fixup {
-    case "$1" in
+   case "$1" in
         vendor/lib*/hw/vendor.mediatek.hardware.pq@2.13-impl.so)
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
             ;;
@@ -70,10 +70,13 @@ function blob_fixup {
 	    ;;
 	system/lib64/libsink.so)	
  	    "${PATCHELF}" --add-needed "libshim_sink.so" "$2"
-	    ;;    
-	esac
-    }
+	    ;;   
+	vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
+	    sed -i 's/start/enable/' "$2"
+	    ;;
 
+	esac
+}
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
