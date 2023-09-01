@@ -670,6 +670,16 @@ system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 
+# Sensors (citsensor)
+vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
+vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc
+vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
+vendor/lib64/libhfmanager.so
+vendor/lib64/libhfmanagerwrapper.so
+vendor/lib64/libssccalapi.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
+
 # Tether Offload
 vendor/bin/hw/tetheroffloadservice
 vendor/bin/netdagent
