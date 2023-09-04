@@ -1828,9 +1828,7 @@ vendor/etc/thermal-tgame.conf
 vendor/etc/thermal-video.conf
 vendor/etc/thermald-devices.conf
 
-# USB
-vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
-vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
+
 
 # Vibrator
 vendor/bin/hw/android.hardware.vibrator-service.mediatek
