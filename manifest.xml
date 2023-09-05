@@ -32,7 +32,7 @@
  <hal format="hidl">
         <name>vendor.mediatek.hardware.bluetooth.audio</name>
         <transport>hwbinder</transport>
-        <fqname>@2.1::IBluetoothAudioProvidersFactory/default</fqname>
+        <fqname>@2.2::IBluetoothAudioProvidersFactory/default</fqname>
     </hal>
  <hal format="hidl">
         <name>android.hardware.graphics.allocator</name>
