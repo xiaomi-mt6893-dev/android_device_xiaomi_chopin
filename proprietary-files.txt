@@ -421,6 +421,15 @@ vendor/lib64/libnvram_sec.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 
+# Tether Offload
+vendor/bin/hw/tetheroffloadservice
+vendor/bin/netdagent
+vendor/etc/init/netdagent.rc
+vendor/etc/init/tetheroffloadservice.rc
+vendor/lib64/libforkexecwrap.so
+vendor/lib64/libifcutils_mtk.so
+vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
+
 # Trusted Execution Environment (TEE)
 vendor/bin/hw/vendor.microtrust.hardware.thh@2.0-service
 vendor/bin/teei_daemon
@@ -510,3 +519,8 @@ vendor/firmware/soc3_0_ram_mcu_e1_hdr.bin
 vendor/firmware/soc3_0_ram_wifi_1a_1_hdr.bin
 vendor/firmware/soc3_0_ram_wmmcu_1a_1_hdr.bin
 
+# Wi-Fi
+vendor/bin/wlan_assistant
+vendor/etc/init/wlan_assistant.rc
+vendor/etc/wifi/passpointProfile.conf
+vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
