@@ -140,7 +140,12 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.bluetooth@1.1.vendor \
     libbluetooth_audio_session
-	
+
+# ConsumerIr
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-impl \
+    android.hardware.ir@1.0-service
+
 # Keymaster
 PRODUCT_PACKAGES += \
 		android.hardware.keymaster@4.0.vendor:64 \

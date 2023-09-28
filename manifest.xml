@@ -79,4 +79,9 @@
         <transport>hwbinder</transport>
         <fqname>@1.1::INvram/default</fqname>
     </hal>
+ <hal format="hidl">
+        <name>android.hardware.ir</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IConsumerIr/default</fqname>
+    </hal>
 </manifest>
