@@ -139,3 +139,6 @@ ro.vendor.mtk_tee_gp_support=1
 # Keymaster
 ro.hardware.kmsetkey=beanpod
 ro.crypto.volume.filenames_mode=aes-256-cts
+
+# ConsumerIr
+ro.hardware.consumerir=common
