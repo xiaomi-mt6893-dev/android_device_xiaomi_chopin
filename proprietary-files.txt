@@ -175,6 +175,10 @@ vendor/lib/soundfx/libswdap.so
 vendor/lib/soundfx/libswgamedap.so
 vendor/lib/soundfx/libswvqe.so
 
+# Batterysecret
+vendor/bin/batterysecret
+vendor/etc/init/init.batterysecret.rc
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
 vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
@@ -328,3 +332,11 @@ vendor/etc/dsi_k10a_42_02_0b_dsc_vdo_mi.xml
 vendor/etc/cust_color_36_02_0a.xml
 vendor/etc/cust_color_42_02_0b.xml
 vendor/etc/cust_silky_brightness.xml
+
+# Fuelgauge
+vendor/bin/fuelgauged
+vendor/bin/fuelgauged_nvram
+vendor/etc/init/fuelgauged_init.rc
+vendor/etc/init/fuelgauged_nvram_init.rc
+vendor/lib/libfgauge_gm30.so
+
