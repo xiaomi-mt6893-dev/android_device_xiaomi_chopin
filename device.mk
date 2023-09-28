@@ -188,5 +188,10 @@ PRODUCT_SOONG_NAMESPACES += \
 # Kernel Build Options
 VENDOR_KERNEL_MODULES := no
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.3.vendor \
+    android.hardware.usb.gadget@1.1.vendor
+
 # Inherit the proprietary files
 # $(call inherit-product, vendor/xiaomi/chopin/chopin-vendor.mk)
