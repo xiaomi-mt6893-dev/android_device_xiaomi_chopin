@@ -69,6 +69,11 @@
         <transport>hwbinder</transport>
         <fqname>@2.13::IPictureQuality/default</fqname>
     </hal>
+	   <hal format="hidl">
+        <name>android.hardware.keymaster</name>
+        <transport>hwbinder</transport>
+        <fqname>@4.0::IKeymasterDevice/default</fqname>
+    </hal>
  <hal format="hidl">
         <name>vendor.mediatek.hardware.nvram</name>
         <transport>hwbinder</transport>
