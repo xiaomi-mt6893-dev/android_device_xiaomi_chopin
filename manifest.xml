@@ -64,4 +64,9 @@
         <transport>hwbinder</transport>
         <fqname>@2.13::IPictureQuality/default</fqname>
     </hal>
+ <hal format="hidl">
+        <name>vendor.mediatek.hardware.nvram</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::INvram/default</fqname>
+    </hal>
 </manifest>
