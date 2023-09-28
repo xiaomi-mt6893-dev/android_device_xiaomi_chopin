@@ -140,3 +140,13 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 
 # ConsumerIr
 ro.hardware.consumerir=common
+
+# Media
+debug.mediatek.disp_decompress=1
+media.c2.dmabuf.padding=3072
+ro.vendor.jpeg_decode_sw_opt=1
+ro.vendor.mtk_config_max_dram_size=0x800000000
+ro.vendor.mtk_sec_video_path_support=1
+ro.vendor.mtk_video_hevc_enc_support=1
+vendor.mtk.vdec.waitkeyframeforplay=9
+
