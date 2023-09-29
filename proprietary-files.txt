@@ -342,6 +342,10 @@ vendor/etc/init/fuelgauged_init.rc
 vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/lib/libfgauge_gm30.so
 
+# Gatekeeper
+vendor/lib64/hw/gatekeeper.beanpod.so
+vendor/lib64/hw/gatekeeper.mitee.so
+
 # Keymaster
 vendor/bin/bp_kmsetkey_ca
 vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod
