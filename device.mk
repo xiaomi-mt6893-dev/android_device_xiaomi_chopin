@@ -152,6 +152,11 @@ PRODUCT_PACKAGES += \
 # Shims
 PRODUCT_PACKAGES += \
 		  libshim_libkeymaster4 
+
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.xiaomi
+
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail_vendor \

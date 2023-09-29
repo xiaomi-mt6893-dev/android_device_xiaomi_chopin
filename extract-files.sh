@@ -65,10 +65,6 @@ function blob_fixup {
 		    vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)
             		"$PATCHELF" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "$2"
 	                ;;
-                    vendor/bin/hw/android.hardware.lights-service.mediatek |\
-		    vendor/lib64/hw/android.hardware.lights-impl-mediatek.so)
-                        "$PATCHELF" --replace-needed "android.hardware.lights-V1-ndk_platform.so" "android.hardware.lights-V1-ndk.so" "$2" 
-			;;
 		    vendor/bin/hw/android.hardware.memtrack-service.mediatek |\
 		    vendor/lib64/hw/android.hardware.memtrack-impl-mediatek.so)
 		        "$PATCHELF" --replace-needed "android.hardware.memtrack-V1-ndk_platform.so" "android.hardware.memtrack-V1-ndk.so" "$2"

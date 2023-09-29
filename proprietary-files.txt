@@ -1534,8 +1534,7 @@ vendor/lib64/libkeymaster4.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 
-# Light
-vendor/bin/hw/android.hardware.lights-service.mediatek
+
 
 # Local time
 vendor/lib/hw/local_time.default.so
@@ -2227,7 +2226,6 @@ vendor/etc/init/init.vtservice_hidl.rc
 vendor/etc/init/init.wlan_drv.rc
 vendor/etc/init/ipsec_mon.rc
 vendor/etc/init/lbs_hidl_service.rc
-vendor/etc/init/lights-mtk-default.rc
 vendor/etc/init/loghidlvendorservice.rc
 vendor/etc/init/md_monitor.rc
 vendor/etc/init/memtrack-mediatek.rc
