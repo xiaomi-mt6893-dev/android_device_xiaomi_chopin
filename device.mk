@@ -162,6 +162,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libdrm.vendor
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service-mediatek
+
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.mtkpower@1.2.vendor
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/perf,$(TARGET_COPY_OUT_VENDOR)/etc)
+
+
 # Rootdir
 PRODUCT_PACKAGES += \
 	 fstab.mt6893 \
@@ -187,11 +198,15 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+<<<<<<< HEAD
     hardware/mediatek \
     hardware/xiaomi
 
 # Kernel Build Options
 VENDOR_KERNEL_MODULES := no
+=======
+    hardware/mediatek
+>>>>>>> b168009 (pissarro: Configure Perf/Power stack)
 
 # USB
 PRODUCT_PACKAGES += \
