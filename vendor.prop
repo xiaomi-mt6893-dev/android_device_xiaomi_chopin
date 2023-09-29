@@ -145,3 +145,6 @@ ro.hardware.consumerir=common
 
 # Gatekeeper
 ro.hardware.gatekeeper=beanpod
+
+# Sensors
+ro.vendor.mtk.sensor.support=yes

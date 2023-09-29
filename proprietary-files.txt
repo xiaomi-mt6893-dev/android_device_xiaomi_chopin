@@ -450,6 +450,17 @@ vendor/lib64/libpowerhal.so
 vendor/lib64/libpowerhalwrap_vendor.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 
+# Sensors
+vendor/etc/elliptic_sensor.xml
+vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so
+vendor/lib64/hw/sensors.elliptic.so
+vendor/lib64/hw/sensors.mt6893.so
+vendor/lib64/libhfmanager.so
+vendor/lib64/libhwm.so
+vendor/lib64/libksensor.so
+vendor/lib64/libnotifyaudiohal.so
+vendor/lib64/libsensor_custom.so
+
 # Tether Offload
 vendor/bin/hw/tetheroffloadservice
 vendor/bin/netdagent
