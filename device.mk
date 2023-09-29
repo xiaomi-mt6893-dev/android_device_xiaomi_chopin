@@ -199,7 +199,22 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/perf,$(TARGET_COPY_OUT_VENDOR)/etc)
 
-
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio@1.6.vendor
+# Radio (IMS)
+PRODUCT_BOOT_JARS += \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
+	
 # Rootdir
 PRODUCT_PACKAGES += \
 	 fstab.mt6893 \
@@ -213,7 +228,7 @@ PRODUCT_PACKAGES += \
 	init.mt6893.usb.rc \
 	init.project.rc \
 	init.sensor_2_0.rc \
-        ueventd.mt6893.rc   
+    ueventd.mt6893.rc   
 
 
 PRODUCT_PACKAGES += \
