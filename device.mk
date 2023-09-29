@@ -164,6 +164,10 @@ PRODUCT_PACKAGES += \
 		libkeymaster4.vendor \
 		libpuresoftkeymasterdevice.vendor \
 		libsoft_attestation_cert.vendor
+		
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.xiaomi
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
