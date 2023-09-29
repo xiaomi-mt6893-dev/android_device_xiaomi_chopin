@@ -152,7 +152,6 @@ PRODUCT_PACKAGES += \
 # Shims
 PRODUCT_PACKAGES += \
 		  libshim_libkeymaster4 
-
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail_vendor \
@@ -222,6 +221,24 @@ PRODUCT_PACKAGES += \
 		    vendor.mediatek.hardware.mtkpower@1.0.vendor \
 		    vendor.mediatek.hardware.mtkpower@1.1.vendor \
 		    vendor.mediatek.hardware.mtkpower@1.2.vendor
+
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio@1.6.vendor
+
+# Radio (IMS)
+PRODUCT_BOOT_JARS += \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
 
 # Rootdir
 PRODUCT_PACKAGES += \
