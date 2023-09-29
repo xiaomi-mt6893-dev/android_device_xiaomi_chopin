@@ -203,15 +203,17 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-<<<<<<< HEAD
     hardware/mediatek \
     hardware/xiaomi
 
 # Kernel Build Options
 VENDOR_KERNEL_MODULES := no
-=======
-    hardware/mediatek
->>>>>>> b168009 (pissarro: Configure Perf/Power stack)
+
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-impl \
+    android.hardware.thermal@2.0.vendor
+
 
 # USB
 PRODUCT_PACKAGES += \
