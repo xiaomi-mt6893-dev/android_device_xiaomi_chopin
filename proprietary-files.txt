@@ -470,6 +470,21 @@ vendor/lib64/libforkexecwrap.so
 vendor/lib64/libifcutils_mtk.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
+# Thermal
+vendor/bin/hw/android.hardware.thermal@2.0-service.mtk
+vendor/bin/mi_thermald
+vendor/bin/thermal
+vendor/bin/thermal_manager
+vendor/bin/thermalloadalgod
+vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc
+vendor/etc/init/init.thermal.rc
+vendor/etc/init/init.thermal_manager.rc
+vendor/etc/init/init.thermalloadalgod.rc
+vendor/lib/libmtcloader.so
+vendor/lib/libthermalalgo.so
+vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
+vendor/lib64/hw/thermal_hal.so
+
 # Trusted Execution Environment (TEE)
 vendor/bin/hw/vendor.microtrust.hardware.thh@2.0-service
 vendor/bin/teei_daemon
