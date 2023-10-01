@@ -214,7 +214,16 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder.vendor \
-	android.hidl.allocator@1.0.vendor 	
+    android.hidl.allocator@1.0.vendor 	
+
+# HotwordEnrollement app permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
+
+# Vibrator
+$(call soong_config_set, vibrator, vibratortargets, vibratoraidlV2target)
+PRODUCT_PACKAGES += \
+              vendor.qti.hardware.vibrator.service.chopin
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
