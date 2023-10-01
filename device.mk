@@ -220,6 +220,11 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.visibility_control@1.0.vendor \
     android.hardware.gnss-V1-ndk.vendor \
     android.hardware.gnss@2.1.vendor
+	
+# Neural Networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor \
+    libtextclassifier_hash.vendor
 
 # USB
 PRODUCT_PACKAGES += \
