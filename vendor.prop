@@ -130,6 +130,10 @@ ro.vendor.smvr.p2batch.fhd=8
 ro.vendor.smvr.p2batch.hd=16
 ro.vendor.smvr.p2batch.vga=32
 
+# DRM
+ro.netflix.bsp_rev=MTK6893-32816-1
+drm.service.enabled=true
+
 # TEE
 ro.vendor.mtk_microtrust_tee_support=1
 ro.vendor.mtk_svp_on_mtee_support=1
