@@ -247,7 +247,10 @@ PRODUCT_PACKAGES += \
     libhwbinder.vendor \
     android.hidl.allocator@1.0.vendor 	
 
-
+# HotwordEnrollement app permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
+	
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.multihal \
