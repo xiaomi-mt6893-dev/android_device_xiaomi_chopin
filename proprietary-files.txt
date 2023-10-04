@@ -637,6 +637,15 @@ vendor/firmware/soc3_0_ram_mcu_e1_hdr.bin
 vendor/firmware/soc3_0_ram_wifi_1a_1_hdr.bin
 vendor/firmware/soc3_0_ram_wmmcu_1a_1_hdr.bin
 
+# Vibrator
+vendor/firmware/0_click_P_RTP.bin
+vendor/firmware/1_doubelClick_P_RTP.bin
+vendor/firmware/2_tick_P_RTP.bin
+vendor/firmware/3_thud_P_RTP.bin
+vendor/firmware/4_pop_P_RTP.bin
+vendor/firmware/5_heavyClick_P_RTP.bin
+vendor/firmware/aw8697_haptic.bin
+
 # Wi-Fi
 vendor/bin/wlan_assistant
 vendor/etc/init/wlan_assistant.rc
