@@ -5,11 +5,6 @@
 -->
 <manifest version="4.0" type="device" target-level="5">
 <hal format="hidl">
-	<name>android.hardware.boot</name>
-	<transport>hwbinder</transport>
-	<fqname>@1.0::IBootControl/default</fqname>
-	</hal>
-<hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
         <fqname>@7.0::IDevicesFactory/default</fqname>
