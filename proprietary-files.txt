@@ -468,6 +468,7 @@ vendor/lib64/libneuron_platform.so
 vendor/lib64/libneuron_wrapper.so
 vendor/lib64/libneuropilot_hal_utils.so
 vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so
+vendor/lib64/libvpu.so
 vendor/lib64/mt6893/libneuron_platform.vpu.so
 vendor/lib64/mt6893/libneuron_runtime.5.so
 vendor/lib64/mt6893/libneuron_runtime.so
