@@ -71,6 +71,9 @@ function blob_fixup {
 	vendor/lib*/libmtkcam_stdutils.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "$2"
             ;;
+	vendor/etc/init/init.batterysecret.rc)
+            sed -i '/seclabel/d' "$2" 
+	    ;;
     esac
 }
 
