@@ -298,9 +298,6 @@
 
         </module>
 
-        <!-- BT Audio HAL -->
-        <xi:include href="bluetooth_offload_audio_policy_configuration.xml"/>
-
 	<!-- Bluetooth Audio HAL -->
 	<xi:include href="bluetooth_audio_policy_configuration.xml"/>
 
