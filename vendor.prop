@@ -58,10 +58,7 @@ bluetooth.profile.vc.server.enabled=true
 ro.vendor.bt.platform=6893
 ro.vendor.mtk.bt_sap_enable=true
 vendor.bluetooth.ldac.abr=true
-bluetooth.profile.a2dp.source.enabled=true
-persist.bluetooth.a2dp_offload.cap=sbc-aac
 persist.bluetooth.a2dp_offload.disabled=true
-ro.bluetooth.a2dp_offload.supported=true
 
 # Display
 debug.mediatek.appgamepq_compress=1
