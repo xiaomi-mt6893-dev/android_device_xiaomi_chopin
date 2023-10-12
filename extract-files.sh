@@ -74,6 +74,9 @@ function blob_fixup {
 	vendor/etc/init/init.batterysecret.rc)
             sed -i '/seclabel/d' "$2" 
 	    ;;
+        vendor/bin/hw/camerahalserver)
+            sed -i 's/\/system\/lib64\/libion.so/\/vendor\/lib64\/libion.so/g' "${2}"
+            ;;
     esac
 }
 
