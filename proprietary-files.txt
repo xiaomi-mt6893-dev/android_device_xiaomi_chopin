@@ -1285,7 +1285,6 @@ system_ext/lib64/vendor.mediatek.hardware.pq@2.7.so
 system_ext/lib64/vendor.mediatek.hardware.pq@2.9.so
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/android.hardware.graphics.composer@2.3-service
-vendor/bin/hw/android.hardware.memtrack-service.mediatek
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
@@ -2215,7 +2214,6 @@ vendor/etc/init/ipsec_mon.rc
 vendor/etc/init/lbs_hidl_service.rc
 vendor/etc/init/loghidlvendorservice.rc
 vendor/etc/init/md_monitor.rc
-vendor/etc/init/memtrack-mediatek.rc
 vendor/etc/init/mi_ic.rc
 vendor/etc/init/mi_ric.rc
 vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
