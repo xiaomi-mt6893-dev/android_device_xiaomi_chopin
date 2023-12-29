@@ -1097,12 +1097,6 @@ service osi /system/bin/osi
     oneshot
     #seclabel u:r:osi:s0
 
-service charger /system/bin/charger
-    class charger
-    critical
-    #seclabel u:r:charger:s0
-    group system graphics
-    seclabel u:r:healthd:s0
 
 on property:vendor.audio.voice.receiver.status=on
     write /sys/class/thermal/thermal_message/voice_receiver_state 10000
