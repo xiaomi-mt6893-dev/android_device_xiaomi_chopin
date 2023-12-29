@@ -33,6 +33,9 @@ PRODUCT_PACKAGES += \
 	android.hardware.health-service.mediatek \
 	android.hardware.health-service.mediatek-recovery	
 
+PRODUCT_PACKAGES += \
+	android.hardware.health@1.0.vendor
+
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
