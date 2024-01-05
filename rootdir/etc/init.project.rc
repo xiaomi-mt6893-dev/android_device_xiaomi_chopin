@@ -62,4 +62,26 @@ on post-fs-data
     chown root system /sys/devices/platform/bootdevice/ufscld/trigger_interval
     chmod 664 /sys/devices/platform/bootdevice/ufscld/trigger
 	
-	
+    # Fingerprint
+    mkdir /data/vendor/misc 01771 system system
+    mkdir /data/vendor/fpc 0770 system system
+    mkdir /data/vendor/fpdump 0770 system system
+    mkdir /data/vendor/gf_data 0770 system system
+    mkdir /data/vendor/goodix 0770 system system
+    mkdir /mnt/vendor/persist/goodix 0770 system system
+on boot
+    chmod 0666 /dev/goodix_fp
+    chown system system /dev/goodix_fp
+    chown system system /sys/bus/platform/devices/fingerprint/clk_enable
+    chmod 0660 /sys/bus/platform/devices/fingerprint/clk_enable
+    chown system system /sys/bus/platform/devices/fingerprint/wakeup_enable
+    chmod 0660 /sys/bus/platform/devices/fingerprint/wakeup_enable
+    chown system system /sys/bus/platform/devices/fingerprint/irq
+    chmod 0660 /sys/bus/platform/devices/fingerprint/irq
+    chown system system /sys/bus/platform/devices/fingerprint/hw_reset
+    chmod 0660 /sys/bus/platform/devices/fingerprint/hw_reset
+    chown system system /sys/bus/spi/devices/spi5.0/authen_fd/performance
+    chmod 0660 /sys/bus/spi/devices/spi5.0/authen_fd/performance
+    chown system system /sys/class/drm/card0-DSI-1/disp_param
+    chmod 0664 /sys/class/drm/card0-DSI-1/disp_param
+    chown system system /sys/bus/platform/devices/fingerprint/fingerdown_wait
