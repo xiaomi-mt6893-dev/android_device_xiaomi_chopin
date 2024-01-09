@@ -1,0 +1,2 @@
+# Fingerprint
+persist.vendor.sys.fp.                   u:object_r:vendor_fingerprint_persist_prop:s0
