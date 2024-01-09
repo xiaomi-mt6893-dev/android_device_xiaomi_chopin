@@ -19,6 +19,7 @@
 
 # Sensor
 /(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.citsensorservice@1\.1-service                 u:object_r:vendor_hal_citsensorservice_xiaomi_default_exec:s0
+/dev/elliptic[0-1]                                                                                     u:object_r:sensor_device:s0
 
 # Thermal
 /(vendor|system/vendor)/bin/mi_thermald                                                                u:object_r:mi_thermald_exec:s0
