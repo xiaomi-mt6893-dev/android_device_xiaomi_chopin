@@ -35,6 +35,7 @@ vendor/lib/libbessound_hd_mtk_vendor.so
 vendor/lib/libblisrc32_vendor.so
 vendor/lib/libbwc.so
 vendor/lib/libcvsd_mtk.so
+vendor/lib/libfvaudio.so
 vendor/lib/libladder.so
 vendor/lib/libmsbc_mtk.so
 vendor/lib/libmtklimiter_vendor.so
