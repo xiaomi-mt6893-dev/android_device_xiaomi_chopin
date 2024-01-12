@@ -18,7 +18,7 @@ on early-init
     write /proc/bootprof "INIT:early-init"
 
     # load vendor-modules
-    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules xiaomi_touch fpsgo wlan_drv_gen4m wmt_chrdev_wifi gps_drv bt_drv_6893 conninfra connfem
+    exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules xiaomi_touch fpsgo wlan_drv_gen4m wmt_chrdev_wifi gps_drv bt_drv_6893 conninfra connfem
     # boot perf. tune
     write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "5 0 0 0 3 3"
     write /sys/devices/platform/boot_dramboost/dramboost/dramboost 1
