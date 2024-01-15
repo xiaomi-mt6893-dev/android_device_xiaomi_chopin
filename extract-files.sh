@@ -77,6 +77,9 @@ function blob_fixup {
         vendor/bin/hw/camerahalserver)
             sed -i 's/\/system\/lib64\/libion.so/\/vendor\/lib64\/libion.so/g' "${2}"
             ;;
+		vendor/bin/hw/camerahalserver)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v31.so" "${2}"
+            ;;
     esac
 }
 
