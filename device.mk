@@ -143,7 +143,7 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
 PRODUCT_PACKAGES += \
-             DolbyManager \
+             XiaomiDolby 
 
 # Bluetooth
 PRODUCT_PACKAGES += \

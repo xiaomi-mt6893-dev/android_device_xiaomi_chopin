@@ -5,7 +5,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="co.aospa.settings.dolby"
+    package="com.xiaomi.dolby"
     android:versionCode="1"
     android:versionName="1.0"
     android:sharedUserId="android.uid.system">
@@ -50,8 +50,8 @@
                        android:value="content://org.lineageos.settings.device.summary/dolby" />
         </activity>
 
-	<provider
-            android:name=".SummaryProvider"
+        <provider
+            android:name=".DolbySummaryProvider"
             android:authorities="org.lineageos.settings.device.summary">
         </provider>
 
