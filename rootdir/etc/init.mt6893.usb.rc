@@ -44,6 +44,16 @@ on post-fs
     setprop sys.usb.mtp.device_type 3
     setprop sys.usb.mtp.batchcancel true
 
+    # Modify class/subclass/protocol for rndis.gs4
+     # Remote NDIS: Class: Wireless Controller (0xe0), Subclass: 0x1, Protocol: 0x3
+     write /config/usb_gadget/g1/functions/rndis.gs4/class e0
+     write /config/usb_gadget/g1/functions/rndis.gs4/subclass 01
+     write /config/usb_gadget/g1/functions/rndis.gs4/protocol 03
+     write /config/usb_gadget/g1/functions/rndis.gs4/os_desc/interface.ncm/compatible_id RNDIS
+     write /config/usb_gadget/g1/functions/rndis.gs4/ifname rndis%d
+     setprop vendor.usb.rndis.config rndis.gs4
+
+
 on post-fs && property:ro.boot.factorybuild=1
     setprop vendor.usb.vid "0x0E8D"
     write /config/usb_gadget/g1/idVendor ${vendor.usb.vid}
