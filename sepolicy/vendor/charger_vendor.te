@@ -1,0 +1,6 @@
+r_dir_file(charger_vendor, sysfs_power_supply)
+
+allow charger_vendor sysfs_power_supply:file rw_file_perms;
+
+allow charger_vendor gpu_device:dir search;
+allow charger_vendor dri_device:chr_file rw_file_perms;
