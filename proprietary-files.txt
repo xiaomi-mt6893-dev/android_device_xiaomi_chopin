@@ -1,0 +1,6 @@
+# Unpinned blobs from missi_phoneext4_global-user 13 TP1A.220624.014 V14.0.6.0.TKPMIXM release-keys
+
+
+# AEE
+vendor/lib/libaedv.so
+vendor/lib64/libaedv.so
