@@ -23,7 +23,6 @@ import android.media.AudioDeviceInfo;
 import android.media.AudioManager;
 import android.util.Log;
 
-import com.android.settingslib.widget.R;
 import com.xiaomi.dolby.DolbyConstants.DsParam;
 
 import java.util.Arrays;
