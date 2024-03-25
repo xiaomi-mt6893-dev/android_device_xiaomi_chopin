@@ -319,6 +319,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service-lazy \
     hostapd \
+    libwifi-hal-wrapper \
     wpa_supplicant
 
 PRODUCT_PACKAGES += \
