@@ -129,10 +129,13 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default
 PRODUCT_PACKAGES += \
     libaudiofoundation.vendor \
+    libunwindstack.vendor \
     libalsautils \
     libtinycompress \
     libdynproc \
-    libhapticgenerator
+    libhapticgenerator \
+    libsqlite.vendor 
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 PRODUCT_COPY_FILES += \
@@ -181,7 +184,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
 	libdrm.vendor \
-    libutils-v32
+       	libutils-v32 
+
+PRODUCT_PACKAGES += \
+	libutilscallstack.vendor
 
 # Xiaomi TouchFeature Service
 PRODUCT_PACKAGES += \
@@ -201,6 +207,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.6.vendor:64 \
     android.hardware.camera.provider@2.6.vendor:64
+
+PRODUCT_PACKAGES += \
+	libcamera_metadata.vendor \
+	libpng.vendor
 
 # Power
 PRODUCT_PACKAGES += \
@@ -304,6 +314,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.visibility_control@1.0.vendor \
     android.hardware.gnss-V1-ndk.vendor \
     android.hardware.gnss@2.1.vendor
+
+PRODUCT_PACKAGES += \
+	libcurl.vendor \
+	libexpat.vendor
 	
 # Neural Networks
 PRODUCT_PACKAGES += \
