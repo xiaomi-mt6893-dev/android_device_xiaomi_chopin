@@ -238,6 +238,14 @@ PRODUCT_BOOT_JARS += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common
+<<<<<<< HEAD
+=======
+
+PRODUCT_PACKAGES += \
+    libui_shim \
+    libshim_sink
+
+>>>>>>> e56cf37 (pissarro: Patch libsource to load the old graphicsbuffer symbol)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
 	
