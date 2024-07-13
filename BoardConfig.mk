@@ -119,6 +119,9 @@ else
 endif
 
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_ALGORITHM := SHA256_RSA2048
