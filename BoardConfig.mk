@@ -103,6 +103,9 @@ TARGET_KERNEL_CONFIG := chopin_user_defconfig
 TARGET_KERNEL_SOURCE := $(DEVICE_PATH)-kernel/kernel-headers
 
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_ALGORITHM := SHA256_RSA2048
