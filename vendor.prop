@@ -1,2 +1,12 @@
 # Gatekeeper
 ro.hardware.gatekeeper=beanpod
+
+# Keymaster
+ro.hardware.kmsetkey=beanpod
+ro.crypto.volume.filenames_mode=aes-256-cts
+
+# TEE
+ro.hardware.wechat=beanpod
+ro.vendor.mtk_microtrust_tee_support=1
+ro.vendor.mtk_svp_on_mtee_support=1
+ro.vendor.mtk_tee_gp_support=1
