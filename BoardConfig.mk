@@ -73,6 +73,7 @@ BOARD_DTB_OFFSET := 0x07c08000
 BOARD_RAMDISK_OFFSET := 0x11088000
 BOARD_KERNEL_TAGS_OFFSET := 0x07c08000
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
+BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 
 TARGET_KERNEL_SOURCE := kernel/xiaomi/chopin
 TARGET_KERNEL_CONFIG := chopin_user_defconfig
