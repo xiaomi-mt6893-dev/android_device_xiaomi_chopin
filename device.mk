@@ -50,6 +50,11 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.mediatek \
+    android.hardware.health-service.mediatek-recovery
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
