@@ -59,6 +59,15 @@ PRODUCT_PACKAGES += \
     libsoft_attestation_cert.vendor \
     libpuresoftkeymasterdevice.vendor
 
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@4.0.vendor \
+    android.hardware.graphics.composer@2.3-service \
+    android.hardware.memtrack-service.mediatek-mali
+
+PRODUCT_PACKAGES += \
+    libdrm.vendor \
+
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
