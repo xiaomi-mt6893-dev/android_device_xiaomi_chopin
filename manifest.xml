@@ -29,4 +29,34 @@
         <transport>hwbinder</transport>
         <fqname>@2.1::IBluetoothAudioProvidersFactory/default</fqname>
     </hal>
+ <hal format="hidl">
+        <name>android.hardware.graphics.allocator</name>
+        <transport>hwbinder</transport>
+        <fqname>@4.0::IAllocator/default</fqname>
+    </hal>
+ <hal format="hidl">
+        <name>android.hardware.graphics.composer</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.3::IComposer/default</fqname>
+    </hal>
+ <hal format="hidl">
+        <name>android.hardware.graphics.mapper</name>
+        <transport arch="32+64">passthrough</transport>
+        <fqname>@4.0::IMapper/default</fqname>
+    </hal>
+ <hal format="hidl">
+        <name>vendor.mediatek.hardware.composer_ext</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IComposerExt/default</fqname>
+    </hal>
+ <hal format="hidl">
+        <name>vendor.mediatek.hardware.mms</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.6::IMms/default</fqname>
+    </hal>
+ <hal format="hidl">
+        <name>vendor.mediatek.hardware.pq</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.13::IPictureQuality/default</fqname>
+    </hal>
 </manifest>

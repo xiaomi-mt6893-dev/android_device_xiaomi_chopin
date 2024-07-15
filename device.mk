@@ -108,6 +108,10 @@ PRODUCT_COPY_FILES += \
 # Fastbootd
 PRODUCT_PACKAGES += \
 		    fastbootd
+
+# AAPT
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 			
 # Audio
 PRODUCT_PACKAGES += \
@@ -136,6 +140,14 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.bluetooth@1.1.vendor \
     libbluetooth_audio_session
+
+
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@4.0.vendor \
+    android.hardware.graphics.composer@2.3-service
+PRODUCT_PACKAGES += \
+    libdrm.vendor
 
 # Rootdir
 PRODUCT_PACKAGES += \
