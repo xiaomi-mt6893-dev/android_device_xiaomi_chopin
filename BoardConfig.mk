@@ -27,6 +27,9 @@ TARGET_NO_BOOTLOADER := true
 BOARD_HAS_MTK_HARDWARE := true
 TARGET_BOARD_PLATFORM := mt6893
 
+# Display
+TARGET_SCREEN_DENSITY := 440
+
 # Inherit the proprietary files
 include vendor/xiaomi/chopin/BoardConfigVendor.mk
 
