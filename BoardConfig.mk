@@ -19,6 +19,14 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a55
 
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := chopin
+TARGET_NO_BOOTLOADER := true
+
+# Platform
+BOARD_HAS_MTK_HARDWARE := true
+TARGET_BOARD_PLATFORM := mt6893
+
 # Inherit the proprietary files
 include vendor/xiaomi/chopin/BoardConfigVendor.mk
 
