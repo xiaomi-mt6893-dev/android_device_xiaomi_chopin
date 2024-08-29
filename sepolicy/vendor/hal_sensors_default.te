@@ -1,0 +1,18 @@
+# Allow access to the HALs
+hal_client_domain(hal_sensors_default, hal_audio)
+
+# Allow binder communication with hal_audio_default
+binder_call(hal_sensors_default, hal_audio_default)
+
+# Allow hal_sensors_default to find hal_audio_hwservice
+allow hal_sensors_default hal_audio_hwservice:hwservice_manager find;
+
+# Allow hal_sensors_default to read/write to sensor device
+allow hal_sensors_default sensor_device:chr_file rw_file_perms;
+
+# Allow access for dynamic sensor properties.
+get_prop(hal_sensors_default, vendor_dynamic_sensor_prop)
+
+# Allow access to raw HID devices for dynamic sensors.
+allow hal_sensors_default device:dir r_dir_perms;
+allow hal_sensors_default hidraw_device:chr_file rw_file_perms;
