@@ -62,5 +62,9 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Kernel Build Options
+BUILD_SOURCE_KERNEL=no
+PREBUILT_DTB=no
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/chopin/chopin-vendor.mk)
