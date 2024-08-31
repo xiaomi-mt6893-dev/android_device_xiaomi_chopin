@@ -38,6 +38,23 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+
+# Rootdir
+PRODUCT_PACKAGES += \
+	 fstab.mt6893 \
+	 fstab.mt6893.ramdisk \
+
+PRODUCT_PACKAGES += \
+	init.connectivity.rc \
+	init.mi_thermald.rc \
+	init.modem.rc \
+	init.mt6893.rc \
+	init.mt6893.usb.rc \
+	init.project.rc \
+	init.sensor_2_0.rc \
+        ueventd.mt6893.rc   
+
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
