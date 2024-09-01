@@ -130,7 +130,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 VENDOR_SECURITY_PATCH := 2024-04-01
 
 # SELinux
-include device/mediatek/sepolicy_vndr/SEPolicy.mk
+# include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
@@ -155,7 +155,7 @@ BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX := 1
 BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION := 3
 
 # Inherit the proprietary files
-include vendor/xiaomi/chopin/BoardConfigVendor.mk
+# include vendor/xiaomi/chopin/BoardConfigVendor.mk
 
 
 
