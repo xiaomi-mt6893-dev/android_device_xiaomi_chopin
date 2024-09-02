@@ -95,7 +95,6 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 ifeq ($(PREBUILT_DTB),yes)
 	TARGET_PREBUILT_DTB := $(DEVICE_PATH)-kernel/dtb.img
 	BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
-	BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 endif
 
 
