@@ -64,5 +64,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek \
     hardware/xiaomi
 
+# Kernel Build Options
+VENDOR_KERNEL_MODULES := no
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/chopin/chopin-vendor.mk)
