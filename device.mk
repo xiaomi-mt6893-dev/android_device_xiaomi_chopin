@@ -171,8 +171,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/xiaomi
 
 # Kernel Build Options
-BUILD_SOURCE_KERNEL=no
-PREBUILT_DTB=yes
+VENDOR_KERNEL_MODULES := no
 
 # Inherit the proprietary files
 # $(call inherit-product, vendor/xiaomi/chopin/chopin-vendor.mk)
