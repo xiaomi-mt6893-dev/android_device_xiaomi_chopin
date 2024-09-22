@@ -37,12 +37,12 @@ persist.vendor.camera3.pipeline.bufnum.base.imgo=4
 persist.vendor.camera3.pipeline.bufnum.base.lcso=4
 persist.vendor.camera3.pipeline.bufnum.base.rrzo=4
 persist.vendor.camera3.pipeline.bufnum.base.rsso=5
-persist.vendor.camera3.pipeline.bufnum.min.high_ram.fdyuv=5
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.fdyuv=6
 persist.vendor.camera3.pipeline.bufnum.min.high_ram.imgo=7
 persist.vendor.camera3.pipeline.bufnum.min.high_ram.lcso=7
 persist.vendor.camera3.pipeline.bufnum.min.high_ram.rrzo=7
 persist.vendor.camera3.pipeline.bufnum.min.high_ram.rsso=7
-persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=5
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=6
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.imgo=6
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.lcso=6
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.rrzo=6
@@ -61,11 +61,11 @@ vendor.mtk.camera.app.fd.video=1
 
 # Connsys
 persist.vendor.connsys.chipid=-1
-persist.vendor.connsys.coredump.mode=0
+persist.vendor.connsys.coredump.mode=1
 persist.vendor.connsys.dynamic.dump=0
 persist.vendor.connsys.patch.version=-1
 persist.vendor.connsysfw.enable=true
-ro.vendor.connsys.dedicated.log.port=bt,wifi,ics,btmcu,wifimcu
+ro.vendor.connsys.dedicated.log.port=bt,wifi
 ro.vendor.connsys.dedicated.log=1
 vendor.connsys.driver.ready=no
 
@@ -77,12 +77,12 @@ debug.mediatek.appgamepq_compress=1
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_gl_backpressure=1
 debug.sf.use_phase_offsets_as_durations=1
-debug.sf.late.sf.duration=10500000
-debug.sf.late.app.duration=16600000
-debug.sf.early.sf.duration=16600000
-debug.sf.early.app.duration=16600000
-debug.sf.earlyGl.sf.duration=16600000
-debug.sf.earlyGl.app.duration=16600000
+debug.sf.late.sf.duration=27600000
+debug.sf.late.app.duration=20000000
+debug.sf.early.sf.duration=27600000
+debug.sf.early.app.duration=20000000
+debug.sf.earlyGl.sf.duration=27600000
+debug.sf.earlyGl.app.duration=20000000
 debug.sf.enable_hwc_vds=0
 debug.sf.enable_transaction_tracing=false
 debug.sf.predict_hwc_composition_strategy=0
@@ -147,13 +147,13 @@ ro.vendor.audio.dolby.dax.support=true
 
 # DRM
 drm.service.enabled=true
-ro.netflix.bsp_rev=MTK6893-32817-1
+ro.netflix.bsp_rev=MTK6893-32816-1
 
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
 # GNSS
-ro.vendor.mtk_log_hide_gps=1
+ro.vendor.mtk_log_hide_gps=0
 
 # IR
 ro.hardware.consumerir=common
@@ -175,7 +175,7 @@ vendor.mtk.vdec.waitkeyframeforplay=9
 
 # MediaTek
 ro.soc.manufacturer=Mediatek
-ro.soc.model=MT6893
+ro.soc.model=MT6891
 ro.vendor.mediatek.platform=MT6893
 ro.vendor.mediatek.version.branch=alps-mp-s0.mp1.tc8sp
 ro.vendor.mediatek.version.release=alps-mp-s0.mp1.tc8sp-V1.0.13_xiaomi.s0mp1.k6893v1.64_P14
