@@ -64,6 +64,11 @@ on init
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/top-app/cpus 0-7
 
+# Logger
+    start boot_log
+    start boot_log_crash
+    start boot_log_kernel
+
 on late-init
     write /proc/bootprof "INIT:late-init"
 # enable rcu_expedited
@@ -227,6 +232,13 @@ on post-fs
 
     # allow ccci_mdinit access ccci_dump
     chown root system /proc/ccci_dump
+
+
+    # Logger
+    start boot_log
+    start boot_log_crash
+    start boot_log_kernel
+
 
 on post-fs-data
     write /proc/bootprof "INIT:post-fs-data"
@@ -772,6 +784,11 @@ on post-fs-data
     chmod 0664 sys/kernel/debug/rt-regmap/mt6360_ldo.5-0064/reg_addr
     chmod 0664 sys/kernel/debug/rt-regmap/mt6360-4e/reg_addr
 
+    # Logger
+    start boot_log
+    start boot_log_crash
+    start boot_log_kernel
+
     #widevine driver node
     chmod 0660 /dev/drm_wv
     chown media system /dev/drm_wv
@@ -784,6 +801,11 @@ on zygote-start
 on early-boot
     write /proc/bootprof "INIT:early-boot"
     verity_update_state
+
+    # Logger
+    start boot_log
+    start boot_log_crash
+    start boot_log_kernel
 
 on boot
     write /proc/bootprof "INIT:boot"
@@ -1195,3 +1217,31 @@ service mi_thermald /system/vendor/bin/mi_thermald
     user root
     group system
     seclabel u:r:mi_thermald:s0
+
+# Logger
+service boot_log /system/bin/logcat -b all -D -f /cache/boot_log_full.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+service boot_log_crash /system/bin/logcat -b crash -D -f /cache/boot_log_crash.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+service boot_log_kernel /system/bin/logcat -b kernel -D -f /cache/boot_log_kernel.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+on property:sys.boot_completed=1
+# Stop the logger service
+    stop boot_log
+    stop boot_log_crash
+    stop boot_log_kernel
