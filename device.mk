@@ -183,6 +183,15 @@ PRODUCT_PACKAGES += \
 		     android.hardware.thermal@1.0-impl \
 		     android.hardware.thermal@2.0.vendor
 
+
+# Sensors
+PRODUCT_PACKAGES += \
+	     android.hardware.sensors@2.1.vendor:64 \
+	     android.hardware.sensors@2.1-service.chopin-multihal
+
+PRODUCT_PACKAGES += \
+		  libsensorndkbridge
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
