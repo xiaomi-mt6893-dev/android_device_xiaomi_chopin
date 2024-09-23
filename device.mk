@@ -173,6 +173,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.recovery.mt6893.rc
 
+# Secure Element
+PRODUCT_PACKAGES += \
+	     android.hardware.secure_element@1.2.vendor
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
