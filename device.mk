@@ -76,6 +76,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 		        libdrm.vendor \
 			libutils-v32
+# DRM
+PRODUCT_PACKAGES += \
+	     android.hardware.drm-service.clearkey
+
+PRODUCT_PACKAGES += \
+		        android.hardware.drm@1.4.vendor
+
+PRODUCT_PACKAGES += \
+		        libdrmclearkeyplugin \
+			libmockdrmcryptoplugin
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
