@@ -68,6 +68,14 @@ PRODUCT_PACKAGES += \
 		    libkeymaster4support.vendor:64 \
 		    libsoft_attestation_cert.vendor:64
 
+# Display
+PRODUCT_PACKAGES += \
+		        android.hardware.graphics.allocator@4.0.vendor \
+			android.hardware.graphics.composer@2.3-service \
+			android.hardware.memtrack-service.mediatek-mali
+PRODUCT_PACKAGES += \
+		        libdrm.vendor \
+			libutils-v32
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
