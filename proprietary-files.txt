@@ -1,4 +1,4 @@
-# Unpinned blobs from missi_phoneext4_global-user 13 TP1A.220624.014 V14.0.6.0.TKPMIXM release-keys
+# Unpinned blobs from chopin-user 13 TP1A.220624.014 V14.0.6.0.TKPMIXM release-keys
 
 # ADSP modules
 vendor/lib/rfsa/adsp/libSuperSensor_skel.so
@@ -4101,9 +4101,6 @@ vendor/odm/etc/vintf/manifest_dsds.xml
 vendor/odm/etc/vintf/manifest_qsqs.xml
 vendor/odm/etc/vintf/manifest_ss.xml
 vendor/odm/etc/vintf/manifest_tsts.xml
-vendor/odm/etc/chopin.build.prop
-vendor/odm/etc/choping.build.prop
-vendor/odm/etc/chopinin.build.prop
 vendor/res/images/lcd_test_00.png
 vendor/res/images/lcd_test_01.png
 vendor/res/images/lcd_test_02.png
@@ -4134,6 +4131,4 @@ vendor/thh/ta/d91f322ad5a441d5955110eda3272fc0.ta
 vendor/thh/ta/e5140b3376fa4c63ab18062caab2fb5c.ta
 vendor/thh/ta/e97c270ea5c44c58bcd3384a2fa2539e.ta
 vendor/thh/ta/isee_model.json
-vendor/chopin.build.prop
-vendor/choping.build.prop
-vendor/chopinin.build.prop
+
