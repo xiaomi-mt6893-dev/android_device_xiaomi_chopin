@@ -205,4 +205,4 @@ PRODUCT_SOONG_NAMESPACES += \
 VENDOR_KERNEL_MODULES := no
 
 # Inherit the proprietary files
-# $(call inherit-product, vendor/xiaomi/chopin/chopin-vendor.mk)
+$(call inherit-product, vendor/xiaomi/chopin/chopin-vendor.mk)
