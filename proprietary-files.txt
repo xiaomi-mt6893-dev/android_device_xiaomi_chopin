@@ -1782,8 +1782,6 @@ vendor/lib64/libksensor.so
 vendor/lib64/libnotifyaudiohal.so
 vendor/lib64/libsensor_custom.so
 
-# Sensors configs
-vendor/etc/sensors/hals.conf
 
 # Soter
 vendor/app/SoterService/SoterService.apk
