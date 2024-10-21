@@ -255,7 +255,7 @@ vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 # Boot
 vendor/bin/hw/android.hardware.boot@1.2-service
 vendor/etc/init/android.hardware.boot@1.2-service.rc
-vendor/etc/vintf/manifest/android.hardware.boot@1.2.xml
+
 
 # Camera
 lib/vendor.mediatek.hardware.camera.isphal@1.0.so
@@ -1237,7 +1237,6 @@ vendor/etc/camera/vidhance_calibration
 # CAS
 vendor/bin/hw/android.hardware.cas@1.2-service-lazy
 vendor/etc/init/android.hardware.cas@1.2-service-lazy.rc
-vendor/etc/vintf/manifest/android.hardware.cas@1.2-service-lazy.xml
 
 # CIT
 vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
@@ -1427,7 +1426,6 @@ vendor/bin/hw/android.hardware.drm@1.4-service.clearkey
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.clearkey.rc
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.clearkey.xml
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
 vendor/lib/mediacas/libclearkeycasplugin.so
 vendor/lib/mediadrm/libdrmclearkeyplugin.so
@@ -1521,7 +1519,6 @@ vendor/bin/batterysecret
 vendor/etc/init/android.hardware.health@2.1-service.rc
 vendor/etc/init/init.batterysecret.rc
 vendor/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc
-vendor/etc/vintf/manifest/android.hardware.health@2.1.xml
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.micharge@1.0.xml
 vendor/lib/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so
 vendor/lib/vendor.xiaomi.hardware.micharge@1.0.so
@@ -1826,7 +1823,6 @@ vendor/etc/thermald-devices.conf
 # USB
 vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
 vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
-vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
 
 # Vibrator
 vendor/bin/hw/android.hardware.vibrator-service.mediatek
@@ -2031,9 +2027,6 @@ vendor/bin/hostapd_cli
 vendor/bin/wpa_cli
 vendor/etc/init/android.hardware.wifi.supplicant-service.rc
 vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc
-vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
-vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml
-vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
 vendor/lib/libkeystore-wifi-hidl.so
 vendor/lib64/libkeystore-engine-wifi-hidl.so
 vendor/lib64/libkeystore-wifi-hidl.so
@@ -2047,10 +2040,6 @@ vendor/etc/wifi/wpa_supplicant.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # Miscellaneous
-odm/etc/vintf/manifest_dsds.xml
-odm/etc/vintf/manifest_qsqs.xml
-odm/etc/vintf/manifest_ss.xml
-odm/etc/vintf/manifest_tsts.xml
 odm/etc/chopin.build.prop
 odm/etc/choping.build.prop
 odm/etc/chopinin.build.prop
@@ -2606,14 +2595,8 @@ vendor/etc/security/cacerts_supl/cec771d5.0
 vendor/etc/security/cacerts_supl/f336e3d1.0
 vendor/etc/vintf/manifest/AHBF@2.1-service.xml
 vendor/etc/vintf/manifest/fod.xml
-vendor/etc/vintf/manifest/gnss-default.xml
 vendor/etc/vintf/manifest/gnss@2.1-service.xml
-vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml
-vendor/etc/vintf/manifest/lights-mtk-default.xml
-vendor/etc/vintf/manifest/manifest_hwcomposer.xml
 vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml
-vendor/etc/vintf/manifest/memtrack-mediatek.xml
-vendor/etc/vintf/manifest/power-default.xml
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@1.0.xml
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@2.0.xml
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@3.0.xml
@@ -4095,10 +4078,6 @@ vendor/mitee/ta/dba51a17-0563-11e7-93b16fa7b0071a51.ta
 vendor/mitee/ta/e5140b33-76fa-4c63-ab18062caab2fb5c.ta
 vendor/mitee/ta/f13010e0-2ae1-11e5-896a0002a5d5c51d.ta
 vendor/odm/etc/camera/camerabooster.json
-vendor/odm/etc/vintf/manifest_dsds.xml
-vendor/odm/etc/vintf/manifest_qsqs.xml
-vendor/odm/etc/vintf/manifest_ss.xml
-vendor/odm/etc/vintf/manifest_tsts.xml
 vendor/res/images/lcd_test_00.png
 vendor/res/images/lcd_test_01.png
 vendor/res/images/lcd_test_02.png
