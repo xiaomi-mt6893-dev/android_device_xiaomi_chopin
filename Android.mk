@@ -61,5 +61,5 @@ $(VENDOR_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(VENDOR_SYMLINKS)
 
->>>>>>> 146cbbd (ares: Create vendor symlinks)
+
 endif
