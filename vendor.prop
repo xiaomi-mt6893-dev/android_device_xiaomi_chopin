@@ -254,6 +254,9 @@ ro.vendor.mtk_data_config=1
 ro.vendor.mtk.sensor.support=yes
 
 # TEE
+ro.boot.tee_type=2
+vendor.soter.teei.googlekey.model=chopin
+ro.hardware.kmsetkey=beanpod
 ro.hardware.wechat=beanpod
 ro.vendor.mtk_microtrust_tee_support=1
 ro.vendor.mtk_svp_on_mtee_support=1
