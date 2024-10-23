@@ -62,7 +62,6 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-		android.hardware.keymaster@4.0.vendor:64
 		android.hardware.keymaster@4.0.vendor \
 		libkeymaster4support.vendor \
 	    	libkeymaster4.vendor \
