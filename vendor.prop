@@ -262,6 +262,10 @@ ro.vendor.mtk_microtrust_tee_support=1
 ro.vendor.mtk_svp_on_mtee_support=1
 ro.vendor.mtk_tee_gp_support=1
 
+
+# Gatekeepr
+ro.hardware.gatekeeper=beanpod
+
 # WiFi
 ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0

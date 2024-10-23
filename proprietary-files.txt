@@ -1464,24 +1464,7 @@ vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 
 # Gatekeeper
-lib/vendor.trustonic.tee@1.0.so
-lib/vendor.trustonic.tee@1.1.so
-lib64/vendor.trustonic.tee@1.0.so
-lib64/vendor.trustonic.tee@1.1.so
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service
-vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
-vendor/lib/hw/gatekeeper.beanpod.so
-vendor/lib/hw/gatekeeper.default.so
-vendor/lib/hw/gatekeeper.mitee.so
-vendor/lib/libTEECommon.so
-vendor/lib/libimsg_log.so
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib64/hw/gatekeeper.beanpod.so
-vendor/lib64/hw/gatekeeper.default.so
-vendor/lib64/hw/gatekeeper.mitee.so
-vendor/lib64/libTEECommon.so
-vendor/lib64/libimsg_log.so
 
 # GNSS
 vendor/bin/hw/android.hardware.gnss-service.mediatek
@@ -1531,21 +1514,14 @@ vendor/lib64/hw/android.hardware.ir@1.0-impl.so
 vendor/lib64/hw/consumerir.common.so
 
 # Keymaster
+vendor/bin/bp_kmsetkey_ca
 vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod
-vendor/bin/hw/android.hardware.keymaster@4.0-service.mitee
-vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
 vendor/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc
-vendor/etc/init/android.hardware.keymaster@4.0-service.mitee.rc
-vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
+vendor/lib64/wechat.beanpod.so
+vendor/etc/init/microtrust.rc
+vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
 vendor/lib/hw/kmsetkey.beanpod.so
-vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
-vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so
-vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 vendor/lib64/hw/kmsetkey.beanpod.so
-vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
-vendor/lib64/libkeymaster4.so
-vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
-vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 
 # Light
 vendor/bin/hw/android.hardware.lights-service.mediatek
@@ -1677,13 +1653,9 @@ vendor/app/IFAAService/IFAAService.apk
 
 # Payment (Xiaomi)
 vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-iseeservice.rc
-vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-miteeservice.rc
 vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-iseeservice.rc
-vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-miteeservice.rc
 vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-iseeservice.rc
-vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-miteeservice.rc
 vendor/etc/init/vendor.xiaomi.hardware.tidaservice@1.1-iseeservice.rc
-vendor/etc/init/vendor.xiaomi.hardware.tidaservice@1.1-miteeservice.rc
 vendor/lib/vendor.xiaomi.hardware.mfidoca@1.0.so
 vendor/lib/vendor.xiaomi.hardware.mlipay@1.0.so
 vendor/lib/vendor.xiaomi.hardware.mlipay@1.1.so
@@ -2070,7 +2042,6 @@ vendor/bin/MI_IC
 vendor/bin/MI_RIC
 vendor/bin/STFlashTool
 vendor/bin/SoterProvisioningTool_isee
-vendor/bin/SoterProvisioningTool_mitee
 vendor/bin/aee_aedv
 vendor/bin/aee_aedv64
 vendor/bin/aee_dumpstatev
@@ -2081,7 +2052,6 @@ vendor/bin/audiocmdservice_atci
 vendor/bin/autobt
 vendor/bin/boringssl_self_test32
 vendor/bin/boringssl_self_test64
-vendor/bin/bp_kmsetkey_ca
 vendor/bin/bt_dump
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
@@ -2101,7 +2071,6 @@ vendor/bin/em_hidl
 vendor/bin/factory
 vendor/bin/ffu
 vendor/bin/fidoca_isee
-vendor/bin/fidoca_mitee
 vendor/bin/fuelgauged
 vendor/bin/fuelgauged_nvram
 vendor/bin/gbe
@@ -2124,15 +2093,11 @@ vendor/bin/loghidlvendorservice
 vendor/bin/md_monitor
 vendor/bin/md_monitor_ctrl
 vendor/bin/meta_tst
-vendor/bin/mitee_shell
-vendor/bin/miteelog
 vendor/bin/mlipayd_isee@1.1
-vendor/bin/mlipayd_mitee@1.1
 vendor/bin/mnld
 vendor/bin/mrdump_tool
 vendor/bin/mt6660_calibration
 vendor/bin/mtd_isee@1.2
-vendor/bin/mtd_mitee@1.2
 vendor/bin/mtk_agpsd
 vendor/bin/mtk_pkm_service
 vendor/bin/mtk_plpath_utils_ota
@@ -2152,7 +2117,6 @@ vendor/bin/smartcharging
 vendor/bin/soterd
 vendor/bin/st_factorytests-vendor
 vendor/bin/tcpdump
-vendor/bin/tee-supplicant
 vendor/bin/teei_daemon
 vendor/bin/testgameserver
 vendor/bin/thermal
@@ -2161,14 +2125,12 @@ vendor/bin/thermal_intf
 vendor/bin/thermal_manager
 vendor/bin/thermalloadalgod
 vendor/bin/tidad_isee@1.1
-vendor/bin/tidad_mitee@1.1
 vendor/bin/toucheventcheck
 vendor/bin/vib_cal
 vendor/bin/volte_clientapi_ua
 vendor/bin/volte_rcs_ua
 vendor/bin/vpud
 vendor/bin/vsimd_isee
-vendor/bin/vsimd_mitee
 vendor/bin/wifi_dump
 vendor/bin/wlan_assistant
 vendor/bin/xiaomi_ir_test
@@ -2218,9 +2180,6 @@ vendor/etc/init/md_monitor.rc
 vendor/etc/init/memtrack-mediatek.rc
 vendor/etc/init/mi_ic.rc
 vendor/etc/init/mi_ric.rc
-vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
-vendor/etc/init/microtrust.rc
-vendor/etc/init/miteelog.rc
 vendor/etc/init/mtk_agpsd_p.rc
 vendor/etc/init/mtk_pkm_service.rc
 vendor/etc/init/mtklog.rc
@@ -2229,7 +2188,6 @@ vendor/etc/init/netdagent.rc
 vendor/etc/init/networksetting.rc
 vendor/etc/init/nvram_daemon.rc
 vendor/etc/init/smartcharging_init.rc
-vendor/etc/init/tee-supplicant.rc
 vendor/etc/init/tetheroffloadservice.rc
 vendor/etc/init/vendor.mediatek.hardware.aee@1.1-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
@@ -2243,7 +2201,6 @@ vendor/etc/init/vendor.xiaomi.hardware.misys@3.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.misys@4.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.soterservice@1.0-service-gl.rc
 vendor/etc/init/vendor.xiaomi.hardware.vsimapp@1.0-iseeservice.rc
-vendor/etc/init/vendor.xiaomi.hardware.vsimapp@1.0-miteeservice.rc
 vendor/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc
 vendor/etc/init/vendor_flash_recovery.rc
 vendor/etc/init/vibrator-mtk-default.rc
@@ -3634,21 +3591,17 @@ vendor/lib/libicd_decoder.so
 vendor/lib/libipsec_ims_shr.so
 vendor/lib/liblogwrap_vendor.so
 vendor/lib/libmfido_isee.so
-vendor/lib/libmfido_mitee.so
 vendor/lib/libminiui.so
 vendor/lib/libmisound.so
 vendor/lib/libmisoundcrossfade.so
 vendor/lib/libmlipay_isee.so
 vendor/lib/libmlipay_isee@1.1.so
-vendor/lib/libmlipay_mitee.so
-vendor/lib/libmlipay_mitee@1.1.so
 vendor/lib/libmmprofile.so
 vendor/lib/libmnetlink_v104.so
 vendor/lib/libmp4enc_sa.ca7.so
 vendor/lib/libmp4enc_xa.ca7.so
 vendor/lib/libmsbc_mtk.so
 vendor/lib/libmt_isee.so
-vendor/lib/libmt_mitee.so
 vendor/lib/libmtcloader.so
 vendor/lib/libmtk_bsg.so
 vendor/lib/libmtkares.so
@@ -3689,7 +3642,6 @@ vendor/lib/libthermalalgo.so
 vendor/lib/libthha.so
 vendor/lib/libthhclient.so
 vendor/lib/libtida_isee@1.1.so
-vendor/lib/libtida_mitee@1.1.so
 vendor/lib/libtlcWidevineModularDrm.so
 vendor/lib/libtranslator_mapi_v3.0.so
 vendor/lib/libtranslator_mdmi_v2.8.2.so
@@ -3713,7 +3665,6 @@ vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
 vendor/lib/libvpx.so
 vendor/lib/libvsim_isee.so
-vendor/lib/libvsim_mitee.so
 vendor/lib/libvt_custom.so
 vendor/lib/libwapi.so
 vendor/lib/libwpa_client.so
@@ -3897,7 +3848,6 @@ vendor/lib64/liblogwrap_vendor.so
 vendor/lib64/libmcv_runtime.mtk.so
 vendor/lib64/libmdla_ut.so
 vendor/lib64/libmfido_isee.so
-vendor/lib64/libmfido_mitee.so
 vendor/lib64/libmiai_deblur.so
 vendor/lib64/libmiai_portraitsupernight.so
 vendor/lib64/libmialgo_ie_capture.so
@@ -3909,8 +3859,6 @@ vendor/lib64/libmisound.so
 vendor/lib64/libmisoundcrossfade.so
 vendor/lib64/libmlipay_isee.so
 vendor/lib64/libmlipay_isee@1.1.so
-vendor/lib64/libmlipay_mitee.so
-vendor/lib64/libmlipay_mitee@1.1.so
 vendor/lib64/libmmagent.so
 vendor/lib64/libmmprofile.so
 vendor/lib64/libmnetlink_v104.so
@@ -3918,8 +3866,6 @@ vendor/lib64/libmnl.so
 vendor/lib64/libmsbc_mtk.so
 vendor/lib64/libmt_isee.so
 vendor/lib64/libmt_isee@1.2.so
-vendor/lib64/libmt_mitee.so
-vendor/lib64/libmt_mitee@1.2.so
 vendor/lib64/libmtcloader.so
 vendor/lib64/libmtk-fusion-ril-prop-vsim.so
 vendor/lib64/libmtk-ril.so
@@ -3994,7 +3940,6 @@ vendor/lib64/libtflite_mtk.so
 vendor/lib64/libthha.so
 vendor/lib64/libthhclient.so
 vendor/lib64/libtida_isee@1.1.so
-vendor/lib64/libtida_mitee@1.1.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/libtranslator_mapi_v3.0.so
 vendor/lib64/libtranslator_mdmi_v2.8.2.so
@@ -4013,7 +3958,6 @@ vendor/lib64/libvow_ap_test_hh.so
 vendor/lib64/libvow_ap_test_nn.so
 vendor/lib64/libvpu5.so
 vendor/lib64/libvsim_isee.so
-vendor/lib64/libvsim_mitee.so
 vendor/lib64/libwa_opticalzoom_fusion.so
 vendor/lib64/libwapi.so
 vendor/lib64/libwifitest.so
@@ -4061,19 +4005,6 @@ vendor/lib64/vendor.xiaomi.hardware.misys@4.0.so
 vendor/lib64/vendor.xiaomi.hardware.soterservice@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.vsimapp@1.0.so
 vendor/lib64/vendor.xiaomi.hw.touchfeature@1.0.so
-vendor/lib64/wechat.beanpod.so
-vendor/mitee/ta/14b0aad8-c011-4a3f-b66aca8d0e66f273.ta
-vendor/mitee/ta/377ee4e8-af0e-474f-a9d636a9268fe85c.ta
-vendor/mitee/ta/3d08821c-33a6-11e6-a1fa089e01c83aa2.ta
-vendor/mitee/ta/4d573443-6a56-4272-ac6f2425af9ef9bb.ta
-vendor/mitee/ta/68bcd09d-4101-4c0a-9552ed0af9ae16b2.ta
-vendor/mitee/ta/7b30b820-a9ea-11e5-b1780002a5d5c51b.ta
-vendor/mitee/ta/86f623f6-a299-4dfd-b560ffd3e5a62c29.ta
-vendor/mitee/ta/88ce8e6b-8646-4092-bb78faf5b55ff4df.ta
-vendor/mitee/ta/a985d3eb-3b52-4d44-be6c628a813561e8.ta
-vendor/mitee/ta/dba51a17-0563-11e7-93b16fa7b0071a51.ta
-vendor/mitee/ta/e5140b33-76fa-4c63-ab18062caab2fb5c.ta
-vendor/mitee/ta/f13010e0-2ae1-11e5-896a0002a5d5c51d.ta
 vendor/odm/etc/camera/camerabooster.json
 vendor/res/images/lcd_test_00.png
 vendor/res/images/lcd_test_01.png
