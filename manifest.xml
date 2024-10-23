@@ -330,7 +330,7 @@
         <name>vendor.xiaomi.hardware.vsimapp</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IVSIMService/default</fqname>
-    </hal>
+</hal>
     <hal format="hidl">
     <name>android.hardware.vibrator</name>
     <transport>hwbinder</transport>
