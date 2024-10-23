@@ -1,3 +1,4 @@
+<compatibility-matrix version="4.0" type="framework">
 <hal format="hidl" optional="true">
     <name>android.hardware.radio</name>
     <version>1.0-6</version>
@@ -399,4 +400,4 @@
         <instance>default</instance>
     </interface>
 </hal>
-
+</compatibility-matrix>
