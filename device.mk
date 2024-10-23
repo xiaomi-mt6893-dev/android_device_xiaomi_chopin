@@ -62,13 +62,12 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-	       android.hardware.keymaster@4.0.vendor:64
-
-PRODUCT_PACKAGES += \
-		    libkeymaster4.vendor:64 \
-		    libkeymaster4support.vendor:64 \
-		    libsoft_attestation_cert.vendor:64
-
+		android.hardware.keymaster@4.0.vendor:64
+		android.hardware.keymaster@4.0.vendor \
+		libkeymaster4support.vendor \
+	    	libkeymaster4.vendor \
+	        libpuresoftkeymasterdevice.vendor \
+		libsoft_attestation_cert.vendor
 # Display
 PRODUCT_PACKAGES += \
 		        android.hardware.graphics.allocator@4.0.vendor \
