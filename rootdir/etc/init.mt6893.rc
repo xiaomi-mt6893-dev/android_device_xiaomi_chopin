@@ -1240,6 +1240,19 @@ service boot_log_kernel /system/bin/logcat -b kernel -D -f /cache/boot_log_kerne
     disabled
     oneshot
 
+
+# Logger
+service boot_log /system/bin/logcat -b all -D -f /metadata/boot_log.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+on post-fs-data
+    # Clear existing log and start the service
+    rm /metadata/boot_log.txt
+    start boot_log
+
 on property:sys.boot_completed=1
 # Stop the logger service
     stop boot_log
