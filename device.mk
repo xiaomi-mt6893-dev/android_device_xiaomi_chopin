@@ -65,7 +65,6 @@ PRODUCT_PACKAGES += \
 		android.hardware.keymaster@4.0.vendor \
 		libkeymaster4support.vendor \
 	    	libkeymaster4.vendor \
-	        libpuresoftkeymasterdevice.vendor \
 		libsoft_attestation_cert.vendor
 
 # Gatekeeper
