@@ -207,8 +207,12 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder.vendor \
-	android.hidl.allocator@1.0.vendor 	
-	
+    android.hidl.allocator@1.0.vendor 	
+
+# Shims
+PRODUCT_PACKAGES += \
+	libshim_libkeymaster4
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.multihal \
