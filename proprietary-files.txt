@@ -1654,9 +1654,6 @@ vendor/lib64/nfc_nci.st21nfc.st.so
 vendor/etc/libnfc-hal-st.conf
 vendor/etc/libnfc-nci.conf
 
-# Payment (IFAA)
-vendor/app/IFAAService/IFAAService.apk
-
 # Payment (Xiaomi)
 vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-iseeservice.rc
 vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-miteeservice.rc
