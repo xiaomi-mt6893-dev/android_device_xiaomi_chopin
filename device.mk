@@ -102,6 +102,11 @@ PRODUCT_PACKAGES += \
 		        libdrmclearkeyplugin \
 			libmockdrmcryptoplugin
 
+
+# Dumpstate (Xiaomi)
+PRODUCT_PACKAGES += \
+		    android.hardware.dumpstate@1.1-service.xiaomi \
+		    android.hardware.dumpstate@1.1.vendor
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
