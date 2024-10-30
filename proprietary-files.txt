@@ -1649,6 +1649,7 @@ vendor/bin/hw/android.hardware.nfc@1.2-service-st
 vendor/etc/init/android.hardware.nfc@1.2-service-st.rc
 vendor/lib/nfc_nci.st21nfc.st.so
 vendor/lib64/nfc_nci.st21nfc.st.so
+vendor/lib64/android.hardware.nfc@1.0.so
 
 # NFC configs
 vendor/etc/libnfc-hal-st.conf
@@ -4105,3 +4106,6 @@ vendor/thh/ta/e5140b3376fa4c63ab18062caab2fb5c.ta
 vendor/thh/ta/e97c270ea5c44c58bcd3384a2fa2539e.ta
 vendor/thh/ta/isee_model.json
 
+
+# Block
+vendor/lib64/android.hidl.memory.block@1.0.so
