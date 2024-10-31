@@ -254,9 +254,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
 
-# NFC
-PRODUCT_PACKAGES += \
-		    android.hardware.nfc@1.0.vendor 
 
 # Rootdir
 PRODUCT_PACKAGES += \
