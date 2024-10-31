@@ -190,14 +190,6 @@
     </interface>
 </hal>
 <hal format="hidl" optional="true">
-    <name>android.hardware.vibrator</name>
-    <version>1.0</version>
-    <interface>
-        <name>IVibrator</name>
-        <instance>vibratorfeature</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
     <name>com.fingerprints.extension</name>
     <version>3.0</version>
     <interface>
