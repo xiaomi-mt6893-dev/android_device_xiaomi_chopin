@@ -1431,16 +1431,16 @@ vendor/etc/vintf/manifest/android.hardware.dumpstate@1.1-service.xiaomi.xml
 # Fingerprint
 lib/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
-vendor/lib/hw/fingerprint.fpc_isee.so
-vendor/lib/hw/fingerprint.fpc_msee.so
+vendor/lib/hw/fingerprint.fpc_isee.so:vendor/lib/hw/fingerprint.fpc_isee.default.so
+vendor/lib/hw/fingerprint.fpc_msee.so:vendor/lib/hw/fingerprint.fpc_msee.default.so
 vendor/lib/hw/fingerprint.goodix.so
 vendor/lib/libgf_ca.so
 vendor/lib/libgf_hal.so
 vendor/lib/libgoodixhwfingerprint.so
 vendor/lib/libteecli.so
 vendor/lib/vendor.xiaomi.hardware.fx.tunnel@1.0.so
-vendor/lib64/hw/fingerprint.fpc_isee.so
-vendor/lib64/hw/fingerprint.fpc_msee.so
+vendor/lib64/hw/fingerprint.fpc_isee.so:vendor/lib64/hw/fingerprint.fpc_isee.default.so
+vendor/lib64/hw/fingerprint.fpc_msee.so:vendor/lib64/hw/fingerprint.fpc_msee.default.so
 vendor/lib64/hw/fingerprint.goodix.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
@@ -2050,7 +2050,6 @@ vendor/app/NetworkStackResOverlay/NetworkStackResOverlay.apk
 vendor/app/SensorTestTool/SensorTestTool.apk
 vendor/app/TetheringResOverlay/TetheringResOverlay.apk
 vendor/bin/hw/camerahalserver
-vendor/bin/hw/mfp-daemon
 vendor/bin/hw/tetheroffloadservice
 vendor/bin/hw/vendor.mediatek.hardware.aee@1.1-service
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
@@ -2797,7 +2796,6 @@ vendor/firmware/st21nfc_fw.bin
 vendor/firmware/st21nfc_fw7.bin
 vendor/firmware/valhall-1691526.wa
 vendor/firmware/wifi.cfg
-vendor/framework/com.fingerprints.extension.jar
 vendor/lib/hw/audio.vehicle_display.default.so
 vendor/lib/hw/audio_policy.stub.so
 vendor/lib/hw/libSoftGatekeeper.so

@@ -163,6 +163,9 @@ PRODUCT_PACKAGES += \
 		  android.hidl.allocator@1.0.vendor \
 		  android.hidl.memory.block@1.0.vendor 
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+	     android.hardware.biometrics.fingerprint@2.3-service.xiaomi
 
 # Shims
 PRODUCT_PACKAGES += \
