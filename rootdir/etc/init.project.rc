@@ -4,8 +4,6 @@ import /vendor/etc/init/init.charge_logger.rc
 import /vendor/etc/init/init.mishow.ctl.rc
 import /vendor/etc/init/hw/init.mi_thermald.rc
 
-import /vendor/etc/init/hw/init.stnfc.rc
-import /product/etc/init/hw/init.stnfc.rc
 import /vendor/etc/init/hw/vendor.mi.secure_element@1.0-service.rc
 import /vendor/etc/init/hw/vendor.mi.secure_element@1.2-service.rc
 

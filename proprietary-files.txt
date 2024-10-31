@@ -1647,16 +1647,6 @@ vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-mdla-d
 vendor/lib/libneuropilot_hal_utils.so
 vendor/lib64/libneuropilot_hal_utils.so
 
-# NFC
-vendor/bin/hw/android.hardware.nfc@1.2-service-st
-vendor/etc/init/android.hardware.nfc@1.2-service-st.rc
-vendor/lib/nfc_nci.st21nfc.st.so
-vendor/lib64/nfc_nci.st21nfc.st.so
-vendor/lib64/android.hardware.nfc@1.0.so
-
-# NFC configs
-vendor/etc/libnfc-hal-st.conf
-vendor/etc/libnfc-nci.conf
 
 # Payment (Xiaomi)
 vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-iseeservice.rc
@@ -2142,7 +2132,6 @@ vendor/bin/mtk_plpath_utils_ota
 vendor/bin/muxreport
 vendor/bin/netdagent
 vendor/bin/netdc
-vendor/bin/nfcstackp-vendor
 vendor/bin/nvram_daemon
 vendor/bin/pnscr
 vendor/bin/rcs_volte_stack
