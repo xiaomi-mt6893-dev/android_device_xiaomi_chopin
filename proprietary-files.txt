@@ -1472,6 +1472,7 @@ vendor/lib64/libimsg_log.so
 # GNSS
 vendor/bin/hw/android.hardware.gnss-service.mediatek
 vendor/etc/init/android.hardware.gnss-service.mediatek.rc
+vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so:vendor/lib64/android.hardware.gnss-impl-mediatek.so
 vendor/lib/hw/gps.default.so
 vendor/lib64/hw/gps.default.so
 
