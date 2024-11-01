@@ -2814,6 +2814,7 @@ vendor/lib/lib3a.aishutter.models.so
 vendor/lib/libAVCSecureVencCA.so
 vendor/lib/libHEVCdec_sa.ca7.android.so
 vendor/lib/libMtkSpeechEnh.so
+vendor/lib/libpcap.so
 vendor/lib/lib_iir.so
 vendor/lib/lib_speech_enh.so
 vendor/lib/libaal_cust.so
