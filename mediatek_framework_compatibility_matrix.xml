@@ -507,14 +507,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.mediatek.hardware.mtkpower_applist</name>
-        <version>1</version>
-        <interface>
-            <name>IMtkpower_applist</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.mediatek.hardware.mtkradioex</name>
         <transport>hwbinder</transport>
