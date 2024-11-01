@@ -267,3 +267,8 @@ ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0
 ro.vendor.wlan.chrdev=wmt_chrdev_wifi
 ro.vendor.wlan.gen=gen4m
+
+# Debug (ADB)
+persist.sys.usb.config=adb
+ro.debuggable=1
+ro.adb.secure=0
