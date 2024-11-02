@@ -331,6 +331,18 @@ PRODUCT_PACKAGES += \
 		    vendor.qti.hardware.vibrator.service.chopin
 PRODUCT_COPY_FILES += \
 		      vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
+
+# WiFi
+PRODUCT_PACKAGES += \
+		    android.hardware.tetheroffload.config@1.0.vendor:64 \
+      		    android.hardware.tetheroffload.control@1.1.vendor:64 \
+		    android.hardware.wifi@1.0-service-lazy
+
+PRODUCT_PACKAGES += \
+	    wpa_supplicant \
+	    hostapd
+
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
