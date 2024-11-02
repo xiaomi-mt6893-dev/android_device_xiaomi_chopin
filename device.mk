@@ -266,6 +266,11 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor \
     android.hardware.radio@1.6.vendor
 
+# ConsumerIr
+PRODUCT_PACKAGES += \
+	     android.hardware.ir@1.0-impl \
+    	     android.hardware.ir@1.0-service
+
 # Radio (IMS)
 PRODUCT_BOOT_JARS += \
     mediatek-common \
