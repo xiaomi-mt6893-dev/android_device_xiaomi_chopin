@@ -9,4 +9,19 @@
 	<transport>hwbinder</transport>
 	<fqname>@1.0::IBootControl/default</fqname>
 	</hal>
+<hal format="hidl">
+        <name>android.hardware.audio</name>
+        <transport>hwbinder</transport>
+        <fqname>@7.0::IDevicesFactory/default</fqname>
+    </hal>
+ <hal format="hidl">
+        <name>android.hardware.audio.effect</name>
+        <transport>hwbinder</transport>
+        <fqname>@7.0::IEffectsFactory/default</fqname>
+    </hal>
+ <hal format="hidl">
+        <name>android.hardware.soundtrigger</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.3::ISoundTriggerHw/default</fqname>
+    </hal>
 </manifest>

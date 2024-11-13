@@ -84,6 +84,9 @@ BOARD_HAS_MTK_HARDWARE := true
 TARGET_BOARD_PLATFORM := mt6893
 BOARD_VENDOR := xiaomi
 
+# Propertiesw
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 
