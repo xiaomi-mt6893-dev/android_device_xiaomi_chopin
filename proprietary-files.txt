@@ -53,6 +53,7 @@ vendor/lib/libvow_ap_test_ha.so
 vendor/lib/libvow_ap_test_hh.so
 vendor/lib/libvow_ap_test_nn.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
+vendor/etc/cs35l41_cal.wav
 
 # Audio (configurations)
 vendor/etc/audio_param/AudioParamOptions.xml
