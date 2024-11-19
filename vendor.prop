@@ -129,3 +129,8 @@ ro.vendor.pq.mtk_video_transition=0
 ro.vendor.smvr.p2batch.fhd=8
 ro.vendor.smvr.p2batch.hd=16
 ro.vendor.smvr.p2batch.vga=32
+
+# TEE
+ro.vendor.mtk_microtrust_tee_support=1
+ro.vendor.mtk_svp_on_mtee_support=1
+ro.vendor.mtk_tee_gp_support=1

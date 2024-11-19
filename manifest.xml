@@ -54,6 +54,11 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::IComposerExt/default</fqname>
     </hal>
+	  <hal format="hidl">
+        <name>vendor.microtrust.hardware.thh</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.0::IThhDevice/default</fqname>
+    </hal>
  <hal format="hidl">
         <name>vendor.mediatek.hardware.mms</name>
         <transport>hwbinder</transport>
