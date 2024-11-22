@@ -441,3 +441,18 @@ vendor/mitee/ta/f13010e0-2ae1-11e5-896a0002a5d5c51d.ta
 vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
 vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
 vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
+
+# Connectivity
+vendor/bin/conninfra_loader
+vendor/firmware/conninfra.cfg
+vendor/firmware/wifi.cfg
+vendor/firmware/WIFI_RAM_CODE_soc3_0_1a_1.bin
+vendor/firmware/soc3_0_patch_wmmcu_1a_1_hdr.bin
+vendor/firmware/soc3_0_ram_bt_1_1_hdr.bin
+vendor/firmware/soc3_0_ram_bt_1a_1_hdr.bin
+vendor/firmware/soc3_0_ram_mcu_1_1_hdr.bin
+vendor/firmware/soc3_0_ram_mcu_1a_1_hdr.bin
+vendor/firmware/soc3_0_ram_mcu_e1_hdr.bin
+vendor/firmware/soc3_0_ram_wifi_1a_1_hdr.bin
+vendor/firmware/soc3_0_ram_wmmcu_1a_1_hdr.bin
+
