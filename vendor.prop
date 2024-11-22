@@ -34,6 +34,13 @@ persist.vendor.audio.misound.disable=true
 # AEE
 ro.vendor.have_aee_feature=0
 
+# Connsys
+persist.vendor.connsys.chipid=-1
+persist.vendor.connsys.coredump.mode=0
+persist.vendor.connsys.dynamic.dump=0
+persist.vendor.connsys.patch.version=-1
+vendor.connsys.driver.ready=no
+
 # Bluetooth
 bluetooth.profile.asha.central.enabled=true
 bluetooth.profile.avrcp.target.enabled=true
@@ -155,3 +162,9 @@ ro.vendor.mtk_nn.option=A,B,E,F,Z
 ro.vendor.mtk_nn_baseline_support=1
 ro.vendor.mtk_nn_quant_preferred=1
 ro.vendor.mtk_nn_support=1
+
+# WiFi
+ro.vendor.wifi.sap.concurrent.iface=ap1
+ro.vendor.wifi.sap.interface=ap0
+ro.vendor.wlan.chrdev=wmt_chrdev_wifi
+ro.vendor.wlan.gen=gen4m
