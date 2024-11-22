@@ -94,4 +94,44 @@
         <transport>hwbinder</transport>
         <fqname>@1.1::IMMAgent/default</fqname>
     </hal>
+ <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.mmagent</name>
+        <version>1.0-1</version>
+        <interface>
+            <name>IMMAgent</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+ <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.neuropilot.agent</name>
+        <version>1.0-2</version>
+        <interface>
+            <name>IAgent</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+ <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.apuware.apusys</name>
+        <version>2.0-1</version>
+        <interface>
+            <name>INeuronApusys</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+ <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.apuware.hmp</name>
+        <version>1.0</version>
+        <interface>
+            <name>IApuwareHmp</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+ <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.apuware.utils</name>
+        <version>2.0</version>
+        <interface>
+            <name>IApuwareUtils</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </manifest>
