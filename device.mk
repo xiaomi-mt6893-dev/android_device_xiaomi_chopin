@@ -300,4 +300,4 @@ PRODUCT_COPY_FILES += \
 
 
 # Inherit the proprietary files
-# $(call inherit-product, vendor/xiaomi/chopin/chopin-vendor.mk)
+$(call inherit-product, vendor/xiaomi/chopin/chopin-vendor.mk)
