@@ -44,20 +44,6 @@
         <instance>default</instance>
     </interface>
 </hal>
-<hal format="aidl" optional="true">
-    <name>android.hardware.light</name>
-    <interface>
-        <name>ILights</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="aidl" optional="true">
-    <name>android.hardware.power</name>
-    <interface>
-        <name>IPower</name>
-        <instance>default</instance>
-    </interface>
-</hal>
 <hal format="hidl" optional="true">
     <name>android.hardware.usb</name>
     <version>1.0-3</version>
