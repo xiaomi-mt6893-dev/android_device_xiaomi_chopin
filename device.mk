@@ -33,9 +33,8 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-	   android.hardware.health@2.1-impl \
-	   android.hardware.health@2.1-impl.recovery \
-	   android.hardware.health@2.1-service
+    android.hardware.health-service.mediatek \
+    android.hardware.health-service.mediatek-recovery
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -297,8 +296,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3.vendor \
-    android.hardware.usb.gadget@1.1.vendor
+    android.hardware.usb-service.mediatek
 
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey \
