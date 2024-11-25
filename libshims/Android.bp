@@ -15,14 +15,6 @@
 
 
 
-cc_library_shared {
-    name: "libshim_libkeymaster4",
-    srcs: ["libshim_libkeymaster4.c"],
-    shared_libs: [
-        "libkeymaster4",
-    ],
-	vendor: true,
-}
 
 cc_library_shared {
     name: "libshim_sink",
