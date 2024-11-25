@@ -269,6 +269,7 @@ vendor/lib/vendor.mediatek.hardware.pq@2.6.so
 vendor/lib/vendor.mediatek.hardware.pq@2.7.so
 vendor/lib/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib/vendor.mediatek.hardware.pq@2.9.so
+vendor/lib64/libladder.so
 vendor/lib64/egl/libGLES_meow.so
 vendor/lib64/egl/libMEOW_data.so
 vendor/lib64/egl/libMEOW_gift.so
@@ -397,6 +398,8 @@ vendor/lib/libvcodecdrv.so
 vendor/lib/libvcodecdrv_header_stub.so
 vendor/lib/libvpu.so
 vendor/lib/libvpu5.so
+vendor/lib/mt6893/libmtk_drvb.so
+vendor/lib64/mt6893/libmtk_drvb.so
 vendor/lib/libvpud_vcodec.so
 
 # Media (Configs)
