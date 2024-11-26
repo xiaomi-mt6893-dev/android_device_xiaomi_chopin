@@ -5,6 +5,14 @@
 //
 
 
+// Init scripts
+
+sh_binary {
+    name: "init.insmod.sh",
+    src: "bin/init.insmod.sh",
+    vendor: true,
+}
+
 // Init configuration files
 
 prebuilt_etc {
