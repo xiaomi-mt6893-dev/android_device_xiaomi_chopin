@@ -787,6 +787,7 @@ vendor/thh/ta/isee_model.json
 # Xiaomi Trusted Execution Environment (MITEE)
 vendor/bin/tee-supplicant
 vendor/etc/init/tee-supplicant.rc
+vendor/lib64/libteecli.so
 vendor/lib64/libmt_mitee.so
 vendor/lib64/libmt_mitee@1.2.so
 vendor/mitee/ta/14b0aad8-c011-4a3f-b66aca8d0e66f273.ta
