@@ -424,6 +424,7 @@ vendor/etc/seccomp_policy/mediaswcodec.policy
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b:vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
 vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml
+vendor/lib64/libcodec2_soft_common.so
 vendor/lib64/libcodec2_mtk_c2store.so
 vendor/lib64/libcodec2_mtk_vdec.so
 vendor/lib64/libcodec2_mtk_venc.so
