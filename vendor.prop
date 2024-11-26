@@ -142,20 +142,20 @@ ro.netflix.bsp_rev=MTK6893-32816-1
 drm.service.enabled=true
 
 # TEE
-ro.hardware.wechat=mitee
+ro.hardware.wechat=beanpod
 ro.vendor.mtk_microtrust_tee_support=1
 ro.vendor.mtk_svp_on_mtee_support=1
 ro.vendor.mtk_tee_gp_support=1
 
 # Keymaster
-ro.hardware.kmsetkey=mitee
+ro.hardware.kmsetkey=beanpod
 ro.crypto.volume.filenames_mode=aes-256-cts
 
 # ConsumerIr
 ro.hardware.consumerir=common
 
 # Gatekeeper
-ro.hardware.gatekeeper=mitee
+ro.hardware.gatekeeper=beanpod
 
 # Sensors
 ro.vendor.mtk.sensor.support=yes
