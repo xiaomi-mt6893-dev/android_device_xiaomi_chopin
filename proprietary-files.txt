@@ -2043,3 +2043,11 @@ vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
+
+# vendor-modules-init
+vendor/etc/init/init.bt_drv.rc
+vendor/etc/init/init.connfem.rc
+vendor/etc/init/init.conninfra.rc
+vendor/etc/init/init.fmradio_drv.rc
+vendor/etc/init/init.gps_drv.rc
+vendor/etc/init/init.wlan_drv.rc
