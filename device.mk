@@ -247,7 +247,6 @@ PRODUCT_PACKAGES += \
 	init.mt6893.usb.rc \
 	init.project.rc \
 	init.sensor_2_0.rc \
-	init.insmod.sh \
     ueventd.mt6893.rc   
 
 
