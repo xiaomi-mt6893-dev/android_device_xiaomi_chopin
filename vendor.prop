@@ -170,9 +170,6 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 # ConsumerIr
 ro.hardware.consumerir=common
 
-# Gatekeeper
-ro.hardware.gatekeeper=beanpod
-
 # Sensors
 ro.vendor.mtk.sensor.support=yes
 
