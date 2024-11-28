@@ -146,6 +146,13 @@ ro.vendor.mtk_sec_video_path_support=1
 ro.vendor.mtk_video_hevc_enc_support=1
 vendor.mtk.vdec.waitkeyframeforplay=9
 
+# MediaTek
+ro.soc.manufacturer=Mediatek
+ro.soc.model=MT6891
+ro.vendor.mediatek.platform=MT6893
+ro.vendor.mediatek.version.branch=alps-mp-s0.mp1.tc8sp
+ro.vendor.mediatek.version.release=alps-mp-s0.mp1.tc8sp-V1.0.13_xiaomi.s0mp1.k6893v1.64_P14
+
 # DRM
 ro.netflix.bsp_rev=MTK6893-32816-1
 drm.service.enabled=true
