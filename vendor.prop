@@ -137,6 +137,15 @@ ro.vendor.smvr.p2batch.fhd=8
 ro.vendor.smvr.p2batch.hd=16
 ro.vendor.smvr.p2batch.vga=32
 
+# Media
+debug.mediatek.disp_decompress=1
+media.c2.dmabuf.padding=3072
+ro.vendor.jpeg_decode_sw_opt=1
+ro.vendor.mtk_config_max_dram_size=0x800000000
+ro.vendor.mtk_sec_video_path_support=1
+ro.vendor.mtk_video_hevc_enc_support=1
+vendor.mtk.vdec.waitkeyframeforplay=9
+
 # DRM
 ro.netflix.bsp_rev=MTK6893-32816-1
 drm.service.enabled=true
