@@ -126,6 +126,11 @@ BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_CONFIG := chopin_user_defconfig
 TARGET_KERNEL_SOURCE := $(DEVICE_PATH)-kernel/kernel-headers
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_chopin
+TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_chopin
+
+
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
