@@ -21,7 +21,7 @@ static const variant_info_t chopin_info = {
 };
 
 static const std::vector<variant_info_t> variants = {
-    amber_info,
+    chopin_info,
 };
 
 void vendor_load_properties() {
