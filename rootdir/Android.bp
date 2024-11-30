@@ -4,8 +4,12 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
-
-// Init configuration files
+prebuilt_etc {
+    name: "fstab.mt6893",
+    src: "etc/fstab.mt6893",
+    vendor: true,
+    ramdisk_available: true,
+}
 
 prebuilt_etc {
     name: "init.cgroup.rc",
@@ -71,23 +75,8 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init_conninfra.rc",
-    src: "etc/init_conninfra.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "ueventd.mt6893.rc",
     filename: "ueventd.rc",
     src: "etc/ueventd.mt6893.rc",
     vendor: true,
-}
-
-// fstab
-prebuilt_etc {
-    name: "fstab.mt6893",
-    src: "etc/fstab.mt6893",
-    vendor: true,
-    ramdisk_available: true,
 }
