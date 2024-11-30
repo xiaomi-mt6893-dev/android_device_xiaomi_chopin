@@ -723,6 +723,8 @@ vendor/lib/libmtcloader.so
 vendor/lib/libthermalalgo.so
 vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
 vendor/lib64/hw/thermal_hal.so
+vendor/lib64/libmtcloader.so
+vendor/lib64/libthermalalgo.so
 
 
 # Thermal Configs
