@@ -500,7 +500,7 @@ vendor/lib64/mt6893/libDR.so
 vendor/lib64/mt6893/libaiselector.so
 vendor/lib64/mt6893/libgpudataproducer.so
 vendor/lib64/mt6893/libmcv_runtime.mtk.so
-vendor/lib64/mt6893/libmnl.so
+vendor/lib64/mt6893/libmnl.so:vendor/lib64/libmnl.so
 vendor/lib64/mt6893/libneuron_platform.vpu.so
 vendor/lib64/mt6893/libneuron_runtime.5.so
 vendor/lib64/mt6893/libneuron_runtime.so

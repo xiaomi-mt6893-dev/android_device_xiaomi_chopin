@@ -56,7 +56,6 @@ $(VENDOR_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@ln -sf $(TARGET_BOARD_PLATFORM)/arm.graphics-ndk_platform.so $(TARGET_OUT_VENDOR)/lib64/arm.graphics-ndk_platform.so
 	@ln -sf $(TARGET_BOARD_PLATFORM)/libmcv_runtime.mtk.so $(TARGET_OUT_VENDOR)/lib64/libmcv_runtime.mtk.so
 	@ln -sf $(TARGET_BOARD_PLATFORM)/libDR.so $(TARGET_OUT_VENDOR)/lib64/libDR.so
-	@ln -sf $(TARGET_BOARD_PLATFORM)/libmnl.so $(TARGET_OUT_VENDOR)/lib64/libmnl.so
 	@ln -sf /vendor/lib64/egl/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib64/hw/vulkan.mt6893.so
 	$(hide) touch $@
 
