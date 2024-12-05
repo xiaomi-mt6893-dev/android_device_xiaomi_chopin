@@ -91,7 +91,11 @@ BOARD_VENDOR := xiaomi
 
 # Propertiesw
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
-
+ifeq ($(TARGET_PRODUCT), chopin_gl)
+  TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor_gl.prop
+else
+  TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor_cn.prop
+ 
 # Display
 TARGET_SCREEN_DENSITY := 440
 

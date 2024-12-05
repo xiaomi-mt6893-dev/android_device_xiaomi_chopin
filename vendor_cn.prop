@@ -1,0 +1,3 @@
+# TEE
+ro.vendor.mtk_mitee_support=1
+ro.hardware.gatekeeper=mitee

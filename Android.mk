@@ -6,6 +6,11 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),chopin)
+ifeq ($(TARGET_DEVICE),chopin_cn)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
+
+ifeq ($(TARGET_DEVICE),chopin_gl)
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
+endif
+

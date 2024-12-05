@@ -9,9 +9,9 @@
 
 #include "vendor_init.h"
 
-static const variant_info_t chopin_info = {
+static const variant_info_t choping_info = {
     .hwc_value = "",
-    .sku_value = "chopin",
+    .sku_value = "choping",
 
     .brand = "Xiaomi",
     .device = "chopin",
@@ -20,8 +20,20 @@ static const variant_info_t chopin_info = {
     .build_fingerprint = "POCO/chopin_global/chopin:12/SP1A.210812.016/V14.0.6.0.TKPMIXM:user/release-keys",
 };
 
+static const variant_info_t chopin_info = {
+    .hwc_value = "",
+    .sku_value = "chopin",
+
+    .brand = "Xiaomi",
+    .device = "chopin",
+    .marketname = "Redmi Note 10 Pro",
+    .model = "M2104K10AC",
+    .build_fingerprint = "Redmi/chopin/chopin:12/SP1A.210812.016/V14.0.6.0.TKPMIXM:user/release-keys",
+};
+
 static const std::vector<variant_info_t> variants = {
-    amber_info,
+    chopin_info,
+	choping_info
 };
 
 void vendor_load_properties() {
