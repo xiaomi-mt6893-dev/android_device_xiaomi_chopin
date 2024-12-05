@@ -1,45 +1,18 @@
-# MTK platform .rc configure
-
 import /vendor/etc/init/hw/init.connectivity.rc
 import /vendor/etc/init/hw/init.mt6893.usb.rc
 import /vendor/etc/init/hw/init.project.rc
-import /system_ext/etc/init/hw/init.aee.rc
-import /vendor/etc/init/hw/init.aee.rc
-import /vendor/etc/init/hw/init.volte.rc
-import /vendor/etc/init/hw/init.mal.rc
 import /vendor/etc/init/hw/init.sensor_2_0.rc
 import /vendor/etc/init/hw/init.cgroup.rc
-
-# init.modem.rc must be the LAST rc file because vold.post_fs_data_done is set in it
 import /vendor/etc/init/hw/init.modem.rc
-# *** DO NOT import the new rc file after this line ***
 
 on early-init
-    write /proc/bootprof "INIT:early-init"
-
     # load vendor-modules
     exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules xiaomi_touch fpsgo wlan_drv_gen4m wmt_chrdev_wifi gps_drv bt_drv_6893 conninfra connfem
-    # boot perf. tune
-    write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "5 0 0 0 3 3"
-    write /sys/devices/platform/boot_dramboost/dramboost/dramboost 1
 
     # initialize vendor.all.modules.ready to 1 here to prevent NOT GKI project blocked
     setprop vendor.all.modules.ready 1
 
-# Keep debugfs mounted in non-user builds
-on early-init && property:ro.build.type=eng
-    mount debugfs debugfs /sys/kernel/debug
-    chmod 0755 /sys/kernel/debug
-    setprop persist.dbg.keep_debugfs_mounted true
-
-on early-init && property:ro.build.type=userdebug
-    mount debugfs debugfs /sys/kernel/debug
-    chmod 0755 /sys/kernel/debug
-    setprop persist.dbg.keep_debugfs_mounted true
-
 on init
-    write /proc/bootprof "INIT:init"
-
     # Support legacy paths
     symlink /sdcard /mnt/sdcard
 
@@ -72,18 +45,12 @@ on init
     start boot_log_kernel
 
 on late-init
-    write /proc/bootprof "INIT:late-init"
 # enable rcu_expedited
     write /sys/kernel/rcu_expedited 1
 
 # mount different fs start
 
 on charger
-    write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "-1 -1 -1 -1 -1 -1"
-    write /sys/devices/platform/boot_dramboost/dramboost/dramboost 0
-
-    exec /system/bin/e2fsck -f -p /dev/block/platform/bootdevice/by-name/cache
-    mount ext4 /dev/block/platform/bootdevice/by-name/cache /cache rw wait
     chmod 0660 /dev/spm
     chown system system /dev/spm
     start spm_script
@@ -127,22 +94,13 @@ on charger
     start vendor.light-default
 
     start mi_thermald
-    # Stop bootprof
-    write /proc/bootprof "0"
 
-on early-fs
-    write /proc/bootprof "INIT:early-fs"
 on fs
-    write /proc/bootprof "INIT:fs"
-    start vendor.boot-hal-1-2
-
     # mount fstab
-    write /proc/bootprof "INIT:Mount_START"
     write /sys/kernel/tracing/trace_marker "B|1|Mount"
     mount_all --early
     exec /system/bin/tune2fs -O has_journal -u 10010 -r 4096 /dev/block/platform/bootdevice/by-name/userdata
     write /sys/kernel/tracing/trace_marker "E"
-    write /proc/bootprof "INIT:Mount_END"
 
     write /sys/block/zram0/comp_algorithm lz4
     write /proc/sys/vm/page-cluster 0
@@ -159,18 +117,13 @@ on fs
    mount iso9660 loop@/vendor/etc/iAmCdRom.iso /mnt/cd-rom ro
 
 on late-fs
-    write /proc/bootprof "INIT:late-fs"
     wait_for_prop hwservicemanager.ready "true"
 
-    write /proc/bootprof "INIT:Mount_START --late"
     write /sys/kernel/tracing/trace_marker "B|1|Mount late"
     mount_all --late
     write /sys/kernel/tracing/trace_marker "E"
-    write /proc/bootprof "INIT:Mount_END --late"
 
 on post-fs
-    write /proc/bootprof "INIT:post-fs"
-
     # Support legacy paths
     symlink /sdcard /storage/sdcard0
 
@@ -220,8 +173,6 @@ on post-fs
     #haptic End
 
 # change owner
-    chown system system /proc/bootprof
-    chmod 0664 /proc/bootprof
     chown root system /proc/mtprof/cputime
     chown root system /proc/mtprof/reboot_pid
 
@@ -235,17 +186,13 @@ on post-fs
     # allow ccci_mdinit access ccci_dump
     chown root system /proc/ccci_dump
 
-
     # Logger
     start boot_log
     start boot_log_crash
     start boot_log_kernel
 
-
 on post-fs-data
-    write /proc/bootprof "INIT:post-fs-data"
     wait_for_prop vendor.all.modules.ready 1
-    write /proc/bootprof "modprobe: Load_Module_DONE"
 
     # boot time fs tune
     write /sys/block/mmcblk0/queue/iostats 0
@@ -378,8 +325,6 @@ on post-fs-data
     #insmod /vendor/lib/modules/mali.ko
     chmod 666 /dev/mali0
     #chown system graphics /dev/mali
-
-
 
     # Touch Panel
     # chmod 0664 /dev/touch
@@ -800,11 +745,7 @@ on post-fs-data
 
 # End of adding by MTK drivers
 # -----------------------
-on zygote-start
-    write /proc/bootprof "INIT:zygote-start"
-
 on early-boot
-    write /proc/bootprof "INIT:early-boot"
     verity_update_state
 
     # Logger
@@ -813,8 +754,6 @@ on early-boot
     start boot_log_kernel
 
 on boot
-    write /proc/bootprof "INIT:boot"
-
     write /proc/sys/vm/dirty_writeback_centisecs 300
     chmod 0660 /sys/power/autosleep
 
@@ -1038,25 +977,20 @@ on boot
     write /sys/power/pm_freeze_timeout 2000
 
 on property:vold.decrypt=trigger_reset_main
-    write /proc/bootprof "INIT:vold.decrypt=trigger_reset_main"
     setprop sys.boot_completed 0
     setprop dev.bootcomplete 0
 
 on property:vold.decrypt=trigger_post_fs_data
-    write /proc/bootprof "INIT:vold.decrypt=trigger_post_fs_data"
 
 on property:vold.decrypt=trigger_restart_min_framework
-    write /proc/bootprof "INIT:vold.decrypt=trigger_restart_min_framework"
     start msensord
     start permission_check
 
 on property:vold.decrypt=trigger_restart_framework
-    write /proc/bootprof "INIT:vold.decrypt=trigger_restart_framework"
     start msensord
     start permission_check
 
 on property:vold.decrypt=trigger_shutdown_framework
-    write /proc/bootprof "INIT:vold.decrypt=trigger_shutdown_framework"
     setprop sys.boot_completed 0
     setprop dev.bootcomplete 0
 
@@ -1098,43 +1032,6 @@ on property:sys.boot_completed=1
 on property:sys.boot_completed=1
     write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "-1 -1 -1 -1 -1 -1"
     write /sys/devices/platform/boot_dramboost/dramboost/dramboost 0
-
-    # stop bootprof
-    write /proc/bootprof 0
-
-#service dpfd /vendor/bin/dpfd
-#	user root
-#	group system media
-
-#
-#  External Modme control related services
-#
-
-#
-#  Modem related services (Begin)
-#
-##Add by T.Zh for ppp daemon
-#service pppd /system/bin/pppd file /data/misc/ppp/ppp_options
-#    user root
-#    disabled
-#    oneshot
-#
-##
-#
-#  Modem related services (End)
-#
-
-#add for power-off alarm
-#service poad /vendor/bin/poad
-#    class main
-#    user system
-#    group system
-#    oneshot
-
-#service BGW /vendor/xbin/BGW
-#	user system
-#	group gps system radio
-#	class main
 
 # Battery info
 on property:persist.vendor.mediatek.fg.disable=1
@@ -1191,10 +1088,6 @@ on property:vendor.mtk.md1.status=reset
 # MTK fast charging support
 on property:persist.vendor.mediatek.fast_charging.support=*
     write /sys/devices/platform/charger/fast_chg_indicator ${persist.vendor.mediatek.fast_charging.support}
-
-# FPSGO FBT Game
-on boot
-    insmod /vendor/lib/modules/fpsgo.ko
 
 # VSIM service (vendor OSI)
 service osi /system/bin/osi
