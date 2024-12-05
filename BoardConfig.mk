@@ -135,7 +135,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 VENDOR_SECURITY_PATCH := 2024-04-01
 
 # SELinux
-# include device/mediatek/sepolicy_vndr/SEPolicy.mk
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
@@ -179,7 +179,7 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
-# include vendor/xiaomi/chopin/BoardConfigVendor.mk
+include vendor/xiaomi/chopin/BoardConfigVendor.mk
 
 
 
