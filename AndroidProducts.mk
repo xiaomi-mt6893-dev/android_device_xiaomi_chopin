@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_chopin_cn.mk
+    $(LOCAL_DIR)/lineage_chopin_cn.mk \
     $(LOCAL_DIR)/lineage_chopin_gl.mk
 
 COMMON_LUNCH_CHOICES := \

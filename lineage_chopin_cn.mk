@@ -14,7 +14,7 @@ $(call inherit-product, device/xiaomi/chopin/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_chopin
+PRODUCT_NAME := lineage_chopin_cn
 PRODUCT_DEVICE := chopin
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi

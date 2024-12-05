@@ -6,7 +6,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),chopin_cn)
+ifeq ($(TARGET_DEVICE),chopin)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 VENDOR_SYMLINKS := \
@@ -61,7 +61,7 @@ $(VENDOR_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 ALL_DEFAULT_INSTALLED_MODULES += $(VENDOR_SYMLINKS)
 endif
 
-ifeq ($(TARGET_DEVICE),chopin_gl)
+ifeq ($(TARGET_DEVICE),choping)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 VENDOR_SYMLINKS := \
