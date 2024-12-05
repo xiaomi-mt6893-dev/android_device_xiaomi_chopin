@@ -1,0 +1,141 @@
+<compatibility-matrix version="4.0" type="framework">
+<hal format="hidl" optional="true">
+    <name>android.hardware.audio.effect</name>
+    <version>7.0</version>
+    <interface>
+        <name>IEffectsFactory</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.audio</name>
+    <version>7.0</version>
+    <interface>
+        <name>IDevicesFactory</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.bluetooth.audio</name>
+    <interface>
+        <name>IBluetoothAudioProviderFactory</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.boot</name>
+    <version>1.0-2</version>
+    <interface>
+        <name>IBootControl</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.drm</name>
+    <version>1.0-4</version>
+    <interface>
+        <name>ICryptoFactory</name>
+        <instance>clearkey</instance>
+        <instance>widevine</instance>
+    </interface>
+    <interface>
+        <name>IDrmFactory</name>
+        <instance>clearkey</instance>
+        <instance>widevine</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.gnss</name>
+    <interface>
+        <name>IGnss</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.light</name>
+    <interface>
+        <name>ILights</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.memtrack</name>
+    <interface>
+        <name>IMemtrack</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.power</name>
+    <interface>
+        <name>IPower</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.radio.config</name>
+    <version>1.0-3</version>
+    <interface>
+        <name>IRadioConfig</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.radio</name>
+    <version>1.0-6</version>
+    <interface>
+        <name>ISap</name>
+        <instance>slot2</instance>
+    </interface>
+    <interface>
+        <name>IRadio</name>
+        <instance>slot1</instance>
+        <instance>slot2</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.usb</name>
+    <interface>
+        <name>IUsb</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.wifi.hostapd</name>
+    <interface>
+        <name>IHostapd</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.wifi.supplicant</name>
+    <interface>
+        <name>ISupplicant</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.wifi</name>
+    <version>1.0-6</version>
+    <interface>
+        <name>IWifi</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.microtrust.hardware.thh</name>
+    <version>2.0</version>
+    <interface>
+        <name>IThhDevice</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.xiaomi.hardware.citsensorservice</name>
+    <version>1.0-1</version>
+    <interface>
+        <name>ICitSensorService</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+</compatibility-matrix>
