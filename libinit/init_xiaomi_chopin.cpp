@@ -17,6 +17,7 @@ static const variant_info_t choping_info = {
     .device = "chopin",
     .marketname = "POCO X3 GT",
     .model = "21061110AG",
+	.vendor.name = "chopin_global",
     .build_fingerprint = "POCO/chopin_global/chopin:12/SP1A.210812.016/V14.0.6.0.TKPMIXM:user/release-keys",
 };
 
@@ -28,6 +29,7 @@ static const variant_info_t chopin_info = {
     .device = "chopin",
     .marketname = "Redmi Note 10 Pro",
     .model = "M2104K10AC",
+	.vendor.name = "chopin",
     .build_fingerprint = "Redmi/chopin/chopin:12/SP1A.210812.016/V14.0.6.0.TKPMIXM:user/release-keys",
 };
 
