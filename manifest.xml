@@ -268,4 +268,19 @@
         <fqname>@3.0::IMtkRadioEx/mtkSmartRatSwitch1</fqname>
         <fqname>@3.0::IMtkRadioEx/mtkSmartRatSwitch2</fqname>
     </hal>
+	    <hal format="hidl">
+        <name>android.hardware.camera.provider</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.6::ICameraProvider/internal/0</fqname>
+    </hal>
+	    <hal format="hidl">
+        <name>vendor.mediatek.hardware.camera.atms</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IATMs/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.camera.isphal</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IISPModule/internal/0</fqname>
+    </hal>
 </manifest>
