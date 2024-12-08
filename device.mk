@@ -167,6 +167,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libdrm.vendor
 
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.device@3.6.vendor:64 \
+    android.hardware.camera.provider@2.6.vendor:64
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek
