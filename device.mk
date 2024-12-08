@@ -204,6 +204,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek
 
 PRODUCT_PACKAGES += \
+    android.hardware.power@1.2.vendor \
     vendor.mediatek.hardware.mtkpower@1.2.vendor
 
 PRODUCT_PACKAGES += \
