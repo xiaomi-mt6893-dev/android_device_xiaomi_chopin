@@ -9,5 +9,11 @@
         <permission name="android.permission.UPDATE_DEVICE_STATS"/>
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
         <permission name="android.permission.LOCATION_BYPASS"/>
+        <permission name="com.mediatek.permission.START_WFO_SERVICE"/>
+        <permission name="com.mediatek.presence.permission.PRESENCE"/>
+        <permission name="com.mediatek.ims.rcsua.permission.USE_SERVICE"/>
+        <permission name="android.permission.MANAGE_WIFI_WHEN_WIRELESS_CONSENT_REQUIRED"/>
+        <permission name="android.permission.MANAGE_VIRTUAL_MACHINE"/>
+        <permission name="android.permission.DEBUG_VIRTUAL_MACHINE"/>
     </privapp-permissions>
 </permissions>
