@@ -623,6 +623,7 @@ vendor/lib64/libtrm.so
 vendor/lib64/libvia-ril.so
 vendor/lib64/libviamipc-ril.so
 vendor/lib64/libwpfa.so
+vendor/lib64/libgwsdv2-ril.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 
