@@ -58,7 +58,7 @@ bluetooth.profile.vc.server.enabled=true
 ro.vendor.bt.platform=6893
 ro.vendor.mtk.bt_sap_enable=true
 vendor.bluetooth.ldac.abr=true
-persist.bluetooth.a2dp_offload.disabled=true
+
 
 
 # WiFi
@@ -72,7 +72,7 @@ persist.vendor.connsys.chipid=-1
 persist.vendor.connsys.coredump.mode=1
 persist.vendor.connsys.dynamic.dump=0
 persist.vendor.connsys.patch.version=-1
-vendor.connsys.driver.ready=yes
+vendor.connsys.driver.ready=no
 ro.vendor.connsys.dedicated.log.port=bt,wifi
 
 # Display
@@ -160,7 +160,7 @@ ro.hardware.consumerir=common
 # Media
 debug.mediatek.disp_decompress=1
 media.c2.dmabuf.padding=3072
-ro.vendor.jpeg_decode_sw_opt=1
+ro.vendor.jpeg_decode_sw_opt=2
 ro.vendor.mtk_config_max_dram_size=0x800000000
 ro.vendor.mtk_sec_video_path_support=1
 ro.vendor.mtk_video_hevc_enc_support=1
@@ -246,7 +246,7 @@ ro.vendor.mtk_nn_baseline_support=1
 ro.vendor.mtk_nn_quant_preferred=1
 ro.vendor.mtk_nn_support=1
 
-# Debug (ADB)
+# PC v/USB Connection
 persist.sys.usb.config=adb
 ro.debuggable=1
 ro.adb.secure=0
