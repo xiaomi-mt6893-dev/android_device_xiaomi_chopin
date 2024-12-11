@@ -127,7 +127,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
 	
 # Public Vendor Libraries
-PRODUCT_COPY_FILES += \ 
+PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # Fastbootd
