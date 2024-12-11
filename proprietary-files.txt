@@ -1639,10 +1639,10 @@ vendor/lib/libMtkOmxCore.so
 vendor/lib/libMtkOmxGsmDec.so
 vendor/lib/libMtkOmxMp3Dec.so
 vendor/lib/libadpcmdec_mtk.so
+vendor/lib/libalacdec_mtk.so
 vendor/lib/libmp3dec_mtk.so
 vendor/lib/libstagefrighthw.so
 vendor/lib64/libstagefrighthw.so
-
 
 # MMS
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service
