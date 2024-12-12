@@ -212,6 +212,8 @@ vendor/bin/lib3a.ccu.dm
 vendor/bin/lib3a.ccu.pm
 vendor/etc/init/camerahalserver.rc
 vendor/firmware/lib3a.ccu
+system/lib64/libion.so:vendor/lib64/libion.so
+system/lib/libion.so:vendor/lib/libion.so
 vendor/lib/ov64b40sunny_mipi_raw_1_tuning.so
 vendor/lib/ov64b40sunny_mipi_raw_2_tuning.so
 vendor/lib/ov64b40sunny_mipi_raw_tuning.so
