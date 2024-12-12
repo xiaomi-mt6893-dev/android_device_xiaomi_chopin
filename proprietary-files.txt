@@ -1646,6 +1646,21 @@ vendor/lib/libmp3dec_mtk.so
 vendor/lib/libstagefrighthw.so
 vendor/lib64/libstagefrighthw.so
 
+# Media (OMX) - from oneplus_pickle_sys_mssi_64_cn_armv82-user 13 TP1A.220905.001 1676518158691
+vendor/lib/libcodec2_soft_mtk_alacdec.so|78adcbec37c277babcde505453abf08b98f67575
+vendor/lib/libcodec2_soft_mtk_apedec.so|4fc4f81e547014830ec99517fc9931c121703024
+vendor/lib/libcodec2_soft_mtk_imaadpcmdec.so|607dbd04247406b7af1d438788d9d01b0f7f4e4f
+vendor/lib/libcodec2_soft_mtk_mp3dec.so|a01918930145ad259d316e3a70a6f29e229c6341
+vendor/lib/libcodec2_soft_mtk_msadpcmdec.so|ee78065e7bd1129ef7fe630ebda5c0fad81ed20f
+vendor/lib/libcodec2_soft_mtk_wmadec.so|bf00a1f4a6acf2fab22c272dc1d91b008757ddc1
+
+vendor/lib64/libcodec2_soft_mtk_alacdec.so|bf98ffdafc19438baadd2e4ebb05c1979c471dcb
+vendor/lib64/libcodec2_soft_mtk_apedec.so|9afbf1d30b883f3e2dcdac9416f371fada25a2e3
+vendor/lib64/libcodec2_soft_mtk_imaadpcmdec.so|a7803c99ced2f17a839e5fc058b66dde79720eb4
+vendor/lib64/libcodec2_soft_mtk_mp3dec.so|00b6eae8825397e6ea9d8f9a1f61ddd20694bb91
+vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so|0bb8a7319d7ab8e4c5f7de7725001721dcbf0530
+vendor/lib64/libcodec2_soft_mtk_wmadec.so|943a02629389c79a9fcfade94a5de9399f7030f4
+
 # MMS
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service
 vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc
