@@ -1643,6 +1643,7 @@ vendor/lib/libMtkOmxMp3Dec.so
 vendor/lib/libadpcmdec_mtk.so
 vendor/lib/libalacdec_mtk.so|daf82765b2572384e2e09508d5b0ad69ee05e205
 vendor/lib/libmp3dec_mtk.so
+vendor/lib64/libmp3dec_mtk.so
 vendor/lib/libstagefrighthw.so
 vendor/lib64/libstagefrighthw.so
 
