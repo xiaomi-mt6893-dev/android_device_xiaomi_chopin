@@ -42,3 +42,24 @@ on post-fs-data
 
     chmod 0660 /dev/spm
     chown system system /dev/spm
+	
+    # NFC
+    mkdir /data/vendor/nfc 0770 nfc nfc
+    chmod 0660 /dev/nq-nci
+    chown nfc nfc /dev/nq-nci
+    chmod 0660 /dev/p73
+    chown nfc nfc /dev/p73
+    # Display
+    chown system system /sys/class/mi_display/disp-DSI-0/brightness_clone
+    chmod 0666 /sys/class/mi_display/disp-DSI-0/brightness_clone
+    # ufscld function permission
+    chown root system /sys/devices/platform/bootdevice/ufscld/auto_hibern8_enable
+    chown root system /sys/devices/platform/bootdevice/ufscld/block_suspend
+    chown root system /sys/devices/platform/bootdevice/ufscld/cld_opration_status
+    chown root system /sys/devices/platform/bootdevice/ufscld/debug
+    chown root system /sys/devices/platform/bootdevice/ufscld/frag_level
+    chown root system /sys/devices/platform/bootdevice/ufscld/trigger
+    chown root system /sys/devices/platform/bootdevice/ufscld/trigger_interval
+    chmod 664 /sys/devices/platform/bootdevice/ufscld/trigger
+	
+	
