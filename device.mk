@@ -331,7 +331,6 @@ PRODUCT_PACKAGES += \
 	
 # OMX
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-service \
     android.hardware.media.c2@1.1.vendor \
     android.hardware.media.c2@1.2.vendor \
     libcodec2_hidl@1.0.vendor \
