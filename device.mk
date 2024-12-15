@@ -328,19 +328,34 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey \
     android.hardware.drm@1.4.vendor
+	
+# OMX
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-service \
+    android.hardware.media.c2@1.1.vendor \
+    android.hardware.media.c2@1.2.vendor \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_hidl@1.1.vendor \
+    libcodec2_hidl@1.2.vendor \
+    libcodec2_vndk.vendor \
+    libstagefright_omx.vendor
 
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail_vendor \
-    libcodec2_hidl@1.2.vendor \
-    libcodec2_soft_common.vendor \
+    libstagefright_softomx_plugin.vendor \
     libsfplugin_ccodec_utils.vendor \
-    libstagefright_softomx_plugin.vendor
+    libcodec2_soft_common.vendor
+
+
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
+    frameworks/av/media/libstagefright/data/media_codecs_google_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_audio.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_c2_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_video.xml
+
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc) \
+	$(COMMON_PATH)/configs/media/media_profiles_V1_0.dtd:$(TARGET_COPY_OUT_SYSTEM)/etc/media_profiles_V1_0.dtd
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
