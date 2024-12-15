@@ -138,4 +138,20 @@
         <instance>default</instance>
     </interface>
 </hal>
+<hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.camera.atms</name>
+        <version>1.0</version>
+        <interface>
+            <name>IATMs</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.camera.isphal</name>
+        <version>1.0</version>
+        <interface>
+            <name>IISPModule</name>
+            <instance>internal/0</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>

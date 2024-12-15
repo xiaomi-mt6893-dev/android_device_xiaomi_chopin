@@ -212,6 +212,15 @@ vendor/bin/lib3a.ccu.dm
 vendor/bin/lib3a.ccu.pm
 vendor/etc/init/camerahalserver.rc
 vendor/firmware/lib3a.ccu
+vendor/lib/ov64b40sunny_mipi_raw_1_tuning.so
+vendor/lib/ov64b40sunny_mipi_raw_2_tuning.so
+vendor/lib/ov64b40sunny_mipi_raw_tuning.so
+vendor/lib64/ov64b40sunny_mipi_raw_1_IdxMgr.so
+vendor/lib64/ov64b40sunny_mipi_raw_1_tuning.so
+vendor/lib64/ov64b40sunny_mipi_raw_2_IdxMgr.so
+vendor/lib64/ov64b40sunny_mipi_raw_2_tuning.so
+vendor/lib64/ov64b40sunny_mipi_raw_IdxMgr.so
+vendor/lib64/ov64b40sunny_mipi_raw_tuning.so
 vendor/lib64/gc02m1sunny_mipi_raw_IdxMgr.so
 vendor/lib64/gc02m1sunny_mipi_raw_tuning.so
 vendor/lib64/imx355sunny_mipi_raw_IdxMgr.so
@@ -909,6 +918,7 @@ vendor/lib/libCamera_ov64b40sunnymipiraw_Video_Log.so
 vendor/lib/libCamera_ov64b40sunnymipiraw_WeChat_Preview.so
 vendor/lib/libCamera_ov64b40sunnymipiraw_WeChatQQ_Video.so
 vendor/lib/libCamera_ov64b40sunnymipiraw_XTS_Capture.so
+
 vendor/lib64/lib3a.sensors.flicker.so
 vendor/lib64/libHalSuperSensorServer.so
 vendor/lib64/libHalSuperSensorServerCWrapper.so
@@ -1301,7 +1311,27 @@ vendor/lib64/libSuperSensorCPU.so
 vendor/lib64/libSuperSensorProcessor.so
 vendor/lib64/libvidhance.so
 vendor/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so
+vendor/lib64/com.xiaomi.plugin.capbokeh.so
+vendor/lib64/com.xiaomi.plugin.dc.so
+vendor/lib64/com.xiaomi.plugin.depurple.so
+vendor/lib64/com.xiaomi.plugin.hdr.so
+vendor/lib64/com.xiaomi.plugin.ldc.so
+vendor/lib64/com.xiaomi.plugin.memcpy.so
+vendor/lib64/com.xiaomi.plugin.miaideblur.so
+vendor/lib64/com.xiaomi.plugin.miaihdr.so
+vendor/lib64/com.xiaomi.plugin.miaiie.so
 vendor/lib64/com.xiaomi.plugin.mibokeh.so
+vendor/lib64/com.xiaomi.plugin.mifragment.so
+vendor/lib64/com.xiaomi.plugin.misegment.so
+vendor/lib64/com.xiaomi.plugin.rawsuperlight.so
+vendor/lib64/com.xiaomi.plugin.skinbeautifier.so
+vendor/lib64/com.xiaomi.plugin.sr.so
+vendor/lib64/com.xiaomi.plugin.superlowlight.so
+vendor/lib64/com.xiaomi.plugin.supernight.so
+vendor/lib64/com.xiaomi.plugin.swflip.so
+vendor/lib64/com.xiaomi.plugin.tetrassr.so
+vendor/lib64/com.xiaomi.plugin.uwfusion.so
+
 
 # Camera-arcsoft
 vendor/lib/libarcsoft_dualcam_refocus.so
@@ -1670,6 +1700,7 @@ vendor/lib64/vendor.mediatek.hardware.apuware.apusys@2.1.so
 vendor/lib64/vendor.mediatek.hardware.apuware.hmp@1.0.so
 vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
 vendor/lib64/vendor.mediatek.hardware.apuware.xrp@2.0.so
+
 # NVRAM
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/bin/nvram_daemon
