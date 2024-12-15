@@ -199,6 +199,10 @@ PRODUCT_PACKAGES += \
 	libdrm.vendor \
     libutils-v32
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.6.vendor:64 \
