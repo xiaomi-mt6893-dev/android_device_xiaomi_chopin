@@ -85,15 +85,15 @@
 /dev/t-base-tui           0666   system     system
 
 #v4l2 device
-/dev/video*      0660 camera system
-/dev/media*      0660 camera system
-/dev/v4l-subdev* 0660 camera system
+/dev/video*      0770 camera system
+/dev/media*      0770 camera system
+/dev/v4l-subdev* 0770 camera system
 
 #v4l2 codec
-/dev/vcu    0660 camera system
+/dev/vcu    0770 camera system
 
 #v4l2 camera
-/dev/mtk_hcp     0660 camera system
+/dev/mtk_hcp     0770 camera system
 
 # DRM node
 /dev/dri/card0            0660   system     system
