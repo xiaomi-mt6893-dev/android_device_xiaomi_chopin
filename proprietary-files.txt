@@ -1603,8 +1603,14 @@ vendor/lib64/AVCSecureVdecCA.so
 vendor/lib64/HEVCSecureVdecCA.so
 vendor/lib64/VP9SecureVdecCA.so
 vendor/lib64/libvcodec_oal.so
+vendor/lib/AV1SecureVdecCA.so
+vendor/lib/AVCSecureVdecCA.so
+vendor/lib/HEVCSecureVdecCA.so
+vendor/lib/VP9SecureVdecCA.so
+vendor/lib/libvcodec_oal.so
 vendor/lib/libvcodec_utility.so
 vendor/lib/libvcodecdrv.so
+vendor/lib/libvcodecdrv_header_stub.so
 vendor/lib64/libvcodecdrv_header_stub.so
 vendor/lib/libvpu.so
 vendor/lib/libvpu5.so
