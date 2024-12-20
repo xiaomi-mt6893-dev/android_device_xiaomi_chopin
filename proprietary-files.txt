@@ -1687,6 +1687,8 @@ vendor/lib/libMtkOmxGsmDec.so
 vendor/lib/libMtkOmxMp3Dec.so
 vendor/lib/libadpcmdec_mtk.so
 vendor/lib/libmp3dec_mtk.so
+vendor/lib64/libadpcmdec_mtk.so
+vendor/lib64/libmp3dec_mtk.so
 
 
 # Media (Codec2)
