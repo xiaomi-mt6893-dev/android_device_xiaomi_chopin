@@ -97,6 +97,14 @@ ro.vendor.wifi.sap.interface=ap0
 ro.vendor.wlan.chrdev=wmt_chrdev_wifi
 ro.vendor.wlan.gen=gen4m
 
+# Connsys
+persist.vendor.connsys.chipid=-1
+persist.vendor.connsys.coredump.mode=1
+persist.vendor.connsys.dynamic.dump=0
+persist.vendor.connsys.patch.version=-1
+vendor.connsys.driver.ready=no
+ro.vendor.connsys.dedicated.log.port=bt,wifi
+
 # Display
 debug.mediatek.appgamepq_compress=1
 debug.sf.disable_client_composition_cache=1
