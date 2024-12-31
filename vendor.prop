@@ -91,6 +91,12 @@ vendor.camera.mdp.dre.enable=1
 vendor.camera.mdp.hfg.enable=1
 vendor.mtk.camera.app.fd.video=1
 
+# WiFi
+ro.vendor.wifi.sap.concurrent.iface=ap1
+ro.vendor.wifi.sap.interface=ap0
+ro.vendor.wlan.chrdev=wmt_chrdev_wifi
+ro.vendor.wlan.gen=gen4m
+
 # Display
 debug.mediatek.appgamepq_compress=1
 debug.sf.disable_client_composition_cache=1
