@@ -67,3 +67,8 @@ on boot
     chown system system /sys/class/drm/card0-DSI-1/disp_param
     chmod 0664 /sys/class/drm/card0-DSI-1/disp_param
     chown system system /sys/bus/platform/devices/fingerprint/fingerdown_wait
+ 
+ # cit led
+~    chown system system /sys/class/leds/torch-light0/brightness
+~    chown system system /sys/class/leds/flash-light0/brightness
+~
