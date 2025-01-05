@@ -167,6 +167,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libdrm.vendor
 
+# Xiaomi TouchFeature Service
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hw.touchfeature@1.0-service \
+    vendor.xiaomi.hw.touchfeature@1.0-impl
+
+# Xiaomi DisplayFeature Service
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.displayfeature@1.0-service \
+    vendor.xiaomi.hardware.displayfeature@1.0-impl
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi

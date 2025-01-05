@@ -275,3 +275,24 @@ ro.vendor.mtk_nn.option=A,B,E,F,Z
 ro.vendor.mtk_nn_baseline_support=1
 ro.vendor.mtk_nn_quant_preferred=1
 ro.vendor.mtk_nn_support=1
+
+# Xiaomi DisplayFeature
+sys.displayfeature_hidl=true
+vendor.displayfeature.entry.enable=true
+vendor.hbm.enable=true
+persist.vendor.dc_backlight.enable=false
+persist.vendor.power.dfps.level=0
+persist.vendor.video.dfps=true
+persist.vendor.video.dfps.level=0
+ro.vendor.histogram.enable=false
+ro.vendor.colorpick_adjust=true
+ro.vendor.all_modes.colorpick_adjust=true
+ro.vendor.xiaomi.bl.poll=true
+ro.vendor.gcp.enable=true
+ro.vendor.cabc.enable=true
+ro.vendor.display.default_fps=60
+ro.vendor.fps.switch.default=true
+ro.vendor.fps.switch.thermal=true
+ro.vendor.soft_backlight.enable=false
+ro.vendor.video.style.by.layer.support=true
+ro.vendor.touchfeature.type=19
