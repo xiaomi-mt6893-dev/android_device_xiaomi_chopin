@@ -202,15 +202,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	libutilscallstack.vendor
 
-# Xiaomi TouchFeature Service
-PRODUCT_PACKAGES += \
-    vendor.xiaomi.hw.touchfeature@1.0-service \
-    vendor.xiaomi.hw.touchfeature@1.0-impl
 
-# Xiaomi DisplayFeature Service
+
 PRODUCT_PACKAGES += \
-    vendor.xiaomi.hardware.displayfeature@1.0-service \
-    vendor.xiaomi.hardware.displayfeature@1.0-impl
+	vendor.xiaomi.hardware.displayfeature@1.0.vendor \
+	vendor.xiaomi.hw.touchfeature@1.0.vendor
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -287,7 +283,7 @@ PRODUCT_COPY_FILES += \
 # Vibrator
 $(call soong_config_set, vibrator, vibratortargets, vibratoraidlV2target)
 PRODUCT_PACKAGES += \
-              vendor.qti.hardware.vibrator.service.chopin
+              vendor.qti.hardware.vibrator.service
 			  
 # Sensors
 PRODUCT_PACKAGES += \
@@ -297,7 +293,7 @@ PRODUCT_PACKAGES += \
     libshim_sensors
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+    $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -344,8 +340,9 @@ PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek
 
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4-service.clearkey \
-    android.hardware.drm@1.4.vendor
+    android.hardware.drm-service.clearkey \
+    android.hardware.drm@1.4.vendor \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat
 
 # Media
 PRODUCT_PACKAGES += \
@@ -364,7 +361,7 @@ PRODUCT_COPY_FILES += \
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service-lazy \
+    android.hardware.wifi-service  \
     hostapd \
     libwifi-hal-wrapper \
     wpa_supplicant

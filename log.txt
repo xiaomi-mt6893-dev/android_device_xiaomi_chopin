@@ -1,0 +1,86 @@
+e707b00b1bd938bc225c751ca456ac4eb808f1d8 chopin: Remove non existent blob
+df6a4f47c78a156f39c5acc99a35b4310bcae8fe chopin: props: Import RIL/IMS Props
+fa67eba90ba25963116868ee78762272908d8dd8 chopin; props: Import Xiaomi Platform Props
+74b1ff556a8d0f33b2ae864da567d24e860e6a64 chopin: props: Import Connsys Props
+6d37d50f200e0d0bd2a8df4607916dcd30d2071e chopin: props: Configure WiFi Props
+a263410acd4a58caaeb1377732c1945642c8e551 chopin: props: Configure Camera Props
+d250ebd6aa3261d81a478d3a3a6305277e866213 chopin: Configure Fingerprint Stack
+75ab4cc09f8a9ed62e51a07e3bf5130f31361e5c chopin: Import Camera Stack
+8c3ade8ce5e40afa33a6757c272ab5d616cab4db chopin: Pull Missing IMS Blob
+3c82237871b91ce44b76c7599172dd097b4c86df chopin: Import missing blobs for RIL
+3d739f10230ed6c962f983e191a0a130f3c6ae34 chopin: Import Xiaomi CIT Sensor Blobs This service contains notifiers (Backlight2SlpiNotifier, Freq2SlpiNotifier) which are responsible for relaying current brightness and refresh rate to our light sensor. Without it, the screen brightness affects light sensor readings, making auto brightness unusable.
+a585ab5a0dda7b5f8e4eef37e48be62ad4ef7684 chopin: Configure Radio/IMS stack
+825be5b2738dda9afa054987217dd0f45faa0370 chopin: Build/Configure AIDL Sensor Service.
+6ea3d8c2df940e84c9f0f0ac8621184ed332dc1d chopin: Import HotwordEnrollment blobs
+8edbc3282a0e87f117d9cd0c991581fbaacaf5f7 chopin: Import missing GNSS blob 11-26 09:53:24.003   947   947 D agps    : [agps][n][RPC] get_rpc_interface load from /vendor/lib64/libviagpsrpc.so 11-26 09:53:24.003   947   947 E agps    : [agps] ERR: [C2K_MSG] dlopen error: dlopen failed: library "/vendor/lib64/libviagpsrpc.so" not found
+93e4a35aa9cc9d42bda3f82e4447407180b5e3c4 chopin: Import DRM stack
+1a0ed716f3963f2557ae1e7a2460d8c309aea134 chopin: Import Vibrator Firmware
+098899989d4b4e6f20420e44aaa0ac8130045903 chopin: Import Public libraries
+24ae3840a1db1fae8896dad22b78052067d43201 chopin: Import Secure Element stack
+5ff7fa8cd970e57bdad3eb36638ce8db7e10ef9e chopin: Configure Neural Networks stack
+4408493698e6ee1319ba5614ad6b340d0883da6b chopin: Import GNSS stack
+f8babd61f9ac0fd27a84f0a00b05280cf8e50bbd chopin: Import Xiaomi Thermal Configurations
+1d10ba610ba09f7dffd5314c6d16b96daf31044e chopin: Configure Thermal stack
+a793002955a5b9d32cfd9e23fe6ceef20ba7d566 chopin: Configure Gatekeeper stack
+d1d3aa932fac149f519dcc00ffb135fd0c4339f5 chopin: Configure MTK PowerHAL stack
+c3c7ef14739aaefc2b184b542c21bf232e24dce2 chopin: Configure MMS stack
+6bdc713fcc2508372fc677124d8070d6f1eabd76 chopin: Configure Wi-Fi stack
+25391dd9879e26276a58caf726d16884fcc33024 chopin: Configure Media stack
+0ff50b1a07ea3217ea7f1b02ab61c52f233a5646 chopin: Import Connectivity Firmware
+1d517faacb0aa927c13d1f76d66e4a3112db19db chopin: Import ConsumerIr stack
+05b37e8f52e50cdbc765cef68be4dd11eb858de6 chopin: Import USB stack
+a63bdedc5375457848e0c7d853271146ace25d08 chopin: Import Keymaster stack
+4be805664d588c4cb88fce2fa523e4b983bd3a31 chopin: Import Trusted Execution Environment (TEE) stack
+f783a80aadd0cf7ac1afc85251bf160acb8991d2 chopin: Import NVRAM stack
+084b5bc4a209c241b645343f3188171f722de44c chopin: Import charging stack
+48ef4ebe03b03950f0008fabc83451739233ea94 chopin: Configure display stack
+aa6f76fccbf43debe169fd3ffa74594445ce4fa8 chopin: Import `cs35l41_cal.wav` * Required for Audio Calibration Blob
+b75cfc666ef2fb35d2f1d42a55c083d82faecefa chopin: Import Bluetooth A2DP blobs
+cd6b101d18714349b4d665df404fc92efb339601 chopin: Import Bluetooth stack
+af457fc8806310a9698fef822a828bb04c24462b chopin: Import AEE blobs
+5fc9b3cf9b4bae8cf46ba2799cc39b7f2b642425 chopin: Import missing audio library
+6096f210c5df838a3f117c9aa3c14109554a3eb2 chopin: Configure Audio Stack
+6407d8751e2f969d0e74f31bcfe1cdb7b5eaeabc chopin: device_manifest: Add entry for AOSP Boot Control HAL
+bcc04144087e27c6b996336015cff82972d0050a chopin: Create empty HIDL manifest
+c1de25f397c79563361ef19330835274d9f79415 [TEMP] We only build Recovery for now
+9a3be00c66c793a33f1c08b59360e823ed61d94e chopin: Allow duplicate targets
+ea78d197f1d9b6a86970998fc4f262a3b65b4654 chopin: Use 6GB dalvik-heap config
+b6c3778a43cafbf96a60f5a6b4bf8b774a8d5650 chopin: Build fastbootd
+6b9eed77340df72a279f0e753ced69c536f2234d chopin: Copy AOSP permissions
+309a4fe29863703637fdc9909532af4525148b60 chopin: Build default health HIDL
+0b3e5641f26e256f9cbb4ccbfc0bfced44978fcb chopin: Build AOSP boot control HAL
+df5ab7f307f6756ccb92227ebb0927524bfa4300 chopin: Enable updateable APEX
+c8ba3478cc5fa31aa683930dc4591c96edabac32 chopin: fstab: Cleanup
+806426df2cb1d442a9d001acaaadfc0f6b073703 chopin: Declare BOARD_VENDOR
+036097e156f5ac59568f693d83f1fd3462a7d09e chopin: Inherit sepolicy for mediatek devices
+09a11a85a1eba5d4dcbfdb829fcd7688e9b1ce26 chopin: Define security patch level
+82ff69797bf0788a007754a9bb232cbe960007fd chopin: Set `sys.usb.configfs` in recovery
+f206d580b4795f618cacf5b8859b557562a81315 chopin: Set `sys.usb.ffs.aio_compat` in recovery
+48b603c37f2a4d008b4805264380544b324e37f2 chopin: Enable Project ID Quota support on userdata
+f7d4342d44bd0498e3504df2fc386167d99e2dd3 chopin: Add a check for using prebuilt `VENDOR_KERNEL_MODULES`
+7ff6ab8716929eb4d05bf4c215be743b42bef110 Include hardware/xiaomi Soong namespace
+f328483ef5caf1121db4a95134321d5eb92e534f chopin: Include `hardware/mediatek` Soong namespace
+89ba3a82addad4cbeb8dca260bd9c96ca5ce5734 chopin: Enable vendor RIL service
+76f0685e77ac4b80fe18184de1862cc5b0f15321 chopin: Build VBMeta image with `--set_hashtree_disabled_flag`
+0cf050370d47bec1381fd879b2696bc1d7a3d3fc chopin: BoardConfig: Setup AVB Flags for Recovery
+92ea26ddfb54dc9e140706d2918d8f55d92864e5 chopin: BoardConfig: Use correct value for `BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION`
+cbbf3de314cb998c4614756be36ab19f3723fd25 chopin: Configure AVB flags
+14212cd775ddc644ac5789bbc47f3c98457a5329 chopin: BoardConfig: Update Recovery Flags strongly recommended for A/B devices. Source: https://source.android.com/docs/core/ota/ab/ab_implement
+39f854ecf1ce1558c31a4e0885abb48d8aa6d348 chopin: Define the recovery pixel format as RGBX_8888
+822bbea406f0a920ca5e056daf753b6e6e0da3ee chopin: Enable support for EXT4 & F2FS formatted userdata
+c3112fe9c771abd65983a25faa538feef3621199 init: Remove seclabel from mi_thermald 11-01 09:34:27.612     1     1 I (3)[1:init]: starting service 'mi_thermald'... 11-01 09:34:27.616  1290  1290 F (5)[1290:init]: cannot setexeccon('u:r:mi_thermald:s0') for mi_thermald: Invalid argument 11-01 09:34:27.617     1     1 I (0)[1:init]: Service 'mi_thermald' (pid 1290) exited with status 6 11-01 09:34:27.617     1     1 I (0)[1:init]: Sending signal 9 to service 'mi_thermald' (pid 1290) process group...
+74184ad59dc915fc835743597ff2e2234fc5215b chopin: Remove seclabel from mi_thermald Correct the path while we are at it
+ad8b7c9c94f5d9e288265be268f417bb3f1fa038 chopin: Create audio dump directory
+f22f0eade4d04041d6467a54b74b309885981d65 rootdir: mt6893-init: Hardcode RC Import Paths
+f9043dd6fab1128145dea86ffd9e36dca9b5def9 init: Import System Logger Changes
+7990e119fdded5c08b369ee3d734f5fd83b4dd75 chopin: Initial Debloated rootdir configuration
+726883b0a31466245a1bc861b952d1c0961fa067 chopin: Reboot to recovery if init fails
+bf0c8d0c13aae505eb5524a5943b3fd40d52d9ec chopin: Enforce RRO for all overlays
+c577b003f0f2d5a0a4d2f7414d46da7e8caca4db chopin: Define physical & dynamic partition sizes
+3af8cbbd285e90d1ae6355674006dcc49d91c10e chopin: Configure Virtual A/B OTAs
+40a319a957d903a5051b2a2274be7c93a4dfcef4 chopin: BoardConfig: Define Prebuilt Kernel Flags
+08d570ea5a447556098284191d91af717c6366d6 chopin: BoardConfig: Define SCREEN_DENSITY
+64126acb1afac19269cdb8a6e7ec871fabffcf04 chopin: BoardConfig: Define Bootloader and Platform Flags
+1562e8ed98495c11c62112ff64ae9073002d9a5e chopin: BoardConfig: Define Architecture Flags
+b304566581f2347468b88d3436110a5e2d643c11 chopin: Initial Skeleton Tree
+5e94c61008c22e7a35e56e5a256cd0047aeb1076 chopin: README!
