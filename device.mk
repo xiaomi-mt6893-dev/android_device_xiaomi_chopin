@@ -233,7 +233,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.2.vendor
 
 PRODUCT_PACKAGES += \
-    libshim_sink
+    libshim_sink \
+    libui_shim
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/perf,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -251,14 +252,7 @@ PRODUCT_BOOT_JARS += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common
-<<<<<<< HEAD
-=======
 
-PRODUCT_PACKAGES += \
-    libui_shim \
-    libshim_sink
-
->>>>>>> e56cf37 (pissarro: Patch libsource to load the old graphicsbuffer symbol)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
 	
