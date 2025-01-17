@@ -1,0 +1,131 @@
+<compatibility-matrix version="4.0" type="framework">
+<hal format="hidl" optional="true">
+    <name>android.hardware.audio.effect</name>
+    <version>7.0</version>
+    <interface>
+        <name>IEffectsFactory</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.audio</name>
+    <version>7.0</version>
+    <interface>
+        <name>IDevicesFactory</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.biometrics.fingerprint</name>
+    <version>2.0-3</version>
+    <interface>
+        <name>IBiometricsFingerprint</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.drm</name>
+    <version>1.0-4</version>
+    <interface>
+        <name>ICryptoFactory</name>
+        <instance>widevine</instance>
+    </interface>
+    <interface>
+        <name>IDrmFactory</name>
+        <instance>widevine</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.radio.config</name>
+    <version>1.0-3</version>
+    <interface>
+        <name>IRadioConfig</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.radio</name>
+    <version>1.0-6</version>
+    <interface>
+        <name>IRadio</name>
+        <instance>slot1</instance>
+        <instance>slot2</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>com.fingerprints.extension</name>
+    <version>3.0</version>
+    <interface>
+        <name>IFingerprintNavigation</name>
+        <instance>default</instance>
+    </interface>
+    <interface>
+        <name>IFingerprintSensorTest</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.dolby.hardware.dms</name>
+    <version>2.0</version>
+    <interface>
+        <name>IDms</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.microtrust.hardware.thh</name>
+    <version>2.0</version>
+    <interface>
+        <name>IThhDevice</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.xiaomi.hardware.citsensorservice</name>
+    <version>1.0-1</version>
+    <interface>
+        <name>ICitSensorService</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.xiaomi.hardware.displayfeature</name>
+    <version>1.0</version>
+    <interface>
+        <name>IDisplayFeature</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.xiaomi.hardware.dtool</name>
+    <version>1.0</version>
+    <interface>
+        <name>IDtool</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.xiaomi.hardware.fingerprintextension</name>
+    <version>1.0</version>
+    <interface>
+        <name>IXiaomiFingerprint</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.xiaomi.hardware.fx.tunnel</name>
+    <version>1.0</version>
+    <interface>
+        <name>IMiFxTunnel</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.xiaomi.hw.touchfeature</name>
+    <version>1.0</version>
+    <interface>
+        <name>ITouchFeature</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+</compatibility-matrix>
