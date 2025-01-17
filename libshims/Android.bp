@@ -40,3 +40,8 @@ cc_library_shared {
     vendor: true
 }
 
+cc_library_shared {
+    name: "libshim_vtservice",
+    srcs: ["libshim_vtservice.cpp"],
+}
+
