@@ -132,11 +132,6 @@
         <fqname>@1.0::IThermal/default</fqname>
         <fqname>@2.0::IThermal/default</fqname>
     </hal>
- <hal format="hidl">
-        <name>vendor.mediatek.hardware.mmagent</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.1::IMMAgent/default</fqname>
-    </hal>
 <hal format="hidl">
         <name>vendor.mediatek.hardware.mmagent</name>
         <transport>hwbinder</transport>
