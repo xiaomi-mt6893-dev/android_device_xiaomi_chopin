@@ -87,7 +87,7 @@ function blob_fixup {
         vendor/lib64/libcam.utils.sensorprovider.so)
             "${PATCHELF}" --replace-needed "libsensorndkbridge.so" "libsensorndkbridge-v31.so" "${2}"
             ;;	
-        system_ext/lib64/libsink.so) | \
+        system_ext/lib64/libsink.so | \
 		system/lib64/libsink.so)
             "${PATCHELF}" --add-needed "libshim_sink.so" "$2"
             ;;

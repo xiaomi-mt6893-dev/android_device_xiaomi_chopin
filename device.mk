@@ -313,7 +313,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/xiaomi
 
 # Kernel Build Options
-VENDOR_KERNEL_MODULES := no
+VENDOR_KERNEL_MODULES := yes
 
 # Thermal
 PRODUCT_PACKAGES += \
