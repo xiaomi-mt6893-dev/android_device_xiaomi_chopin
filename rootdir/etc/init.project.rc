@@ -41,30 +41,30 @@ on post-fs-data
     chown system camera /dev/BU64745GWZAF
 
  # XIAOMI_DUAL_CAM_BIN
-~    mkdir /mnt/vendor/persist/camera/ 0777 system camera
-~    mkdir /data/vendor/camera/ 0777 system camera
-~
-~    # for intsense bokeh use
-~    mkdir /data/vendor/camera/model 0777 system camera
-~    mkdir /data/vendor/camera/model/dof_model 0777 system camera
-~    mkdir /data/vendor/camera/model/rt_model 0777 system camera
-~
-~    copy /vendor/etc/camera/model/dof_model/capture_cache /data/vendor/camera/model/dof_model/capture_cache
-~    copy /vendor/etc/camera/model/dof_model/capture_model /data/vendor/camera/model/dof_model/capture_model
-~    copy /vendor/etc/camera/model/dof_model/capture_policy /data/vendor/camera/model/dof_model/capture_policy
-~    copy /vendor/etc/camera/model/rt_model/preview_cache /data/vendor/camera/model/rt_model/preview_cache
-~    copy /vendor/etc/camera/model/rt_model/preview_model /data/vendor/camera/model/rt_model/preview_model
-~    copy /vendor/etc/camera/model/rt_model/preview_policy /data/vendor/camera/model/rt_model/preview_policy
-~
-~    chmod 0666 /data/vendor/camera/model/dof_model/capture_cache
-~    chmod 0666 /data/vendor/camera/model/dof_model/capture_model
-~    chmod 0666 /data/vendor/camera/model/dof_model/capture_policy
-~    chmod 0666 /data/vendor/camera/model/rt_model/preview_cache
-~    chmod 0666 /data/vendor/camera/model/rt_model/preview_model
-~    chmod 0666 /data/vendor/camera/model/rt_model/preview_policy
-~
-~    # for mibokeh use
-~    mkdir /data/vendor/camera/mibokeh 0776 system camera
+    mkdir /mnt/vendor/persist/camera/ 0777 system camera
+    mkdir /data/vendor/camera/ 0777 system camera
+
+    # for intsense bokeh use
+    mkdir /data/vendor/camera/model 0777 system camera
+    mkdir /data/vendor/camera/model/dof_model 0777 system camera
+    mkdir /data/vendor/camera/model/rt_model 0777 system camera
+
+    copy /vendor/etc/camera/model/dof_model/capture_cache /data/vendor/camera/model/dof_model/capture_cache
+    copy /vendor/etc/camera/model/dof_model/capture_model /data/vendor/camera/model/dof_model/capture_model
+    copy /vendor/etc/camera/model/dof_model/capture_policy /data/vendor/camera/model/dof_model/capture_policy
+    copy /vendor/etc/camera/model/rt_model/preview_cache /data/vendor/camera/model/rt_model/preview_cache
+    copy /vendor/etc/camera/model/rt_model/preview_model /data/vendor/camera/model/rt_model/preview_model
+    copy /vendor/etc/camera/model/rt_model/preview_policy /data/vendor/camera/model/rt_model/preview_policy
+
+    chmod 0666 /data/vendor/camera/model/dof_model/capture_cache
+    chmod 0666 /data/vendor/camera/model/dof_model/capture_model
+    chmod 0666 /data/vendor/camera/model/dof_model/capture_policy
+    chmod 0666 /data/vendor/camera/model/rt_model/preview_cache
+    chmod 0666 /data/vendor/camera/model/rt_model/preview_model
+    chmod 0666 /data/vendor/camera/model/rt_model/preview_policy
+
+    # for mibokeh use
+    mkdir /data/vendor/camera/mibokeh 0776 system camera
 
 #SMB
     chown system system /proc/smb/ScreenComm
@@ -99,6 +99,6 @@ on boot
     chown system system /sys/bus/platform/devices/fingerprint/fingerdown_wait
  
  # cit led
-~    chown system system /sys/class/leds/torch-light0/brightness
-~    chown system system /sys/class/leds/flash-light0/brightness
-~
+    chown system system /sys/class/leds/torch-light0/brightness
+    chown system system /sys/class/leds/flash-light0/brightness
+
