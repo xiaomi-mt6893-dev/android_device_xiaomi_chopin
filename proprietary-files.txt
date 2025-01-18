@@ -2127,3 +2127,14 @@ vendor/lib64/hw/displayfeature.default.so
 vendor/etc/vintf/manifest/vendor.xiaomi.hw.touchfeature@1.0-service.xml
 product/etc/displayconfig/resolution_switch_process_list_backup.xml
 vendor/etc/init.panel_info.sh
+
+# OEM
+vendor/etc/rsc/cn/ro.prop
+vendor/etc/rsc/cn/rw.prop
+vendor/etc/rsc/default/ro.prop
+vendor/etc/rsc/default/rw.prop
+vendor/etc/rsc/global/ro.prop
+vendor/etc/rsc/global/rw.prop
+vendor/etc/rsc/india/ro.prop
+vendor/etc/rsc/india/rw.prop
+
