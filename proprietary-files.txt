@@ -2091,6 +2091,5 @@ system/system/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 vendor/lib/hw/displayfeature.default.so
 vendor/lib64/hw/displayfeature.default.so
 vendor/etc/vintf/manifest/vendor.xiaomi.hw.touchfeature@1.0-service.xml
-product/etc/displayconfig/display_id_0.xml
 product/etc/displayconfig/resolution_switch_process_list_backup.xml
 vendor/etc/init.panel_info.sh
