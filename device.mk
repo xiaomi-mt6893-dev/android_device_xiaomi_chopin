@@ -224,6 +224,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
+	android.hardware.power@1.0.so \
     android.hardware.power-service-mediatek
 
 PRODUCT_PACKAGES += \
