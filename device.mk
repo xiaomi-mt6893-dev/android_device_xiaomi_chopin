@@ -138,7 +138,9 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.service \
     android.hardware.soundtrigger@2.3-impl:32 \
-    audio.bluetooth.default
+    audio.bluetooth.default \
+    android.hardware.audio.sounddose-vendor-impl 
+
 PRODUCT_PACKAGES += \
     libaudiofoundation.vendor \
     libunwindstack.vendor \
