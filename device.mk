@@ -139,8 +139,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.service \
     android.hardware.soundtrigger@2.3-impl:32 \
-    audio.bluetooth.default \
-    android.hardware.audio.sounddose-vendor-impl 
+    audio.bluetooth.default    
 
 PRODUCT_PACKAGES += \
     libaudiofoundation.vendor \
@@ -354,7 +353,9 @@ PRODUCT_PACKAGES += \
     libcodec2_soft_common.vendor \
     libsfplugin_ccodec_utils.vendor \
     libcodec2_soft_common.vendor \
-    libstagefright_foundation-v33
+    libstagefright_foundation-v33 \
+    libstagefright_softomx.vendor \
+    libstagefright_softomx_plugin.vendor 
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
