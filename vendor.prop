@@ -190,6 +190,7 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 ro.hardware.consumerir=common
 
 # Media
+debug.stagefright.ccodec=1
 debug.stagefright.c2inputsurface=-1
 debug.mediatek.disp_decompress=1
 media.c2.dmabuf.padding=3072
