@@ -220,7 +220,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
 	libcamera_metadata.vendor \
-	libpng.vendor
+	libpng.vendor \
+	libexif
 
 # Power
 PRODUCT_PACKAGES += \
