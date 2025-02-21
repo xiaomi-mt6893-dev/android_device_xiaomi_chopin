@@ -1049,6 +1049,10 @@ on property:persist.vendor.mediatek.fg.force25c=0
 on property:persist.vendor.mediatek.fg.log.enable=1
     write /sys/devices/platform/10026000.pwrap/10026000.pwrap:mt6359p/mt6359p-gauge/FG_daemon_log_level 7
     write /proc/sys/kernel/printk 8
+	
+# Restart C2 service after boot completed
+on property:sys.boot_completed=1
+    restart android-hardware-media-c2-hal-1-2	
 
 # add loghidl client
 service loghidlsysservice /system/bin/loghidlsysservice
