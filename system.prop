@@ -1,0 +1,11 @@
+# Telephony
+vendor.rild.libpath=mtk-ril.so
+vendor.rild.libargs=-d /dev/ttyC0
+ro.kom_telephony_support=0
+persist.vendor.pms_removable=1
+ro.vendor.mtk_telephony_add_on_policy=0
+persist.vendor.vzw_device_type=0
+persist.vendor.wfc.sys_wfc_support=1
+persist.vendor.mdlog.flush_log_ratio=0
+
+
