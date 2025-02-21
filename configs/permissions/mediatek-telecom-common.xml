@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2018 The Android Open Source Project
+
+Licensed SPDX-License-Identifier: Apache-2.0
+-->
+<permissions>
+    <library
+        name="mediatek-telecom-common"
+        file="/system_ext/framework/mediatek-telecom-common.jar"
+    />
+</permissions>
+
