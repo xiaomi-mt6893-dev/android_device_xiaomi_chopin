@@ -2,6 +2,7 @@
 <permissions>
     <privapp-permissions package="com.mediatek.ims">
         <permission name="android.permission.READ_PRECISE_PHONE_STATE"/>
+        <permission name="android.permission.READ_NETWORK_USAGE_HISTORY"/>
         <permission name="android.permission.PACKET_KEEPALIVE_OFFLOAD"/>
         <permission name="android.permission.CHANGE_WIFI_STATE"/>
         <permission name="android.permission.NETWORK_SIGNAL_STRENGTH_WAKEUP"/>
