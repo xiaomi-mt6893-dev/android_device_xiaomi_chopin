@@ -1823,7 +1823,7 @@ vendor/lib64/libpower_timer.so
 vendor/lib64/libpowerhal.so
 vendor/lib64/libpowerhalwrap_vendor.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so
-
+system/lib64/libmtkperf_client.so
 
 # Public libraries
 vendor/etc/public.libraries.txt
@@ -1906,52 +1906,50 @@ vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 
 # Radio (IMS)
-vendor/bin/hw/vtservice_hidl
-vendor/bin/rcs_volte_stack
-vendor/bin/volte_clientapi_ua
-vendor/bin/volte_rcs_ua
-vendor/etc/init/init.vtservice_hidl.rc
-vendor/etc/init/volte_clientapi_ua.rc
-vendor/etc/init/volte_rcs_ua.rc
-vendor/lib/libipsec_ims_shr.so
-vendor/lib/librcs_volte_core.so
-vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
-vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so
-vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
-vendor/lib64/libipsec_ims_shr.so
-vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
-vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so|f304c31ba04742953745929e6feb08e882109a33
+vendor/lib/vendor.mediatek.hardware.rcs@2.0.so|fdae1b099eb49b3fa68088a4fdd938911cb7fbf4
+vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so|3283ca8b47d8097d04020b158fa132177fd7ff59
+vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so|bb9ff554802e7bffb72cf24604109dafcf0019fc
+vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|5e228669d2c575e38fc02a13404f31bc22494b87
 
 # Radio (MTK-IMS)
-system/bin/vtservice
-system/etc/init/init.vtservice.rc
-system/framework/mediatek-common.jar
-system/framework/mediatek-framework.jar
-system/framework/mediatek-ims-base.jar
-system/framework/mediatek-ims-common.jar
-system/framework/mediatek-ims-extension-plugin.jar
-system/framework/mediatek-telecom-common.jar
-system/framework/mediatek-telephony-base.jar
-system/framework/mediatek-telephony-common.jar
-system/framework/mediatek-wfo-legacy.jar
-system/lib64/libcomutils.so
-system/lib64/libimsma.so
-system/lib64/libimsma_adapt.so
-system/lib64/libimsma_rtp.so
-system/lib64/libimsma_socketwrapper.so
-system/lib64/libmtk_vt_service.so
-system/lib64/libmtk_vt_wrapper.so
-system/lib64/libmtkperf_client.so
-system/lib64/libsignal.so
-system/lib64/libsink.so
-system/lib64/libsource.so
-system/lib64/libvcodec_cap.so
-system/lib64/libvcodec_capenc.so
-system/lib64/libvsim-adaptor-client.so
-system/lib64/libvt_avsync.so
-system/priv-app/ImsService/ImsService.apk
-system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
-system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+system_ext/bin/vtservice|eeb08595c53be9d7a69ba5b677b5604f753eab37
+system_ext/etc/init/init.vtservice.rc|50a2249906edc06059b443513db47a2ddc0490dc
+system_ext/framework/mediatek-carrier-config-manager.jar|1aad0db18a1ceea3531036ab62e4d624d1bf4437
+system_ext/framework/mediatek-common.jar|b4f57c8f65b92d8b65074911b626559107764bb5
+system_ext/framework/mediatek-framework.jar|fd3298a817d7eef0d985659589186b2754d6c9f3
+system_ext/framework/mediatek-ims-base.jar|a6f7ae937de5b9c25e41af8c15db2717a31a6e97
+system_ext/framework/mediatek-ims-common.jar|e2eab51cbe9af28af76fdcfd308496191285f956
+system_ext/framework/mediatek-ims-extension-plugin.jar|4562720d65136b189d661f248fd3170a749cada3
+system_ext/framework/mediatek-telecom-common.jar|ee46343685e2ef8187a3044daa06658c4ca4e601
+system_ext/framework/mediatek-telephony-base.jar|44b546c4c23d754a9aa5b0c43a342db05c140e7b
+system_ext/framework/mediatek-telephony-common.jar|136e322e5df4b2ad1780da18d6f0eac7f5e85a1d
+system_ext/lib/libmtk_vt_wrapper.so|e6ff2db0096aaeeff0cac424e36574970cc92c9c
+system_ext/lib/libmtkperf_client.so|336217e250e6557db6ee9ab63824e4e9f5946917
+system_ext/lib/libvcodec_cap.so|57d0ad357abb4ce00ef3f2672d4f9fc594b6f59b
+system_ext/lib/libvcodec_capenc.so|68c16fc4d61dfd5a0f1ffb64b56ad675429bb32e
+system_ext/lib/vendor.mediatek.hardware.mtkpower-V1-ndk.so|53b7c406b08b8938230b754f7b523bd0c4127240
+system_ext/lib/vendor.mediatek.hardware.videotelephony-V1-ndk.so|9d18a40ca956b0456d4504498a9c6dc37ca17c5a
+system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so|1eacec3afd1b23a949cb37d9ae870a31e3ac0310
+system_ext/lib64/libcomutils.so|fae6b5fd7628518eaf3e3eadac2133dd83f30839
+system_ext/lib64/libimsma.so|fe5785814579f46510994ebb33fad3ba4e52e35e
+system_ext/lib64/libimsma_adapt.so|87682d1ecd12331841ce3b9f6eb04822a6725488
+system_ext/lib64/libimsma_rtp.so|d748f60abf892897946589d3c17136f38bdd9879
+system_ext/lib64/libimsma_socketwrapper.so|5a26aae9eee36b9e5dc8875aa68b20ced2e1b676
+system_ext/lib64/libmtk_vt_service.so|1c3195178d8f474702ffb576373baf872cf63d9d
+system_ext/lib64/libmtk_vt_wrapper.so|1dc858ac9d043080ceb042bc55c3a81c62988f33
+system_ext/lib64/libmtkperf_client.so|2bb098885c92ef5a8a4fd1106befc4ba3b75db5d
+system_ext/lib64/libsignal.so|5595f5d7b6e7320572ec05ac199f951d141b516a
+system_ext/lib64/libsink.so|f8b24a602c80de5d89bc3a67b7b07315c787066d
+system_ext/lib64/libsource.so|a7b4a1d1c40b7ff9ca9b7b5e86e75ae840c1268d
+system_ext/lib64/libvcodec_cap.so|9c09ca2c773f0eda22ca38d180d1b56e134e2621
+system_ext/lib64/libvcodec_capenc.so|2a9dd2edc46a17f402f342f09035ba5c25bb7ea2
+system_ext/lib64/libvt_avsync.so|186a5263b1be36e3f5ba47c0e8b40bca48a6b382
+system_ext/lib64/vendor.mediatek.hardware.mtkpower-V1-ndk.so|550153d4599f1b282ed8c8cb42158ffaf5944d85
+system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so|d12f0aef8da477595468df3cebb5fa4f0a8770be
+system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|cdd9da0a0896031fd034069566bc80c332cdc9c1
+system_ext/priv-app/ImsService/ImsService.apk|53f3c679f3035ab07893be0f975d9e5f17460495
+
 
 
 # Sensors (citsensor)
