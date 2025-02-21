@@ -224,7 +224,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
 	libcamera_metadata.vendor \
-	libpng.vendor
+	libpng.vendor \
+	libexif \
+	libexif.vendor
 
 # Power
 PRODUCT_PACKAGES += \
