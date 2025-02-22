@@ -91,9 +91,6 @@ function blob_fixup {
 		system/lib64/libsink.so)
             "${PATCHELF}" --add-needed "libshim_sink.so" "$2"
             ;;
-		 system/bin/vtservice)
-            "${PATCHELF}" --add-needed "libshim_vtservice.so" ${2}
-            ;;	
 	vendor/etc/init/init.batterysecret.rc)
             sed -i '/seclabel/d' "$2" 
 	    ;;
