@@ -355,6 +355,7 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.2.vendor \
     libcodec2_soft_common.vendor \
     libsfplugin_ccodec_utils.vendor \
+    libstagefright_foundation-v33 \
     libstagefright_softomx_plugin.vendor
 
 PRODUCT_PACKAGES += \
