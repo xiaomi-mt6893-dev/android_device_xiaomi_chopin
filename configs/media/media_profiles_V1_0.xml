@@ -345,17 +345,19 @@
                    sampleRate="48000"
                    channels="2" />
         </EncoderProfile>
+<!-- [ITD] modify for XLBEPUB-63 2k video support by desuo.lu 20201028 start -->
         <EncoderProfile quality="high" fileFormat="mp4" duration="30">
             <Video codec="h264"
                    bitRate="20000000"
-                   width="1920"
-                   height="1080"
+                   width="2560"
+                   height="1440"
                    frameRate="30" />
             <Audio codec="aac"
                    bitRate="256000"
                    sampleRate="48000"
                    channels="2" />
         </EncoderProfile>
+<!-- [ITD] modify for XLBEPUB-63 2k video support by desuo.lu 20201028 end -->
         <EncoderProfile quality="qcif" fileFormat="mp4" duration="30">
             <Video codec="h264"
                    bitRate="192000"
@@ -422,7 +424,19 @@
                    sampleRate="48000"
                    channels="2" />
         </EncoderProfile>
-
+<!-- [ITD] modify for XLBEPUB-63 2k video support by desuo.lu 20201028 start -->
+        <EncoderProfile quality="qhd" fileFormat="mp4" duration="30">
+            <Video codec="h264"
+                   bitRate="20000000"
+                   width="2560"
+                   height="1440"
+                   frameRate="30" />
+            <Audio codec="aac"
+                   bitRate="256000"
+                   sampleRate="48000"
+                   channels="2" />
+        </EncoderProfile>
+<!-- [ITD] modify for XLBEPUB-63 2k video support by desuo.lu 20201028 end -->
         <EncoderProfile quality="timelapselow" fileFormat="mp4" duration="30">
             <Video codec="h264"
                    bitRate="1000000"
@@ -436,9 +450,9 @@
         </EncoderProfile>
         <EncoderProfile quality="timelapsehigh" fileFormat="mp4" duration="30">
             <Video codec="h264"
-                   bitRate="20000000"
-                   width="1920"
-                   height="1080"
+                   bitRate="9000000"
+                   width="1280"
+                   height="720"
                    frameRate="30" />
             <Audio codec="aac"
                    bitRate="256000"
@@ -500,17 +514,6 @@
                    sampleRate="48000"
                    channels="2" />
         </EncoderProfile>
-        <EncoderProfile quality="timelapse1080p" fileFormat="mp4" duration="30">
-            <Video codec="h264"
-                   bitRate="20000000"
-                   width="1920"
-                   height="1080"
-                   frameRate="30" />
-            <Audio codec="aac"
-                   bitRate="256000"
-                   sampleRate="48000"
-                   channels="2" />
-        </EncoderProfile>
         <ImageEncoding quality="95" />
         <ImageEncoding quality="80" />
         <ImageEncoding quality="70" />
@@ -528,17 +531,19 @@
                    sampleRate="48000"
                    channels="2" />
         </EncoderProfile>
+<!-- [ITD] modify for 4k video support by desuo.lu 20201028 start -->
         <EncoderProfile quality="high" fileFormat="mp4" duration="30">
             <Video codec="h264"
-                   bitRate="20000000"
-                   width="1920"
-                   height="1080"
+                   bitRate="50000000"
+                   width="3840"
+                   height="2160"
                    frameRate="30" />
             <Audio codec="aac"
                    bitRate="256000"
                    sampleRate="48000"
                    channels="2" />
         </EncoderProfile>
+<!-- [ITD] modify for 4k video support by desuo.lu 20201028 start -->
         <EncoderProfile quality="qcif" fileFormat="mp4" duration="30">
             <Video codec="h264"
                    bitRate="192000"
@@ -605,6 +610,19 @@
                    sampleRate="48000"
                    channels="2" />
         </EncoderProfile>
+<!-- [ITD] modify for 4k video support by desuo.lu 20201028 start -->
+        <EncoderProfile quality="2160p" fileFormat="mp4" duration="30">
+            <Video codec="h264"
+                   bitRate="50000000"
+                   width="3840"
+                   height="2160"
+                   frameRate="30" />
+            <Audio codec="aac"
+                   bitRate="256000"
+                   sampleRate="48000"
+                   channels="2" />
+        </EncoderProfile>
+<!-- [ITD] modify for 4k video support by desuo.lu 20201028 end -->
         <EncoderProfile quality="timelapselow" fileFormat="mp4" duration="30">
             <Video codec="h264"
                    bitRate="1000000"
@@ -938,9 +956,9 @@
         </EncoderProfile>
         <EncoderProfile quality="high" fileFormat="mp4" duration="30">
             <Video codec="h264"
-                   bitRate="9000000"
-                   width="1280"
-                   height="720"
+                   bitRate="50000000"
+                   width="3840"
+                   height="2160"
                    frameRate="30" />
             <Audio codec="aac"
                    bitRate="256000"
@@ -996,6 +1014,28 @@
                    bitRate="9000000"
                    width="1280"
                    height="720"
+                   frameRate="30" />
+            <Audio codec="aac"
+                   bitRate="256000"
+                   sampleRate="48000"
+                   channels="2" />
+        </EncoderProfile>
+        <EncoderProfile quality="1080p" fileFormat="mp4" duration="30">
+            <Video codec="h264"
+                   bitRate="20000000"
+                   width="1920"
+                   height="1080"
+                   frameRate="30" />
+            <Audio codec="aac"
+                   bitRate="256000"
+                   sampleRate="48000"
+                   channels="2" />
+        </EncoderProfile>
+        <EncoderProfile quality="2160p" fileFormat="mp4" duration="30">
+            <Video codec="h264"
+                   bitRate="50000000"
+                   width="3840"
+                   height="2160"
                    frameRate="30" />
             <Audio codec="aac"
                    bitRate="256000"
@@ -1633,7 +1673,7 @@
 
     <EncoderOutputFileFormat name="mp4" />
     <EncoderOutputFileFormat name="3gp" />
-    
+
     <!--
          If a codec is not enabled, it is invisible to the applications
          In other words, the applications won't be able to use the codec

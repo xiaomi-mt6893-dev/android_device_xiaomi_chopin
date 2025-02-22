@@ -91,8 +91,8 @@ function blob_fixup {
 		system/lib64/libsink.so)
             "${PATCHELF}" --add-needed "libshim_sink.so" "$2"
             ;;
-		 system/bin/vtservice)
-            "${PATCHELF}" --add-needed "libshim_vtservice.so" ${2}
+	 system/bin/vtservice)
+	    "${PATCHELF}" --add-needed "libshim_vtservice.so" ${2}
             ;;	
 	vendor/etc/init/init.batterysecret.rc)
             sed -i '/seclabel/d' "$2" 
@@ -106,7 +106,13 @@ function blob_fixup {
 	vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
             sed -i 's/start/enable/' "$2"
             ;;
-	vendor/bin/hw/android.hardware.media.c2@1.2-mediatek|\
+	vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc)
+            sed -i 's/@1.2-mediatek/@1.2-mediatek-64b/g' "${2}"
+            ;;
+	vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
+            "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}";
+            "${PATCHELF}" --replace-needed "libavservices_minijail_vendor.so" "libavservices_minijail.so" "${2}"
+	    ;;
 	vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service)
             "$PATCHELF" --add-needed "libstagefright_foundation-v33.so" "$2"
             ;;

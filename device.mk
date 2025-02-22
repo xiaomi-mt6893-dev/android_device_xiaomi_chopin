@@ -355,12 +355,16 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
+    libavservices_minijail.vendor \
     libavservices_minijail_vendor \
     libcodec2_hidl@1.2.vendor \
     libcodec2_soft_common.vendor \
-    libsfplugin_ccodec_utils.vendor \
-    libcodec2_soft_common.vendor \
-    libstagefright_foundation-v33
+    libstagefright_foundation-v33 \
+    libsfplugin_ccodec_utils.vendor 
+
+
+PRODUCT_PACKAGES += \
+    libchrome.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
