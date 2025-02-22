@@ -1409,6 +1409,8 @@ vendor/lib/egl/mt6893/libGLES_mali.so
 vendor/lib/hw/mt6893/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib/hw/mt6893/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib/hw/mt6893/vulkan.mali.so
+vendor/lib/mt6893/libmtk_drvb.so
+vendor/lib64/mt6893/libmtk_drvb.so
 vendor/lib/hw/vendor.mediatek.hardware.pq@2.13-impl.so
 vendor/lib/libDefaultFpsActor.so
 vendor/lib/libFrameRecord.so
