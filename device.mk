@@ -360,8 +360,9 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.2.vendor \
     libcodec2_soft_common.vendor \
     libstagefright_foundation-v33 \
-    libsfplugin_ccodec_utils.vendor 
-
+    libsfplugin_ccodec_utils.vendor \
+    libstagefright_softomx.vendor \
+    libstagefright_softomx_plugin.vendor
 
 PRODUCT_PACKAGES += \
     libchrome.vendor
