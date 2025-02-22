@@ -274,7 +274,7 @@ PRODUCT_COPY_FILES += \
 # Vibrator
 $(call soong_config_set, vibrator, vibratortargets, vibratoraidlV2target)
 PRODUCT_PACKAGES += \
-              vendor.qti.hardware.vibrator.service.chopin
+              vendor.qti.hardware.vibrator.service
 			  
 # Sensors
 PRODUCT_PACKAGES += \
