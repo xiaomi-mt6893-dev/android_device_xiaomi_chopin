@@ -1618,8 +1618,8 @@ vendor/lib64/libgoodixhwfingerprint.so
 vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 
 # Media - from TECNO CAMON 20 Pro 5G (Tecno-CK8N_A14-user)
-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b;NOCHECK|4b1ecba449871086e0e278c6f57f89dda1712778
-vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc|e09ad9455fc75875f6ccef32572bfc0894c98ab5
+vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b;NOCHECK|4b1ecba449871086e0e278c6f57f89dda1712778|f2215868b7b7a5088694dcd6e11f1738e2403848
+vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc|e09ad9455fc75875f6ccef32572bfc0894c98ab5|34912fbccc4aedfb072e86634951af6e8f736c04
 vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy|2f5377909dbdab645c9e4fe0b52c4c5c823256a1
 vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy|7e75df111158f52a57e53afed252bd21ac1468d6
 vendor/etc/seccomp_policy/mediacodec.policy|732e01c6c88d125ca8778a3d88e51ef8511979ea
@@ -1941,7 +1941,7 @@ system_ext/lib64/libmtk_vt_wrapper.so|1dc858ac9d043080ceb042bc55c3a81c62988f33
 system_ext/lib64/libmtkperf_client.so|2bb098885c92ef5a8a4fd1106befc4ba3b75db5d
 system_ext/lib64/libsignal.so|5595f5d7b6e7320572ec05ac199f951d141b516a
 system_ext/lib64/libsink.so|f8b24a602c80de5d89bc3a67b7b07315c787066d
-system_ext/lib64/libsource.so|a7b4a1d1c40b7ff9ca9b7b5e86e75ae840c1268d
+system_ext/lib64/libsource.so;NOCHECK|a7b4a1d1c40b7ff9ca9b7b5e86e75ae840c1268d|88f65b252375ca767620a17beebe16c46c95a030
 system_ext/lib64/libvcodec_cap.so|9c09ca2c773f0eda22ca38d180d1b56e134e2621
 system_ext/lib64/libvcodec_capenc.so|2a9dd2edc46a17f402f342f09035ba5c25bb7ea2
 system_ext/lib64/libvt_avsync.so|186a5263b1be36e3f5ba47c0e8b40bca48a6b382
