@@ -286,6 +286,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
+# MtkInCallService
+PRODUCT_PACKAGES += \
+    MtkInCallService
+
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport \
