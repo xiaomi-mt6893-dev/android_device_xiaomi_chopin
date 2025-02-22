@@ -205,13 +205,11 @@ PRODUCT_PACKAGES += \
 
 # Xiaomi TouchFeature Service
 PRODUCT_PACKAGES += \
-    vendor.xiaomi.hw.touchfeature@1.0-service \
-    vendor.xiaomi.hw.touchfeature@1.0-impl
+	vendor.xiaomi.hw.touchfeature@1.0.vendor
 
 # Xiaomi DisplayFeature Service
 PRODUCT_PACKAGES += \
-    vendor.xiaomi.hardware.displayfeature@1.0-service \
-    vendor.xiaomi.hardware.displayfeature@1.0-impl
+	vendor.xiaomi.hardware.displayfeature@1.0.vendor 
 
 # Fingerprint
 PRODUCT_PACKAGES += \
