@@ -1698,7 +1698,13 @@ vendor/lib64/libvcodecdrv_header_stub.so|4a91e75bf7041a77724b3f81ca7648a163b9873
 vendor/lib64/libvpu.so|18cd888c24f6223e5bd1298c9d43e1dc42f61c5f
 vendor/lib64/libvpu5.so|20c903956b1cd08f95fc90bae7c18910e4d43eb9
 
+# Media - from  TECNO CAMON 20 Pro 5G (Tecno-CK8N_A14-user)
+vendor/lib/libopus.so|cf2c2bf6f02f4fe2a492d59f9164b4ba41f946bd
+vendor/lib/libvorbisidec.so|0791d1780d51b7d4307f34c7172398cf1fcc4bf8
+
 # Libstagefright OMX Blobs - from TECNO CAMON 20 Pro 5G (Tecno-CK8N_A14-user)
+vendor/lib/libstagefright_amrnb_common.so|1688d98f4bf7854c42a05aeaf153c747317ffead
+vendor/lib/libstagefright_enc_common.so|c9bd58c646e41b5d0dd7922904caed2a04da8e8e
 vendor/lib/libstagefright_soft_aacdec.so|4bb16b149055f331e3e99cfa7962c7e321c0a7ac
 vendor/lib/libstagefright_soft_aacenc.so|517e994cbc58b3002d43d7d77ca847b6ecc02cdc
 vendor/lib/libstagefright_soft_amrdec.so|a4c387164ff579e116d4ab2d8332b9678fb3b70e
@@ -1706,6 +1712,7 @@ vendor/lib/libstagefright_soft_amrnbenc.so|9f7f9c77698419f4589752b64fc0eba5e6714
 vendor/lib/libstagefright_soft_amrwbenc.so|1923cb070f9d52e411db67781e978f1d50b0327d
 vendor/lib/libstagefright_soft_avcdec.so|987194190212f03e844420e2e8ecf09013b18364
 vendor/lib/libstagefright_soft_avcenc.so|1028e6b278f5ee1bacdafd8feee151133a4d8dea
+vendor/lib/libstagefright_flacdec.so|0bad2cd90d8bc0aeeb3b649819a4fe768b7f8ad5
 vendor/lib/libstagefright_soft_flacdec.so|fdbb8c3b511e452c43f1041fbeb8d3acea3a2cf2
 vendor/lib/libstagefright_soft_flacenc.so|aa9f7520ab4e413e1cd300304435b6b8cbec4ec9
 vendor/lib/libstagefright_soft_g711dec.so|a7b01dede5fcf804c002ba71d3ee4cdc13a226cf
