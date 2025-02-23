@@ -51,19 +51,6 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 	
- 
-# Overlays
-PRODUCT_PACKAGES += \
-    SettingsResOverlayAmber \
-    SystemUIOverlayAmber \
-    WifiOverlay \
-    CarrierConfigOverlayAmber \
-    FrameworksResOverlayAmber \
-    TelephonyResOverlayAmber \
-    TetheringResOverlayAmber
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
-    
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
