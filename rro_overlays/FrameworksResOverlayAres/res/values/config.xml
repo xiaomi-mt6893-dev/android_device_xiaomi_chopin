@@ -325,7 +325,7 @@
          @see https://www.w3.org/TR/SVG/paths.html#PathData
     -->
     <string name="config_mainBuiltInDisplayCutout" translatable="false">
-        M 0,0 H -31 V 84 H 31 V 0 H 0 Z
+        M 0,0 H -36 V 96 H 36 V 0 H 0 Z
     </string>
 
         <!-- Enable doze alwaysOn Display -->
