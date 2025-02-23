@@ -136,7 +136,6 @@ ro.surface_flinger.protected_contents=true
 ro.vendor.composer_version=2.3
 ro.vendor.mml.mtk_mml_support=0
 ro.vendor.mtk_aal_support=1
-ro.vendor.mtk_aod_support=1
 ro.vendor.mtk_hdr_video_support=1
 ro.vendor.mtk_pq_color_mode=3
 ro.vendor.mtk_pq_support=2
