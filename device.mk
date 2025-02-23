@@ -155,6 +155,19 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1.vendor \
     libbluetooth_audio_session
 
+# Overlays
+PRODUCT_PACKAGES += \
+    SettingsResOverlayAres \
+    SystemUIOverlayAres \
+    WifiOverlay \
+    CarrierConfigOverlayAres \
+    FrameworksResOverlayAres \
+    TelephonyResOverlayAres \
+    TetheringResOverlayAres
+
+PRODUCT_PACKAGES += \
+   LineageSDKAres
+
 # ConsumerIr
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.example
