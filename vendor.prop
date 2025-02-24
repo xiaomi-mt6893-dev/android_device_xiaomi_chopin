@@ -175,6 +175,7 @@ ro.vendor.audio.dolby.dax.support=true
 
 # DRM
 ro.netflix.bsp_rev=MTK6893-32816-1
+ro.vendor.mtk_widevine_drm_l1_support=1
 drm.service.enabled=true
 
 # TEE
