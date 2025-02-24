@@ -2100,6 +2100,11 @@ vendor/firmware/soc3_0_ram_mcu_e1_hdr.bin
 vendor/firmware/soc3_0_ram_wifi_1a_1_hdr.bin
 vendor/firmware/soc3_0_ram_wmmcu_1a_1_hdr.bin
 
+# NFC (Firmware)
+vendor/firmware/st21nfc_fw7.bin
+vendor/firmware/st21nfc_fw.bin
+
+
 # Vibrator
 vendor/firmware/0_click_P_RTP.bin
 vendor/firmware/1_doubelClick_P_RTP.bin

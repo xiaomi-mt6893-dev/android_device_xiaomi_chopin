@@ -1,31 +1,15 @@
-# This file needs to be executed by vendor_init at boot of the device,
-# in normal and FM mode.
-
-# Start the HAL service in all modes (FM, meta, normal)
-on post-fs
-    start nfc_hal_service
-
-# For factory mode, nfcstackp to create the socket as vendor here
-on post-fs-data
-    mkdir /data/vendor/nfc_socket 0770 nfc nfc
-
-# start STFlashTool at boot to ensure a NFC FW is loaded for factory tests
-service stflashtool /vendor/bin/STFlashTool
-    class late_start
-    user nfc
-    group nfc
-    oneshot
-
-service nfcstackp_vendor /vendor/bin/nfcstackp-vendor
-    class late_start
+service nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.st
+    override
+    class hal
     user nfc
     group nfc
     disabled
 
-# start nfcstackp_vendor by properties (FM or EM HIDL will set value)
-on property:vendor.nfc.nfcstackp.enable=0
-    stop nfcstackp_vendor
+on early-init && property:ro.boot.product.hardware.sku=choping
+    setprop ro.boot.product.vendor.sku nfc
 
-on property:vendor.nfc.nfcstackp.enable=1
-    start nfcstackp_vendor
+on early-init && property:ro.boot.product.hardware.sku=chopin
+    setprop ro.boot.product.vendor.sku nfc
 
+on init && property:ro.boot.product.vendor.sku=nfc
+    start nfc_hal_service

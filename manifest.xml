@@ -276,5 +276,11 @@
         </interface>
         <fqname>@1.0::IDisplayFeature/default</fqname>
     </hal>
+   <hal override="true">
+        <name>android.hardware.nfc</name>
+        <transport>hwbinder</transport>
+    </hal>
 </manifest>
+
+
 
