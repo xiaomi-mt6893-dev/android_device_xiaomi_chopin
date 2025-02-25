@@ -8,4 +8,5 @@ persist.vendor.vzw_device_type=0
 persist.vendor.wfc.sys_wfc_support=1
 persist.vendor.mdlog.flush_log_ratio=0
 
-
+# Zygote
+zygote.critical_window.minute=10
