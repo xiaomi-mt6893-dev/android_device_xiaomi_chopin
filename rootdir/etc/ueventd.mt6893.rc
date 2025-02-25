@@ -181,3 +181,6 @@
 #elliptic sensor
 /dev/elliptic0            0644   system     system
 /dev/elliptic1            0644   system     system
+
+# Raw HID devices
+/dev/hidraw*                           0660   system     system
