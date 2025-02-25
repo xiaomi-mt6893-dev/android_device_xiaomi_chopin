@@ -1,0 +1,12 @@
+attribute hal_dms;
+attribute hal_dms_client;
+attribute hal_dms_server;
+attribute hal_mlipay;
+attribute hal_mlipay_client;
+attribute hal_mlipay_server;
+attribute hal_mtdservice;
+attribute hal_mtdservice_client;
+attribute hal_mtdservice_server;
+attribute hal_mfidoca;
+attribute hal_mfidoca_client;
+attribute hal_mfidoca_server;
