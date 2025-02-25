@@ -94,6 +94,10 @@ ro.vendor.wifi.sap.interface=ap0
 ro.vendor.wlan.chrdev=wmt_chrdev_wifi
 ro.vendor.wlan.gen=gen4m
 
+# NFC
+ro.vendor.se.type=eSE,HCE,UICC
+ro.vendor.nfc.repair=1
+
 # Connsys
 persist.vendor.connsys.chipid=-1
 persist.vendor.connsys.coredump.mode=1
