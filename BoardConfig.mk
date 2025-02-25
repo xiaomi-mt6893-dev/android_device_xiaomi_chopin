@@ -145,6 +145,9 @@ TARGET_KERNEL_SOURCE := $(DEVICE_PATH)-kernel/kernel-headers
 DEVICE_MANIFEST_SKUS += nfc
 DEVICE_MANIFEST_NFC_FILES := $(DEVICE_PATH)/manifest.xml
 
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
@@ -153,6 +156,8 @@ VENDOR_SECURITY_PATCH := 2024-04-01
 
 # SELinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Verified Boot
