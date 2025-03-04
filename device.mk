@@ -156,6 +156,10 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1.vendor \
     libbluetooth_audio_session
 
+PRODUCT_COPY_FILES += \
+     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/bt/vendor,$(TARGET_COPY_OUT_VENDOR)/etc) \
+     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/bt/system,$(TARGET_COPY_OUT_SYSTEM)/bluetooth/etc)
+
 # Overlays
 PRODUCT_PACKAGES += \
     SettingsResOverlayAres \

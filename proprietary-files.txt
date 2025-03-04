@@ -183,7 +183,6 @@ vendor/etc/init/init.batterysecret.rc
 vendor/bin/bt_dump
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
 vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
-vendor/firmware/BT_FW.cfg
 vendor/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
 vendor/lib/libbluetooth_mtk.so
 vendor/lib/libbluetooth_mtk_pure.so
