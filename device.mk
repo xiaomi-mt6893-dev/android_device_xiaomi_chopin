@@ -122,13 +122,18 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 			
 # Audio
 TARGET_EXCLUDES_AUDIOFX := true
+$(call soong_config_set,android_hardware_mediatek_usb,audio_accessory_supported,true)
 
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.service \
     android.hardware.soundtrigger@2.3-impl:32 \
-    audio.bluetooth.default
+    audio.bluetooth.default \
+    audio.r_submix.default \
+    audio_policy.stub \
+    audio.usb.default 
+
 PRODUCT_PACKAGES += \
     libaudiofoundation.vendor \
     libunwindstack.vendor \
@@ -136,7 +141,8 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libdynproc \
     libhapticgenerator \
-    libsqlite.vendor 
+    libsqlite.vendor \
+    libnbaio_mono 
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
