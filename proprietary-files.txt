@@ -1840,7 +1840,6 @@ vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
 
 # Sensors
 vendor/etc/elliptic_sensor.xml
-vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so
 vendor/lib64/hw/sensors.elliptic.so
 vendor/lib64/hw/sensors.mt6893.so
 vendor/lib64/hw/sensors.touch.detect.so
