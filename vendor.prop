@@ -33,6 +33,9 @@ persist.vendor.audio.misound.disable=true
 
 # AEE
 ro.vendor.have_aee_feature=0
+ro.vendor.have_aeev_feature=1
+ro.vendor.aee.convert64=0
+
 
 # Bluetooth
 bluetooth.profile.asha.central.enabled=true
