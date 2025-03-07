@@ -55,6 +55,9 @@ vendor/lib/libvow_ap_test_nn.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
 vendor/etc/cs35l41_cal.wav
 
+# Audio-Firmware - from amber_HyperOS_V816.0.4.0.UKWMIXM
+vendor/firmware/cs35l41-delta-rcv-handset.txt|7cf9329bc89cdc35ef3d9ee2162dd293e7e9cfc0
+
 # Audio (configurations)
 vendor/etc/audio_param/AudioParamOptions.xml
 vendor/etc/audio_param/AudioParamOptions_vext.xml

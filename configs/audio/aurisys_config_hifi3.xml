@@ -39,8 +39,7 @@
         <!-- for aurisys_scene playback for all mixed streamout -->
         <aurisys_scenario aurisys_scenario="AURISYS_SCENARIO_DSP_PLAYBACK">
             <downlink_library_name_list digital_gain_lib_name="">
-                <library name="mtk_bessound"/>
-                <library name="mtk_dcrflt"/>
+                <library name="aurisys_demo"/>
             </downlink_library_name_list>
         </aurisys_scenario>
         <!-- for aurisys_scene playback with smartpa for all mixed streamout -->
@@ -476,7 +475,7 @@
                 <component aurisys_scenario="AURISYS_SCENARIO_DSP_RECORD"
                            sample_rate="48000"
                            audio_format="AUDIO_FORMAT_PCM_16_BIT"
-                           frame_size_ms="10"
+                           frame_size_ms="20"
                            b_interleave="0"
                            enable_log="0"
                            enable_raw_dump="0"
@@ -484,7 +483,7 @@
                            enhancement_mode="0">
                     <uplink_process>
                         <buf_in  data_buf_type="DATA_BUF_UPLINK_IN"
-                                 num_channels="1,2"/>
+                                 num_channels="1,2,3"/>
                         <buf_out data_buf_type="DATA_BUF_UPLINK_OUT"
                                  num_channels="1,2"/>
                     </uplink_process>
@@ -501,7 +500,7 @@
                            enhancement_mode="0">
                     <uplink_process>
                         <buf_in  data_buf_type="DATA_BUF_UPLINK_IN"
-                                 num_channels="1,2"/>
+                                 num_channels="1,2,3"/>
                         <buf_out data_buf_type="DATA_BUF_UPLINK_OUT"
                                  num_channels="1,2"/>
                     </uplink_process>

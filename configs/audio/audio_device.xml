@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
     <card name="mt6885mt6359" />
-    <!--<outputdevice name="RCV_OUT" path="I2S3" /> -->
+    <outputdevice name="RCV_OUT" path="I2S3" />
     <outputdevice name="SPK_OUT" path="I2S3" />
     <outputdevice name="VOICE_SPK_OUT" path="I2S3" />
     <mixercontrol>
@@ -14,12 +14,14 @@
         <kctl name="RCV DSP1 Preload Switch" value="1" />
         <kctl name="RCV PCM Source" value="DSP" />
         <kctl name="RCV PCM Soft Ramp" value="4ms" />
-        <kctl name="RCV AMP PCM Gain" value="16" />
+        <kctl name="RCV AMP PCM Gain" value="18" />
         <kctl name="RCV ASP TX1 Source" value="DSPTX1" />
         <kctl name="RCV ASP TX2 Source" value="Zero" />
         <kctl name="RCV ASPTX Ref" value="Ref" />
         <kctl name="RCV DSP RX1 Source" value="ASPRX1" />
         <kctl name="RCV DSP RX2 Source" value="ASPRX1" />
+        <kctl name="RCV Noise Gate" value="16245" />
+        <kctl name="RCV VPBR Config" value="33575689" />
         <kctl name="RCV Fast Use Case Delta File" value="cs35l41-delta-rcv-music.txt"/>
         <kctl name="RCV Fast Use Case Switch Enable" value="0"/>
 
@@ -27,12 +29,14 @@
         <kctl name="DSP1 Preload Switch" value="1" />
         <kctl name="PCM Source" value="DSP" />
         <kctl name="PCM Soft Ramp" value="4ms" />
-        <kctl name="AMP PCM Gain" value="17" />
+        <kctl name="AMP PCM Gain" value="18" />
         <kctl name="ASP TX1 Source" value="Zero" />
         <kctl name="ASP TX2 Source" value="DSPTX1" />
         <kctl name="DSP RX1 Source" value="ASPRX2" />
         <kctl name="DSP RX2 Source" value="ASPRX2" />
         <kctl name="ASPTX Ref" value="Ref" />
+        <kctl name="Noise Gate" value="16245" />
+        <kctl name="VPBR Config" value="33575688" />
         <kctl name="Fast Use Case Delta File" value="cs35l41-delta-spk-music.txt"/>
         <kctl name="Fast Use Case Switch Enable" value="0"/>
         <!-- SmartPA Preload End -->
@@ -57,25 +61,37 @@
         <path name="receiver_output" value="turnon">
             <kctl name="DAC In Mux" value="Normal Path" />
             <kctl name="RCV Mux" value="Voice Playback" />
-            <kctl name="RCV Switch" value= "1" />
         </path>
         <path name="receiver_output" value="turnoff">
             <kctl name="RCV Mux" value="Open" />
-            <kctl name="RCV Switch" value= "0" />
         </path>
         <path name="RCV_OUT_DEVICE_CTRL_PRE_PMU" value="turnon">
+            <kctl name="RCV ASP TX1 Source" value="DSPTX1" />
+            <kctl name="RCV ASP TX2 Source" value="Zero" />
+            <kctl name="RCV DSP RX1 Source" value="ASPRX1" />
+            <kctl name="RCV DSP RX2 Source" value="ASPRX1" />
+            <kctl name="RCV ASPTX Ref" value="Ref" />
+            <kctl name="RCV PCM Source" value="ASP" />
+            <kctl name="RCV AMP PCM Gain" value="13" />
+            <kctl name="Noise Gate" value="51" />
+            <kctl name="RCV Noise Gate" value="51" />
+            <!-- although handset tuning does not take effect, but it is needed due to RCV pinctrl -->
+            <kctl name="RCV Fast Use Case Delta File" value="cs35l41-delta-rcv-handset.txt"/>
             <kctl name="ASP TX1 Source" value="Zero" />
             <kctl name="ASP TX2 Source" value="Zero" />
             <kctl name="DSP RX1 Source" value="Zero" />
             <kctl name="DSP RX2 Source" value="Zero" />
             <kctl name="ASPTX Ref" value="None" />
-            <kctl name="DAC In Mux" value="Normal Path" />
-            <kctl name="RCV Mux" value="Voice Playback" />
-            <kctl name="RCV Switch" value= "1" />
+            <kctl name="PCM Source" value="None" />
         </path>
         <path name="RCV_OUT_DEVICE_CTRL_PRE_PMU" value="turnoff">
-            <kctl name="RCV Mux" value="Open" />
-            <kctl name="RCV Switch" value= "0" />
+            <kctl name="RCV ASP TX1 Source" value="Zero" />
+            <kctl name="RCV ASP TX2 Source" value="Zero" />
+            <kctl name="RCV DSP RX1 Source" value="Zero" />
+            <kctl name="RCV DSP RX2 Source" value="Zero" />
+            <kctl name="RCV ASPTX Ref" value="None" />
+            <kctl name="RCV PCM Source" value="None" />
+	    <kctl name="RCV Fast Use Case Switch Enable" value="0"/>
         </path>
        <!-- 2-in-1 speaker output-->
         <path name="two_in_one_speaker_output" value="turnon">
@@ -97,6 +113,9 @@
             <kctl name="DSP RX1 Source" value="ASPRX2" />
             <kctl name="DSP RX2 Source" value="ASPRX2" />
             <kctl name="ASPTX Ref" value="Ref" />
+            <kctl name="AMP PCM Gain" value="18" />
+            <kctl name="Noise Gate" value="16245" />
+
             <kctl name="Fast Use Case Delta File" value="cs35l41-delta-spk-music.txt"/>
             <kctl name="Fast Use Case Switch Enable" value="1"/>
 
@@ -106,6 +125,9 @@
             <kctl name="RCV ASPTX Ref" value="Ref" />
             <kctl name="RCV DSP RX1 Source" value="ASPRX1" />
             <kctl name="RCV DSP RX2 Source" value="ASPRX1" />
+            <kctl name="RCV AMP PCM Gain" value="18" />
+            <kctl name="RCV Noise Gate" value="16245" />
+
             <kctl name="RCV Fast Use Case Delta File" value="cs35l41-delta-rcv-music.txt"/>
             <kctl name="RCV Fast Use Case Switch Enable" value="1"/>
         </path>
@@ -119,9 +141,10 @@
             <kctl name="RCV DSP RX1 Source" value="ASPRX1" />
             <kctl name="RCV DSP RX2 Source" value="ASPRX1" />
             <kctl name="RCV ASPTX Ref" value="Ref" />
-            <kctl name="RCV AMP PCM Gain" value="14" />
             <kctl name="RCV PCM Source" value="DSP" />
-            <kctl name="RCV Fast Use Case Switch Enable" value="0"/>
+            <kctl name="RCV AMP PCM Gain" value="15" />
+            <kctl name="RCV Noise Gate" value="51" />
+	    <kctl name="RCV Fast Use Case Switch Enable" value="0"/>
             <kctl name="RCV Fast Use Case Delta File" value="cs35l41-delta-rcv-handsfree.txt"/>
             <kctl name="RCV Fast Use Case Switch Enable" value="1"/>
 
@@ -131,14 +154,15 @@
             <kctl name="DSP RX2 Source" value="ASPRX2" />
             <kctl name="ASPTX Ref" value="Ref" />
             <kctl name="PCM Source" value="DSP" />
-            <kctl name="Fast Use Case Switch Enable" value="0"/>
+            <kctl name="Noise Gate" value="51" />
+            <kctl name="AMP PCM Gain" value="18" />
+	    <kctl name="Fast Use Case Switch Enable" value="0"/>
             <kctl name="Fast Use Case Delta File" value="cs35l41-delta-spk-handsfree.txt"/>
             <kctl name="Fast Use Case Switch Enable" value="1"/>
         </path>
         <path name="VOICE_SPK_OUT_DEVICE_CTRL_PRE_PMU" value="turnoff">
             <kctl name="RCV Fast Use Case Switch Enable" value="0"/>
             <kctl name="Fast Use Case Switch Enable" value="0"/>
-            <kctl name="RCV AMP PCM Gain" value="16" />
         </path>
         <!--headhpone_speaker output-->
         <path name="headphoneSpeaker_output" value="turnon">
@@ -1850,18 +1874,16 @@
             <kctl name="UL5_CH2 ADDA_UL_CH2" value="0" />
         </path>
         <path name="ultrasound-proximity" value="turnon">
-            <kctl name="Ultrasound Mode" value="950" />
+            <kctl name="Ultrasound Mode" value="980" />
         </path>
         <path name="ultrasound-proximity" value="turnoff">
             <kctl name="Ultrasound Mode" value="0"  />
         </path>
         <path name="ultrasound-proximity-speaker" value="turnon">
-            <kctl name="Ultrasound Mode" value="951" />
-            <kctl name="Ultrasound Log Level" value="3" />
+            <kctl name="Ultrasound Mode" value="981" />
         </path>
         <path name="ultrasound-proximity-speaker" value="turnoff">
             <kctl name="Ultrasound Mode" value="0"  />
-            <kctl name="Ultrasound Log Level" value="3" />
         </path>
     </mixercontrol>
 </root>
