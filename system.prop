@@ -33,3 +33,12 @@ ro.kernel.zio=38,108,105,16
 # Power Management & Fast Boot (IPO)
 sys.ipo.pwrdncap=2
 sys.ipo.disable=1
+
+
+# Wi-Fi
+wifi.interface=wlan0
+ro.mediatek.wlan.wsc=1
+ro.mediatek.wlan.p2p=1
+mediatek.wlan.ctia=0
+wifi.tethering.interface=ap0
+wifi.direct.interface=p2p0
