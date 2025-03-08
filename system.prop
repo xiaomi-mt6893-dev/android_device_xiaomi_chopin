@@ -43,3 +43,9 @@ ro.mediatek.wlan.p2p=1
 mediatek.wlan.ctia=0
 wifi.tethering.interface=ap0
 wifi.direct.interface=p2p0
+
+# Audio
+audio.offload.disable=true
+ro.audio.usb.period_us=16000
+ro.camera.sound.forced=0
+ro.audio.silent=0
