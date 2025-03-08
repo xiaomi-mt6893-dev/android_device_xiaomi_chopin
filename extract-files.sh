@@ -76,7 +76,6 @@ vendor/bin/mnld | \
 vendor/lib*/libaalservice.so | \
 vendor/lib64/libcam.utils.sensorprovider.so)
     "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
-    "$PATCHELF" --replace-needed "libsensorndkbridge.so" "libsensorndkbridge-v31.so" "${2}"
     ;;
 vendor/etc/init/init.batterysecret.rc)
     sed -i '/seclabel/d' "$2"
