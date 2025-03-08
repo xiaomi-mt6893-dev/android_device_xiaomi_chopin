@@ -29,6 +29,7 @@ ro.mtk_perf_response_time=1
 
 # I/O
 ro.kernel.zio=38,108,105,16
+ro.iorapd.enable=false
 
 # Power Management & Fast Boot (IPO)
 sys.ipo.pwrdncap=2
