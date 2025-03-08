@@ -183,6 +183,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
    LineageSDKAres
 
+# VNDK
+PRODUCT_PACKAGES += \
+    vndservicemanager
+
+
 # ConsumerIr
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.example
