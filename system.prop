@@ -26,6 +26,9 @@ ro.mediatek.version.release=alps-mp-t0.mp1.tc8sp1-V1_xiaomi.t0mp1.vf.sp.64.armv8
 ro.mtk_perf_simple_start_win=1
 ro.mtk_perf_fast_start_win=1
 ro.mtk_perf_response_time=1
+vendor.mtk.hbt.enabled=0
+hbt.debug=off
+
 
 # I/O
 ro.kernel.zio=38,108,105,16
