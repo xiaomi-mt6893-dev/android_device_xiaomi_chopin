@@ -49,3 +49,10 @@ audio.offload.disable=true
 ro.audio.usb.period_us=16000
 ro.camera.sound.forced=0
 ro.audio.silent=0
+
+# Media
+debug.stagefright.c2inputsurface=-1
+ro.vendor.mtk_omacp_support=1
+ro.vendor.mtk_flv_playback_support=1
+media.stagefright.thumbnail.prefer_hw_codecs=true
+vendor.mtk_thumbnail_optimization=true
