@@ -10,7 +10,7 @@ persist.vendor.mdlog.flush_log_ratio=0
 
 # Zygote
 zygote.critical_window.minute=10
-
+ro.zygote.preload.enable=0
 
 # IMS
 persist.dbg.volte_avail_ovr=1
