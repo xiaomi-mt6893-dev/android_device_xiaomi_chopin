@@ -1634,7 +1634,7 @@ vendor/lib/libvpu.so
 vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
 vendor/lib64/libvpu.so
-
+vendor/lib64/libmp3dec_mtk.so
 
 # Media (Configs)
 vendor/etc/mtk_omx_core.cfg
@@ -1673,7 +1673,7 @@ vendor/lib/libmp3dec_mtk.so
 vendor/lib/libstagefrighthw.so
 vendor/lib64/libstagefrighthw.so
 
-# Libstagefright OMX Blobs - from agate_global_V816.0.11.0.UKWMIXM
+# Libstagefright OMX Blobs
 vendor/lib/libstagefright_amrnb_common.so
 vendor/lib/libstagefright_enc_common.so
 vendor/lib/libstagefright_soft_aacdec.so
