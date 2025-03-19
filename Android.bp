@@ -6,3 +6,9 @@
 
 soong_namespace {
 }
+
+cc_library_shared {
+    name: "libldacBT_bco",
+    vendor_available: true,
+    srcs: [],
+}
