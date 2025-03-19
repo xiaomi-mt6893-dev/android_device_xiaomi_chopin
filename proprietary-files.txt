@@ -1487,9 +1487,9 @@ vendor/lib64/libgpud.so
 vendor/lib64/libgralloc_extra.so
 vendor/lib64/libgralloc_metadata.so
 vendor/lib64/libgralloctypes_mtk.so
+vendor/lib64/libhdrvideo.so
 vendor/lib64/libion_mtk.so
 vendor/lib64/libion_ulit.so
-vendor/lib64/libhdrvideo.so
 vendor/lib64/libmml.so
 vendor/lib64/libneuroeara.so
 vendor/lib64/libpq_cust_base.so
@@ -1619,90 +1619,87 @@ vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
 vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 
+# Media
+vendor/bin/vpud
+vendor/etc/init/vpud.rc
+vendor/lib/AV1SecureVdecCA.so
+vendor/lib/AVCSecureVdecCA.so
+vendor/lib/HEVCSecureVdecCA.so
+vendor/lib/VP9SecureVdecCA.so
+vendor/lib/libvcodec_oal.so
+vendor/lib/libvcodec_utility.so
+vendor/lib/libvcodecdrv.so
+vendor/lib/libvcodecdrv_header_stub.so
+vendor/lib/libvpu.so
+vendor/lib/libvpu5.so
+vendor/lib/libvpud_vcodec.so
+vendor/lib64/libvpu.so
 
-# Media - from agate_global_V816.0.11.0.UKWMIXM
-vendor/bin/vpud|ff8ea1c5eb369bdb1319251f6f469d7bb4c82382
-vendor/etc/init/vpud.rc|b4d3ea1ac1b3ab28aed836de823876bc525217e6
-vendor/lib/AV1SecureVdecCA.so|95c89c1de9f0727a68c1f170cf96fab5b930977c
-vendor/lib/AVCSecureVdecCA.so|67bab460e2bcb2d2992338d1c0beab79e5a3de09
-vendor/lib/HEVCSecureVdecCA.so|f3fc3b59ef570250f533cea019b794377a8f77c0
-vendor/lib/libh264dec_customize.so|e85ef1978db37d370d0b7f3f497d8f09eb8d0578
-vendor/lib/libh264dec_sa.ca7.so|6d94ca9094e2eb10ba90628551803ab5851351bf
-vendor/lib/libh264enc_sa.ca7.so|b0d84268ac514f7a6acee48915eb907cf2b3d6c0
-vendor/lib/libHEVCdec_sa.ca7.android.so|f6a71c520ba3d683936ec6d7afe378ddf24f9c00
-vendor/lib/libhevce_sb.ca7.android.so|3448542ca4ce04a8c1146a69dce4d7aa465de917
-vendor/lib/libmp4enc_sa.ca7.so|9c40de7c9c1f42f23453339e37928d45e224aeb3
-vendor/lib/libvcodec_oal.so|239de6e989929792f0aea8a15dc2354b1459a686
-vendor/lib/libvcodec_utility.so|a908a225385795f5749d36a1f43455a5d97e6bde
-vendor/lib/libvcodecdrv_header_stub.so|62cfbcf3ac160ad59e0fd657188328036d98a45d
-vendor/lib/libvcodecdrv.so|ff54c0077ed07c396276dd79d5f2168eac4ad99b
-vendor/lib/libvp8dec_sa.ca7.so|eae218c2034170e840d968fff2f9613b7addbd3b
-vendor/lib/libvp8enc_sa.ca7.so|43b2f08ee6b9ae55157723b8e37e97653a865f73
-vendor/lib/libvp9dec_sa.ca7.so|319464ab49d53a88a4b4a90cd9e5312f9ecacc52
-vendor/lib/libvpu.so|b2cadf38ae7afb60356eb238c718b6dc432765d5
-vendor/lib/libvpu5.so|d55a88f9c0c25db07052f243dacbe87c59ddffb6
-vendor/lib/libvpud_vcodec.so|fbb0f93b576d19af94c92479c149e48b66d77f73
-vendor/lib/VP9SecureVdecCA.so|ac44b87675c06fa3c1e80001c589200eaae25243
-vendor/lib64/libadpcmdec_mtk.so|8386405bf770d1ad7652f76f4f38e9c26285c88a
-vendor/lib/libopus.so|cf2c2bf6f02f4fe2a492d59f9164b4ba41f946bd
-vendor/lib/libvorbisidec.so|0791d1780d51b7d4307f34c7172398cf1fcc4bf8
-vendor/lib64/libmp3dec_mtk.so|ee66320ed4d137e705b3a1f79abc1c0c5d8364d4
-vendor/lib64/libvpu.so|18cd888c24f6223e5bd1298c9d43e1dc42f61c5f
 
-# Media (Codec2) - from agate_global_V816.0.11.0.UKWMIXM
-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b|ba23175801971d7da8dcb632b45fc44da87e21ec|73bd64371f3846e429712232359f24008187b647
-vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc|e09ad9455fc75875f6ccef32572bfc0894c98ab5|34912fbccc4aedfb072e86634951af6e8f736c04
-vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml|9d6aa618b44ce23d3040f1f994692692458a9b7c
-vendor/lib64/libcodec2_mtk_c2store.so|1532f540228912668e13346fa53075fa46088731
-vendor/lib64/libcodec2_mtk_vdec.so|f673cb93ef300db88cd7040515e184e93028657f
-vendor/lib64/libcodec2_mtk_venc.so|ed970fcadfdbaf7bb0583ae6b38f79afacf1d103
-vendor/lib64/libcodec2_soft_mtk_alacdec.so|1976681d101435e24a3f731e639ec619b415c838
-vendor/lib64/libcodec2_soft_mtk_apedec.so|014f02489ac92039c482463f8cd0207aef45b385
-vendor/lib64/libcodec2_soft_mtk_imaadpcmdec.so|0ae5dd00ea7786fa6940e1f53c76c00c636eaea5
-vendor/lib64/libcodec2_soft_mtk_mp3dec.so|de0ff46aacb46846db35ba0ae198e61faf640ea5
-vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so|8490999b7d867ab6d924ca9de687cfeab9536def
-vendor/lib64/libcodec2_vpp_qt_plugin.so|e9b9f42fbad12d71a8590152649280f482bfea28
-vendor/lib64/libcodec2_vpp_rs_plugin.so|76c2396c4448f39d0c5d0a34b61c90b8fa118960
-vendor/lib64/libformatter.so|c45a83fc667b707ded7b4dc7c6fde819cf819647
+# Media (Configs)
+vendor/etc/mtk_omx_core.cfg
+vendor/etc/mtk_platform_codecs_config.xml
+vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy
+vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy
+vendor/etc/seccomp_policy/mediacodec.policy
+vendor/etc/seccomp_policy/mediaextractor.policy
+vendor/etc/seccomp_policy/mediaswcodec.policy
 
-# Media (OMX) - from agate_global_V816.0.11.0.UKWMIXM
-vendor/etc/mtk_omx_core.cfg|686aad3302adf1f81f1291441b8335b0fb3f40cd
-vendor/lib/libMtkOmxAdpcmDec.so|22c6eefa44617f00074fdae7d6d4a2060bd6860c
-vendor/lib/libMtkOmxAlacDec.so|8be062137aadeea9cc22fd2d17031ff6a244a352
-vendor/lib/libMtkOmxApeDec.so|f21fddf5ef449edb172a15ef2a656736dbb21d99
-vendor/lib/libMtkOmxCore.so|6c9b608e99a7856566da926c340286094a42cc0e
-vendor/lib/libMtkOmxGsmDec.so|1587481efdc479c82a0a1d49951f7b8024239e80
-vendor/lib/libMtkOmxMp3Dec.so|1c64b3a604b515b2fce4f2f102e8fa9dc905c4b9
-vendor/lib/libadpcmdec_mtk.so|78a450d4cc083e51674bc171442963454a65f7ea
-vendor/lib/libmp3dec_mtk.so|5f097ba4f1e635e86d06f154b1fbcd11a6887130
-vendor/lib/libstagefrighthw.so|3f5f689fc15f29bde2f26ac2b4b7943a3d49d221
-vendor/lib64/libstagefrighthw.so|71cc034573972efc21695af2ef3e3d78dc21cd26
+# Media (Codec2)
+vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
+vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
+vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml
+vendor/lib64/libcodec2_mtk_c2store.so
+vendor/lib64/libcodec2_mtk_vdec.so
+vendor/lib64/libcodec2_mtk_venc.so
+vendor/lib64/libcodec2_soft_mtk_alacdec.so
+vendor/lib64/libcodec2_soft_mtk_apedec.so
+vendor/lib64/libcodec2_soft_mtk_imaadpcmdec.so
+vendor/lib64/libcodec2_soft_mtk_mp3dec.so
+vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so
+vendor/lib64/libcodec2_vpp_qt_plugin.so
+vendor/lib64/libcodec2_vpp_rs_plugin.so
+vendor/lib64/libformatter.so
+
+# Media (OMX)
+vendor/lib/libMtkOmxAdpcmDec.so
+vendor/lib/libMtkOmxAlacDec.so
+vendor/lib/libMtkOmxApeDec.so
+vendor/lib/libMtkOmxCore.so
+vendor/lib/libMtkOmxGsmDec.so
+vendor/lib/libMtkOmxMp3Dec.so
+vendor/lib/libadpcmdec_mtk.so
+vendor/lib/libmp3dec_mtk.so
+vendor/lib/libstagefrighthw.so
+vendor/lib64/libstagefrighthw.so
 
 # Libstagefright OMX Blobs - from agate_global_V816.0.11.0.UKWMIXM
-vendor/lib/libstagefright_amrnb_common.so|1688d98f4bf7854c42a05aeaf153c747317ffead
-vendor/lib/libstagefright_enc_common.so|c9bd58c646e41b5d0dd7922904caed2a04da8e8e
-vendor/lib/libstagefright_soft_aacdec.so|4bb16b149055f331e3e99cfa7962c7e321c0a7ac
-vendor/lib/libstagefright_soft_aacenc.so|517e994cbc58b3002d43d7d77ca847b6ecc02cdc
-vendor/lib/libstagefright_soft_amrdec.so|a4c387164ff579e116d4ab2d8332b9678fb3b70e
-vendor/lib/libstagefright_soft_amrnbenc.so|9f7f9c77698419f4589752b64fc0eba5e6714157
-vendor/lib/libstagefright_soft_amrwbenc.so|1923cb070f9d52e411db67781e978f1d50b0327d
-vendor/lib/libstagefright_soft_avcdec.so|987194190212f03e844420e2e8ecf09013b18364
-vendor/lib/libstagefright_soft_avcenc.so|1028e6b278f5ee1bacdafd8feee151133a4d8dea
-vendor/lib/libstagefright_flacdec.so|0bad2cd90d8bc0aeeb3b649819a4fe768b7f8ad5
-vendor/lib/libstagefright_soft_flacdec.so|fdbb8c3b511e452c43f1041fbeb8d3acea3a2cf2
-vendor/lib/libstagefright_soft_flacenc.so|aa9f7520ab4e413e1cd300304435b6b8cbec4ec9
-vendor/lib/libstagefright_soft_g711dec.so|a7b01dede5fcf804c002ba71d3ee4cdc13a226cf
-vendor/lib/libstagefright_soft_gsmdec.so|c9e7a230f449627d723a6b39a305f030559666b9
-vendor/lib/libstagefright_soft_hevcdec.so|b4757fdcb3744e03954c6af37c2fa91e6743d856
-vendor/lib/libstagefright_soft_mp3dec.so|9fddfa4f129b79ba09cbf2acedd35ccec277d02a
-vendor/lib/libstagefright_soft_mpeg2dec.so|d14233b61ae610f61c33a85ec1a5716c63e0f554
-vendor/lib/libstagefright_soft_mpeg4dec.so|29cc80714f0df881a859a6414e18a54cc68d27d1
-vendor/lib/libstagefright_soft_mpeg4enc.so|d109af424fff5c87193e340bbc8c6bb330f75dd8
-vendor/lib/libstagefright_soft_opusdec.so|f6e499afbcf83fc51eafc5d4b49b9706671bedd3
-vendor/lib/libstagefright_soft_rawdec.so|cd7829a17ca6423f2f8a9157db8d71dd50ac8b24
-vendor/lib/libstagefright_soft_vorbisdec.so|09584e098ea6ef8220e87ccc30cf79fb0c83256f
-vendor/lib/libstagefright_soft_vpxdec.so|f9caae5443f0998dc261c512c89856197f80a6bd
-vendor/lib/libstagefright_soft_vpxenc.so|0e95ef761ab61c0b687f49a02b4e4f6a9b1fb683
+vendor/lib/libstagefright_amrnb_common.so
+vendor/lib/libstagefright_enc_common.so
+vendor/lib/libstagefright_soft_aacdec.so
+vendor/lib/libstagefright_soft_aacenc.so
+vendor/lib/libstagefright_soft_amrdec.so
+vendor/lib/libstagefright_soft_amrnbenc.so
+vendor/lib/libstagefright_soft_amrwbenc.so
+vendor/lib/libstagefright_soft_avcdec.so
+vendor/lib/libstagefright_soft_avcenc.so
+vendor/lib/libstagefright_flacdec.so
+vendor/lib/libstagefright_soft_flacdec.so
+vendor/lib/libstagefright_soft_flacenc.so
+vendor/lib/libstagefright_soft_g711dec.so
+vendor/lib/libstagefright_soft_gsmdec.so
+vendor/lib/libstagefright_soft_hevcdec.so
+vendor/lib/libstagefright_soft_mp3dec.so
+vendor/lib/libstagefright_soft_mpeg2dec.so
+vendor/lib/libstagefright_soft_mpeg4dec.so
+vendor/lib/libstagefright_soft_mpeg4enc.so
+vendor/lib/libstagefright_soft_opusdec.so
+vendor/lib/libstagefright_soft_rawdec.so
+vendor/lib/libstagefright_soft_vorbisdec.so
+vendor/lib/libstagefright_soft_vpxdec.so
+vendor/lib/libstagefright_soft_vpxenc.so
+
+
 
 # MMS
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service
