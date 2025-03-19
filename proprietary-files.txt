@@ -1649,17 +1649,19 @@ vendor/etc/seccomp_policy/mediaswcodec.policy
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
 vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml
-vendor/lib64/libcodec2_mtk_c2store.so
-vendor/lib64/libcodec2_mtk_vdec.so
-vendor/lib64/libcodec2_mtk_venc.so
-vendor/lib64/libcodec2_soft_mtk_alacdec.so
-vendor/lib64/libcodec2_soft_mtk_apedec.so
-vendor/lib64/libcodec2_soft_mtk_imaadpcmdec.so
-vendor/lib64/libcodec2_soft_mtk_mp3dec.so
-vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so
-vendor/lib64/libcodec2_vpp_qt_plugin.so
-vendor/lib64/libcodec2_vpp_rs_plugin.so
-vendor/lib64/libformatter.so
+
+# Media (Codec2) - from Tecno_CK8N-user14-UP1A.231005.007-614108
+vendor/lib/libcodec2_mtk_c2store.so|592b91051b5f98f4339d3ceb18afb6dd715d66fa
+vendor/lib/libcodec2_mtk_vdec.so|b8750ee042ba6e8e84aa47067d0f1deed43d05b9
+vendor/lib/libcodec2_mtk_venc.so|2276d3d5bc4795d8f36921432123cecadbaa97f2
+vendor/lib/libcodec2_soft_mtk_alacdec.so|09df8479b8e7065138c22acaa5726c74aa9f3b74
+vendor/lib/libcodec2_soft_mtk_apedec.so|08e36e1bba61dce76c28e1ee58b2671b36397f13
+vendor/lib/libcodec2_soft_mtk_imaadpcmdec.so|5b460a0e9683e1c19618dd26cbbd2688ac7c3175
+vendor/lib/libcodec2_soft_mtk_mp3dec.so|11d8ca0a79816a2d89bff2990806263404987f9b
+vendor/lib/libcodec2_soft_mtk_msadpcmdec.so|96568530bb7343d36b57b156ccdebb997c8c881d
+vendor/lib/libcodec2_vpp_qt_plugin.so|a1bd202d4945032bbb42bf5a9ea2757f57387a18
+vendor/lib/libcodec2_vpp_rs_plugin.so|47207eac0116f233b9df68943726e86c11b8d118
+vendor/lib/libformatter.so|66fe4cc7e58690eab573abb4999f074b8dd83292 
 
 # Media (OMX)
 vendor/lib/libMtkOmxAdpcmDec.so
