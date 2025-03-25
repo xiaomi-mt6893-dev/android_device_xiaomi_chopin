@@ -405,7 +405,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libavservices_minijail_vendor \
-    libstagefright_foundation-v33 
+    libstagefright_foundation-v33 \
+    libstagefright_softomx_plugin.vendor \
+    libcodec2_soft_common.vendor \
+    libsfplugin_ccodec_utils.vendor 
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
