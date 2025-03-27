@@ -33,3 +33,5 @@
 # Thermal
 /(vendor|system/vendor)/bin/mi_thermald                                                                u:object_r:mi_thermald_exec:s0
 
+# Vibrator
+/(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.vibrator\.service                             u:object_r:hal_vibrator_default_exec:s0
