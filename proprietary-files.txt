@@ -1635,6 +1635,7 @@ vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
 vendor/lib64/libvpu.so
 vendor/lib64/libmp3dec_mtk.so
+vendor/lib64/libadpcmdec_mtk.so
 
 # Media (Configs)
 vendor/etc/mtk_platform_codecs_config.xml
