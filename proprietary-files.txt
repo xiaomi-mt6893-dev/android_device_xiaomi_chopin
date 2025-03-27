@@ -2184,6 +2184,9 @@ vendor/firmware/soc3_0_ram_mcu_1a_1_hdr.bin|1913077cd0e11637330a01345a973ce2f80e
 vendor/firmware/soc3_0_ram_mcu_e1_hdr.bin|c9633025811954c13cb5a3a2ab24041d9993d1ee
 vendor/firmware/soc3_0_ram_wifi_1a_1_hdr.bin|d1d50983956b02cf4159832b7e96156e5ed12fbe
 vendor/firmware/soc3_0_ram_wmmcu_1a_1_hdr.bin|39a9fe1ad0a80c4a1c998fecfdf97b29f255e66c
+vendor/firmware/mt6635_fm_v1_coeff.bin|6d8504d6932329c7216c8c016fa7351d084a4d33
+vendor/firmware/mt6635_fm_v1_patch.bin|89c569e38fa50ca09edc13e02ace3efbd1eaa178
+vendor/firmware/fm_cust.cfg|875f3f03a0c2edd05b059c9ab3b9779ff38de6ef
 
 # NFC (Firmware)
 vendor/firmware/st21nfc_fw7.bin
