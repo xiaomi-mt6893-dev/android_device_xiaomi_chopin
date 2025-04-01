@@ -10,7 +10,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<!DOCTYPE MediaSettings SYSTEM "/system/etc/media_profiles_V1_0.dtd">
+<!DOCTYPE MediaSettings SYSTEM "/vendor/etc/media_profiles_V1_0.dtd">
 <!--
      This file is used to declare the multimedia profiles and capabilities
      on an android-powered device.
