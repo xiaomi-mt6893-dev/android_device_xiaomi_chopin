@@ -219,6 +219,7 @@ PRODUCT_PACKAGES += \
 # MITEE Dependencies
 PRODUCT_PACKAGES += \
 	vendor.xiaomi.hardware.mtdservice@1.3.vendor:64 \
+	vendor.xiaomi.hardware.mlipay@1.1.vendor:64 \
 
 # Display
 PRODUCT_PACKAGES += \
