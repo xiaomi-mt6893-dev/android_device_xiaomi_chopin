@@ -214,6 +214,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
 
+# MITEE Dependencies
+PRODUCT_PACKAGES += \
+	vendor.xiaomi.hardware.mtdservice@1.3.vendor:64 \
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \
