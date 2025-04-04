@@ -1579,6 +1579,17 @@ vendor/lib64/libmt_isee@1.2.so
 vendor/lib64/libmt_mitee.so
 vendor/lib64/libmt_mitee@1.2.so
 
+
+# Mlipay
+vendor/bin/mlipayd_isee@1.1
+vendor/bin/mlipayd_mitee@1.1
+vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-iseeservice.rc
+vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-miteeservice.rc
+vendor/lib64/libmlipay_isee.so
+vendor/lib64/libmlipay_isee@1.1.so
+vendor/lib64/libmlipay_mitee.so
+vendor/lib64/libmlipay_mitee@1.1.so
+
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.beanpod.so
 vendor/lib64/hw/gatekeeper.mitee.so
