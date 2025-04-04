@@ -1561,6 +1561,14 @@ vendor/etc/init/fuelgauged_init.rc
 vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/lib/libfgauge_gm30.so
 
+# Fido
+vendor/bin/fidoca_isee
+vendor/bin/fidoca_mitee
+vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-iseeservice.rc
+vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-miteeservice.rc
+vendor/lib64/libmfido_isee.so
+vendor/lib64/libmfido_mitee.so
+
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.beanpod.so
 vendor/lib64/hw/gatekeeper.mitee.so
