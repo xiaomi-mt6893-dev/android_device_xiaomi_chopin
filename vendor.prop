@@ -245,7 +245,6 @@ persist.vendor.radio.smart.data.switch=1
 ro.telephony.default_network=33,33,33,33
 ro.telephony.iwlan_operation_mode=AP-assisted
 ro.vendor.md_prop_ver=1
-ro.product.mod_device=chopin_global
 ro.vendor.mtk_c2k_lte_mode=2
 ro.vendor.mtk_c2k_support=1
 ro.vendor.mtk_eccci_c2k=1
