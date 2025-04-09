@@ -19,6 +19,7 @@ persist.dbg.wfc_avail_ovr=1
 
 # Platform
 Build.BRAND=MTK
+ro.product.board=chopin
 ro.mediatek.version.branch=alps-mp-t0.mssi1.tc8sp1
 ro.mediatek.version.release=alps-mp-t0.mp1.tc8sp1-V1_xiaomi.t0mp1.vf.sp.64.armv82_P2
 
