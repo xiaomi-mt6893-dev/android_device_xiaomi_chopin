@@ -187,6 +187,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vndservicemanager
 
+# Properties
+  include $(LOCAL_PATH)/vendor_logtag.mk
 
 # ConsumerIr
 PRODUCT_PACKAGES += \
