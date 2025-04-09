@@ -73,3 +73,4 @@ genfscon sysfs /devices/platform/11d01000.i2c7/i2c-7/7-0064/power_supply/cp_mast
 genfscon sysfs /devices/platform/11d03000.i2c9/i2c-9/9-0055/verify_digest                                  u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/11281000.i2c11/i2c-11/11-0075/power_supply/cp_slave                       u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/11281000.i2c11/i2c-11/11-0066/power_supply/cp_slave                       u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/11015000.i2c0/i2c-0/0-0066/power_supply/bq2597x-slave                     u:object_r:sysfs_batteryinfo:s0
