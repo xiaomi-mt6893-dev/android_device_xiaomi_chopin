@@ -428,8 +428,7 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.0.vendor \
     libcodec2_hidl@1.1.vendor \
     libcodec2_hidl@1.2.vendor \
-    libcodec2_vndk.vendor \
-    libstagefright_omx.vendor
+    libcodec2_vndk.vendor 
 
 
 PRODUCT_COPY_FILES += \
