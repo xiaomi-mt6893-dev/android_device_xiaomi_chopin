@@ -14,7 +14,7 @@ static const variant_info_t choping_info = {
     .sku_value = "choping",
 
     .brand = "POCO",
-    .device = "choping",
+    .device = "chopin",
     .mod_device = "chopin_global",
     .marketname = "POCO X3 GT",
     .model = "21061110AG",
