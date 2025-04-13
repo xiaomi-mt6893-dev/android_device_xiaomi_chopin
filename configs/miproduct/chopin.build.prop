@@ -1,0 +1,12 @@
+# begin sku build properties
+ro.product.vendor.name=chopin
+ro.product.vendor.device=chopin
+ro.product.vendor.manufacturer=Xiaomi
+ro.product.vendor.brand=Redmi
+ro.product.vendor.model=M2104K10AC
+ro.product.vendor.marketname=Redmi Note 10 Pro
+ro.product.vendor.cert=M2104K10AC
+# end sku build properties
+ro.product.board=chopin
+
+

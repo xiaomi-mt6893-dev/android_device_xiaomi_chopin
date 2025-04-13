@@ -292,6 +292,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_nfc/android.hardware.nfc.uicc.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_nfc/com.android.nfc_extras.xml
 
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*.xml,$(LOCAL_PATH)/configs/miproduct/,$(TARGET_COPY_OUT_VENDOR)/etc/miproduct)
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor \

@@ -1,0 +1,10 @@
+# begin sku build properties
+ro.product.vendor.name=chopin_global
+ro.product.vendor.device=chopin
+ro.product.vendor.manufacturer=Xiaomi
+ro.product.vendor.brand=POCO
+ro.product.vendor.model=21061110AG
+ro.product.vendor.marketname=POCO X3 GT
+ro.product.vendor.cert=21061110AG
+# end sku build properties
+ro.product.board=chopin
