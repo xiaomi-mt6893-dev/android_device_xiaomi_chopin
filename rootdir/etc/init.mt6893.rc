@@ -17,6 +17,9 @@ on init
     # Support legacy paths
     symlink /sdcard /mnt/sdcard
 
+    # Mount cgroup mount point for cpu accounting
+    mount cgroup none /acct cpuacct
+
     # if primary storage is physical, set ro.vold.primary_physical to 1
     # setprop ro.vold.primary_physical 1
 
