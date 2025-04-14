@@ -271,7 +271,7 @@ ro.vendor.mtk_world_phone_policy=0
 ro.vendor.num_md_protocol=2
 ro.vendor.sim_me_lock_mode=3
 telephony.lteOnCdmaDevice=1
-import /vendor/etc/rsc/${ro.boot.hwc}/ro.prop
+import /vendor/etc/rsc/${ro.boot.rsc}/ro.prop
 
 # IMS
 persist.vendor.anr.enhancement=0
