@@ -21,6 +21,7 @@ vendor/lib/hw/audio.primary.mt6893.so
 vendor/lib/hw/audio.r_submix.mt6893.so
 vendor/lib/hw/sound_trigger.primary.default.so
 vendor/lib/libMtkSpeechEnh.so
+vendor/lib/libalsautils.so:vendor/lib/libalsautils-v31.so
 vendor/lib/lib_iir.so
 vendor/lib/lib_speech_enh.so
 vendor/lib/libaudio_param_parser-vnd.so
@@ -53,6 +54,7 @@ vendor/lib/libvow_ap_test_ha.so
 vendor/lib/libvow_ap_test_hh.so
 vendor/lib/libvow_ap_test_nn.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
+vendor/lib64/libalsautils.so:vendor/lib64/libalsautils-v31.so
 vendor/etc/cs35l41_cal.wav
 
 # Audio-Firmware - from amber_HyperOS_V816.0.4.0.UKWMIXM
