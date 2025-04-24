@@ -43,6 +43,9 @@ on init
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/top-app/cpus 0-7
 
+
+
+
 # Logger
     start boot_log
     start boot_log_crash
@@ -833,6 +836,17 @@ on boot
     chmod 0770 /sys/power/tuxonice
     chmod 0220 /sys/power/tuxonice/do_hibernate
 
+    # MIUI ADD: Performance_MemoryEnhance
+    chown root system /sys/block/zram0/writeback_limit_enable
+    chmod 0664 /sys/block/zram0/writeback_limit_enable
+    chown root system /sys/block/zram0/writeback_limit
+    chmod 0664 /sys/block/zram0/writeback_limit
+    chown root system /sys/block/zram0/new
+    chmod 0220 /sys/block/zram0/new
+    chown root system /sys/block/zram0/memory_freeze
+    chmod 0664 /sys/block/zram0/memory_freeze
+    # END Performance_MemoryEnhance
+
 
 # Smartbook Handler Framework
     chown system system /sys/power/sb_state
@@ -1148,6 +1162,19 @@ on post-fs-data
     start boot_log
 
 on property:sys.boot_completed=1
+
+# Multi-Gen LRU Experiment
+on property:persist.device_config.mglru_native.lru_gen_config=none
+  write /sys/kernel/mm/lru_gen/enabled 0
+on property:persist.device_config.mglru_native.lru_gen_config=core
+  write /sys/kernel/mm/lru_gen/enabled 1
+on property:persist.device_config.mglru_native.lru_gen_config=core_and_mm_walk
+  write /sys/kernel/mm/lru_gen/enabled 3
+on property:persist.device_config.mglru_native.lru_gen_config=core_and_nonleaf_young
+  write /sys/kernel/mm/lru_gen/enabled 5
+on property:persist.device_config.mglru_native.lru_gen_config=all
+  write /sys/kernel/mm/lru_gen/enabled 7
+
 # Stop the logger service
     stop boot_log
     stop boot_log_crash
