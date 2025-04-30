@@ -1,1 +1,1 @@
-get_prop(cameraserver, vendor_camera_prop)
+get_prop(cameraserver, vendor_mtk_camera_prop)

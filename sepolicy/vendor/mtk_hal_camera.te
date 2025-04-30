@@ -7,5 +7,5 @@ allow mtk_hal_camera camera_persist_file:dir search;
 allow mtk_hal_camera camera_persist_file:dir read;
 allow mtk_hal_camera camera_persist_file:dir open;
 
-get_prop(mtk_hal_camera, vendor_camera_prop)
-set_prop(mtk_hal_camera, vendor_camera_prop)
+get_prop(mtk_hal_camera, vendor_mtk_camera_prop)
+set_prop(mtk_hal_camera, vendor_mtk_camera_prop)
