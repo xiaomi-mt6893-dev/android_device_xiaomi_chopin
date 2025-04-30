@@ -11,3 +11,5 @@ allow mtk_hal_camera sysfs_therm:file rw_file_perms;
 
 get_prop(mtk_hal_camera, vendor_mtk_camera_prop)
 set_prop(mtk_hal_camera, vendor_mtk_camera_prop)
+
+hal_client_domain(mtk_hal_camera, hal_mtk_mmagent)
