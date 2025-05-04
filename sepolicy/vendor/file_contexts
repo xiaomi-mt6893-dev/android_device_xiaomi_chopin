@@ -32,6 +32,12 @@
 /vendor/lib(64)?/libwa_refocus\.so                                                                     u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libwa_rtdof\.so                                                                       u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libxmi_high_dynamic_range\.so                                                         u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libprocessgroup\.so                                                                   u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libz\.so                                                                              u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libbase\.so                                                                           u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libc++\.so                                                                            u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libhidltransport\.so                                                                  u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/vendor\.mediatek\.hardware\.pq@2\.[0-9]\.so                              	       u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/vendor\.mediatek\.hardware\.apuware\.apusys@1\.[0-9]\.so                              u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/vendor\.mediatek\.hardware\.camera\.atms@1\.[0-9]\.so                                 u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/vendor\.mediatek\.hardware\.camera\.isphal@1\.[0-9]\.so                               u:object_r:same_process_hal_file:s0
