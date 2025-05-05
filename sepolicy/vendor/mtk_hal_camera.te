@@ -11,6 +11,7 @@ allow mtk_hal_camera sysfs_therm:file rw_file_perms;
 allow mtk_hal_camera sysfs_fpsgo:dir search;
 allow mtk_hal_camera sysfs_fpsgo:file { write open };
 allow mtk_hal_camera proc_stat:file { read open };
+allow mtk_hal_camera shell_data_file:dir { search };
 
 get_prop(mtk_hal_camera, vendor_mtk_camera_prop)
 set_prop(mtk_hal_camera, vendor_mtk_camera_prop)
