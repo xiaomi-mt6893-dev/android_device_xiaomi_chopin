@@ -19,6 +19,6 @@ r_dir_file(vendor_hal_citsensorservice_xiaomi_default, input_device)
 rw_file_perms(vendor_hal_citsensorservice_xiaomi_default, input_device)
 
 allow vendor_hal_citsensorservice_xiaomi_default hf_manager_device:chr_file rw_file_perms;
-allow vendor_hal_citsensorservice_xiaomi_default input_device:chr_file ioctl;
+allow vendor_hal_citsensorservice_xiaomi_default input_device:chr_file { ioctl open read write append lock map };
 
 set_prop(vendor_hal_citsensorservice_xiaomi_default, vendor_citsensorservice_prop)
