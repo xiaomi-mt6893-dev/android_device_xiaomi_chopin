@@ -230,12 +230,12 @@ PRODUCT_PACKAGES += \
 	libutilscallstack.vendor
 
 # Xiaomi TouchFeature Service
-PRODUCT_PACKAGES += \
-	vendor.xiaomi.hw.touchfeature@1.0.vendor
+# PRODUCT_PACKAGES += \
+#	vendor.xiaomi.hw.touchfeature@1.0.vendor
 
 # Xiaomi DisplayFeature Service
-PRODUCT_PACKAGES += \
-	vendor.xiaomi.hardware.displayfeature@1.0.vendor 
+# PRODUCT_PACKAGES += \
+#	vendor.xiaomi.hardware.displayfeature@1.0.vendor 
 
 # Fingerprint
 PRODUCT_PACKAGES += \
