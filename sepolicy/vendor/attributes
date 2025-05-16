@@ -1,3 +1,4 @@
+attribute hal_client_attributes;
 attribute vendor_hal_citsensorservice_xiaomi;
 attribute vendor_hal_citsensorservice_xiaomi_client;
 attribute vendor_hal_citsensorservice_xiaomi_server;

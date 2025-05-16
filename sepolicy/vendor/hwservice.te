@@ -3,3 +3,7 @@ type hal_dms_hwservice, hwservice_manager_type;
 
 # Fingerprint
  type vendor_hal_fingerprint_hwservice_xiaomi, hwservice_manager_type;
+
+# SurfaceFlinger
+allow surfaceflinger mtk_hal_mmagent_hwservice:hwservice_manager find;
+typeattribute mtk_hal_mmagent_hwservice service_manager_type;

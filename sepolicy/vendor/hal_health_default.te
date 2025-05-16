@@ -1,2 +1,4 @@
 r_dir_file(hal_health_default, sysfs_batteryinfo)
 rw_dir_file(hal_health_default, sysfs_power_supply)
+allow hal_health_default sysfs_wakeup:dir search;
+
