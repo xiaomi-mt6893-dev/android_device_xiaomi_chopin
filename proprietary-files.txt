@@ -1,4 +1,4 @@
-# Unpinned blobs from chopin-user 13 TP1A.220624.014 V14.0.6.0.TKPMIXM release-keys
+# Unpinned blobs from chopin-user 12 SP1A.210812.01 V13.0.7.0.SKPMIXM release-keys
 
 # AEE
 vendor/lib/libaedv.so
@@ -1650,7 +1650,7 @@ vendor/etc/seccomp_policy/mediaswcodec.policy
 # Media (Codec2)
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
-vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml
+vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml
 
 # Media (Codec2) - from Tecno_CK8N-user14-UP1A.231005.007-614108
 vendor/lib64/libcodec2_mtk_c2store.so|ae32a50d6a4fc4d04ced7c84ce24512293569c5e
@@ -2139,7 +2139,6 @@ vendor/thh/ta/5020170115e016302017012521300000.ta
 vendor/thh/ta/7778c03fc30c4dd0a319ea29643d4d4b.ta
 vendor/thh/ta/86f623f6a2994dfdb560ffd3e5a62c29.ta
 vendor/thh/ta/8888c03fc30c4dd0a319ea29643d4d4b.ta
-vendor/thh/ta/8aaaf201246000007143fe4f7c823c80.ta
 vendor/thh/ta/9073f03a9618383bb1856eb3f990babd.ta
 vendor/thh/ta/93feffccd8ca11e796c7c7a21acb4932.ta
 vendor/thh/ta/a985d3eb3b524d44be6c628a813561e8.ta
@@ -2232,24 +2231,6 @@ vendor/etc/init/init.fmradio_drv.rc
 vendor/etc/init/init.gps_drv.rc
 vendor/etc/init/init.wlan_drv.rc
 
-# Xiaomi-DisplayFeature
-vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
-vendor/bin/hw/vendor.xiaomi.hw.touchfeature@1.0-service
-vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
-vendor/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc
-vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
-vendor/lib64/hw/vendor.xiaomi.hw.touchfeature@1.0-impl.so
-vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
-vendor/lib64/vendor.xiaomi.hw.touchfeature@1.0.so
-vendor/lib/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
-vendor/lib/hw/vendor.xiaomi.hw.touchfeature@1.0-impl.so
-system/system/lib/vendor.xiaomi.hardware.displayfeature@1.0.so
-system/system/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
-vendor/lib/hw/displayfeature.default.so
-vendor/lib64/hw/displayfeature.default.so
-vendor/etc/vintf/manifest/vendor.xiaomi.hw.touchfeature@1.0-service.xml
-product/etc/displayconfig/resolution_switch_process_list_backup.xml
-vendor/etc/init.panel_info.sh
 
 # OEM
 vendor/etc/rsc/cn/ro.prop
