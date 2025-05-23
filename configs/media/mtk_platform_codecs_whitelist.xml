@@ -48,14 +48,14 @@
                type="video/x-vnd.on2.vp9"
                driverIntf="v4l2"
                maxConcurrentInstances="2" />
-     <!--   <Video name="c2.mtk.av1.decoder"
+        <Video name="c2.mtk.av1.decoder"
                type="video/av01"
                driverIntf="v4l2"
                maxConcurrentInstances="32" />
-         <Video name="c2.mtk.av1.decoder.secure"
+        <Video name="c2.mtk.av1.decoder.secure"
                type="video/av01"
                driverIntf="v4l2"
-               maxConcurrentInstances="2" />--> 
+               maxConcurrentInstances="2" />
         <Video name="c2.mtk.mpeg2.decoder"
                type="video/mpeg2"
                driverIntf="v4l2"
@@ -97,3 +97,4 @@
                maxConcurrentInstances="2" />
     </Encoders>
 </MediaCodecs>
+
