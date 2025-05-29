@@ -26,4 +26,7 @@ allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;
 add_hwservice(hal_fingerprint_default, vendor_hal_fingerprint_hwservice_xiaomi)
 
 allow hal_fingerprint_default sysfs_wakeup:dir r_dir_perms;
+
+allow hal_fingerprint_default self:capability { sys_nice };
+
 allow hal_fingerprint_default sysfs_wakeup:file rw_file_perms;
