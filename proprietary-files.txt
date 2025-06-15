@@ -2137,6 +2137,8 @@ vendor/bin/hw/vendor.microtrust.hardware.thh@2.0-service
 vendor/bin/teei_daemon
 vendor/etc/init/microtrust.rc
 vendor/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc
+vendor/lib/libthha.so
+vendor/lib/libthhclient.so
 vendor/lib/libTEECommon.so
 vendor/lib/libgz_gp_client.so
 vendor/lib/libgz_uree.so
