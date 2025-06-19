@@ -61,8 +61,30 @@
 /data/vendor/fpc(/.*)?                                                                                 u:object_r:vendor_fingerprint_data_file:s0
 /data/vendor/gf_data(/.*)?                                                                             u:object_r:vendor_fingerprint_data_file:s0
 
+# Keymaster
+/(vendor|system/vendor)/bin/hw/android.hardware.keymaster@4.0-service.mitee                            u:object_r:hal_keymaster_default_exec:s0
+
+# Trusted Execution Environment (TEE)
+/(vendor|system/vendor)/bin/tee-supplicant                                                             u:object_r:tee_exec:s0
+/(vendor|system/vendor)/bin/miteelog                                                                   u:object_r:tee_exec:s0
+/dev/tee0                                                                                              u:object_r:teei_client_device:s0
+/dev/teepriv0                                                                                          u:object_r:teei_client_device:s0
+/data/vendor/mitee(/.*)?                                                                               u:object_r:mitee_data_file:s0
+
 # Light
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.xiaomi                                u:object_r:hal_light_default_exec:s0
+
+# Mfidoca
+/(vendor|system/vendor)/bin/fidoca_isee                                                                 u:object_r:hal_mfidoca_default_exec:s0
+/(vendor|system/vendor)/bin/fidoca_mitee                                                                u:object_r:hal_mfidoca_default_exec:s0
+
+# Mlipay
+/(vendor|system/vendor)/bin/mlipayd_isee@1\.1                                                           u:object_r:hal_mlipay_default_exec:s0
+/(vendor|system/vendor)/bin/mlipayd_mitee@1\.1                                                          u:object_r:hal_mlipay_default_exec:s0
+
+# Mtdservice
+/(vendor|system/vendor)/bin/mtd_isee@1\.2                                                               u:object_r:hal_mtdservice_default_exec:s0
+/(vendor|system/vendor)/bin/mtd_mitee@1\.2                                                              u:object_r:hal_mtdservice_default_exec:s0
 
 # Power
 /dev/xiaomi-touch                                                                                      u:object_r:vendor_touchfeature_device:s0
