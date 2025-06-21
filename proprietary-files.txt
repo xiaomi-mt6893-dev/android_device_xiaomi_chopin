@@ -1566,6 +1566,7 @@ vendor/bin/fidoca_isee
 vendor/bin/fidoca_mitee
 vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-iseeservice.rc
 vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-miteeservice.rc
+vendor/lib64/vendor.xiaomi.hardware.mfidoca@1.0.so
 vendor/lib64/libmfido_isee.so
 vendor/lib64/libmfido_mitee.so
 
