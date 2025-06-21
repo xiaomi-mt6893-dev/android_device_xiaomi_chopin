@@ -420,10 +420,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libavservices_minijail_vendor \
-    libstagefright_foundation-v33 \
-    libstagefright_softomx_plugin.vendor \
-    libcodec2_soft_common.vendor \
-    libsfplugin_ccodec_utils.vendor 
+    libstagefright_foundation-v33 
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -433,7 +430,16 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.1.vendor \
     libcodec2_hidl@1.2.vendor \
     libcodec2_vndk.vendor \
-    libstagefright_omx.vendor
+    libstagefright_omx.vendor \
+    libcodec2_hidl@1.2.vendor \
+    libcodec2_soft_common.vendor \
+    libstagefright_foundation-v33 \
+    libsfplugin_ccodec_utils.vendor \
+    libstagefright_softomx.vendor \
+    libstagefright_softomx_plugin.vendor
+
+PRODUCT_PACKAGES += \
+    libchrome.vendor
 
 
 PRODUCT_COPY_FILES += \
