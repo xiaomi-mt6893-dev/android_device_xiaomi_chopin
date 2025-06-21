@@ -99,6 +99,7 @@ vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service)
     ;;
 vendor/lib*/hw/audio.primary.mt6893.so)
     "${PATCHELF}" --replace-needed "libalsautils.so" "libalsautils-v31.so" "${2}"
+    "${PATCHELF}" --replace-needed "libstagefright_foundation-v33.so" "libstagefright_foundation-v33.so" "${2}"
     ;;
 esac
 }
