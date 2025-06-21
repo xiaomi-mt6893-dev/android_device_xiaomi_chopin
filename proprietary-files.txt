@@ -1636,9 +1636,17 @@ system_ext/framework/com.android.hotwordenrollment.common.util.jar
 vendor/bin/bp_kmsetkey_ca
 vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod
 vendor/bin/hw/android.hardware.keymaster@4.0-service.mitee
+vendor/bin/kmsetkey
 vendor/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc
 vendor/etc/init/android.hardware.keymaster@4.0-service.mitee.rc
 vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
+vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
+vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
+vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
+vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
+vendor/lib64/wechat.beanpod.so
+vendor/lib64/hw/kmsetkey.beanpod.so
+vendor/lib64/libkmsetkey.so
 
 # Fingerprint
 vendor/etc/vintf/manifest/fod.xml
@@ -2198,7 +2206,6 @@ vendor/lib64/libteei_daemon_vfs.so
 vendor/lib64/libthha.so
 vendor/lib64/libthhclient.so
 vendor/lib64/vendor.microtrust.hardware.thh@2.0.so
-vendor/lib64/wechat.beanpod.so
 vendor/thh/ta/020f0000000000000000000000000000.ta
 vendor/thh/ta/05120000000000000000000000000000.ta
 vendor/thh/ta/06090000000000000000000000000000.ta
