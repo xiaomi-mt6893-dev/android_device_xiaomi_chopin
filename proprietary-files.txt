@@ -1713,6 +1713,8 @@ vendor/lib/libMtkOmxGsmDec.so
 vendor/lib/libMtkOmxMp3Dec.so
 vendor/lib/libadpcmdec_mtk.so
 vendor/lib/libmp3dec_mtk.so
+vendor/lib/libopus.so
+vendor/lib/libvorbisidec.so
 vendor/lib/libstagefrighthw.so
 vendor/lib64/libstagefrighthw.so
 
