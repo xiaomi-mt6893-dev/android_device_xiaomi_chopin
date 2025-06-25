@@ -2257,6 +2257,7 @@ vendor/mitee/ta/dba51a17-0563-11e7-93b16fa7b0071a51.ta
 vendor/mitee/ta/e5140b33-76fa-4c63-ab18062caab2fb5c.ta
 vendor/mitee/ta/f13010e0-2ae1-11e5-896a0002a5d5c51d.ta
 
+
 # Connectivity - from Tecno_CK8N-user14-UP1A.231005.007-614108
 vendor/bin/conninfra_loader|dbc4ad0b50dcae82df45911cb93c8f6405832df5
 vendor/firmware/conninfra.cfg|0029e002d3c95838f3732bb65b88f46f0e7b68de
@@ -2277,6 +2278,11 @@ vendor/firmware/fm_cust.cfg|875f3f03a0c2edd05b059c9ab3b9779ff38de6ef
 # NFC (Firmware)
 vendor/firmware/st21nfc_fw7.bin
 vendor/firmware/st21nfc_fw.bin
+
+# USB
+vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
+vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
+vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
 
 
 # Vibrator
