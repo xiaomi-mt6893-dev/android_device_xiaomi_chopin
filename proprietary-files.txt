@@ -2086,6 +2086,8 @@ vendor/lib/vendor.mediatek.hardware.rcs@2.0.so|fdae1b099eb49b3fa68088a4fdd938911
 vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so|3283ca8b47d8097d04020b158fa132177fd7ff59
 vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so|bb9ff554802e7bffb72cf24604109dafcf0019fc
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|5e228669d2c575e38fc02a13404f31bc22494b87
+vendor/etc/init/init.vtservice_hidl.rc|f2e992214ed5bb99c2c2a135cf1f0996dba8a8a0
+vendor/bin/hw/vtservice_hidl|047b26f80b338b7d0869840d243eefebe82d56f5
 
 # Radio (MTK-IMS)
 system_ext/bin/vtservice|eeb08595c53be9d7a69ba5b677b5604f753eab37
