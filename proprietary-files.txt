@@ -2322,25 +2322,6 @@ vendor/etc/init/init.fmradio_drv.rc
 vendor/etc/init/init.gps_drv.rc
 vendor/etc/init/init.wlan_drv.rc
 
-# Xiaomi-DisplayFeature
-vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
-vendor/bin/hw/vendor.xiaomi.hw.touchfeature@1.0-service
-vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
-vendor/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc
-vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
-vendor/lib64/hw/vendor.xiaomi.hw.touchfeature@1.0-impl.so
-vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
-vendor/lib64/vendor.xiaomi.hw.touchfeature@1.0.so
-vendor/lib/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
-vendor/lib/hw/vendor.xiaomi.hw.touchfeature@1.0-impl.so
-system/system/lib/vendor.xiaomi.hardware.displayfeature@1.0.so
-system/system/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
-vendor/lib/hw/displayfeature.default.so
-vendor/lib64/hw/displayfeature.default.so
-vendor/etc/vintf/manifest/vendor.xiaomi.hw.touchfeature@1.0-service.xml
-product/etc/displayconfig/resolution_switch_process_list_backup.xml
-vendor/etc/init.panel_info.sh
-
 # OEM
 vendor/etc/rsc/cn/ro.prop
 vendor/etc/rsc/cn/rw.prop
