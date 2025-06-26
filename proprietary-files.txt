@@ -1662,13 +1662,6 @@ vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 # Media
 vendor/bin/vpud
 vendor/etc/init/vpud.rc
-vendor/lib/AV1SecureVdecCA.so
-vendor/lib/AVCSecureVdecCA.so
-vendor/lib/HEVCSecureVdecCA.so
-vendor/lib/VP9SecureVdecCA.so
-vendor/lib/libvcodec_oal.so
-vendor/lib/libvcodec_utility.so
-vendor/lib/libvcodecdrv.so
 vendor/lib/libvcodecdrv_header_stub.so
 vendor/lib/libvpu.so
 vendor/lib/libvpu5.so
@@ -1676,6 +1669,15 @@ vendor/lib/libvpud_vcodec.so
 vendor/lib64/libvpu.so
 vendor/lib64/libmp3dec_mtk.so
 vendor/lib64/libadpcmdec_mtk.so
+
+# Media - from agate_global_user V816.0.11.0.UKWMIXM
+vendor/lib/AV1SecureVdecCA.so|95c89c1de9f0727a68c1f170cf96fab5b930977c
+vendor/lib/AVCSecureVdecCA.so|67bab460e2bcb2d2992338d1c0beab79e5a3de09
+vendor/lib/HEVCSecureVdecCA.so|f3fc3b59ef570250f533cea019b794377a8f77c0
+vendor/lib/VP9SecureVdecCA.so|ac44b87675c06fa3c1e80001c589200eaae25243
+vendor/lib/libvcodec_oal.so|239de6e989929792f0aea8a15dc2354b1459a686
+vendor/lib/libvcodec_utility.so|a908a225385795f5749d36a1f43455a5d97e6bde
+vendor/lib/libvcodecdrv.so|ff54c0077ed07c396276dd79d5f2168eac4ad99b
 
 # Media (Configs)
 vendor/etc/mtk_omx_core.cfg
