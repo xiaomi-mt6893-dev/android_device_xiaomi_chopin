@@ -28,6 +28,9 @@ vendor.dynamic_sensor.                   u:object_r:vendor_dynamic_sensor_prop:s
 # Thermal
 vendor.sys.thermal.                      u:object_r:vendor_thermal_engine_prop:s0
 
+# Microtrust TEE
+vendor.miteekm_status  		 	 u:object_r:vendor_mtee_prop:s0
+
 # Mlipay
 vendor.sys.rpmb_state                    u:object_r:vendor_mlipay_prop:s0
 vendor.sys.feature_state                 u:object_r:vendor_mlipay_prop:s0

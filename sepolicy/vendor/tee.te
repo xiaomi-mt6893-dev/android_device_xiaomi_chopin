@@ -4,3 +4,6 @@ allow tee mitee_data_file:file create_file_perms;
 allow tee nfc_device:chr_file { ioctl open read write };
 
 allow tee proc_mitee_log:file { read getattr open };
+
+allow hal_keymaster_default vendor_mtee_prop:property_service set;
+
