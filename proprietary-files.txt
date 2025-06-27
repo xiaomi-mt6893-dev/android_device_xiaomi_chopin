@@ -1400,7 +1400,9 @@ vendor/lib64/hw/consumerir.common.so
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
+vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
+vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
 vendor/lib/egl/egl.cfg
 vendor/lib/egl/libGLES_meow.so
