@@ -1638,6 +1638,7 @@ system_ext/framework/com.android.hotwordenrollment.common.util.jar
 vendor/bin/bp_kmsetkey_ca
 vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod
 vendor/bin/hw/android.hardware.keymaster@4.0-service.mitee
+vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
 vendor/bin/kmsetkey
 vendor/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc
 vendor/etc/init/android.hardware.keymaster@4.0-service.mitee.rc
