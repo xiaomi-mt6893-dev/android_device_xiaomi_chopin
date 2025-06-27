@@ -96,10 +96,6 @@ vendor.camera.mdp.dre.enable=1
 vendor.camera.mdp.hfg.enable=1
 vendor.mtk.camera.app.fd.video=1
 
-# Fingerprint
-persist.vendor.fingerprint.type=side
-persist.vendor.fingerprint.sensor_location=1080|915|145
-
 # WiFi
 ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0
@@ -225,7 +221,6 @@ ro.vendor.mtk_gps_support=1
 ro.vendor.gps.chrdev=gps_drv
 ro.vendor.mtk_log_hide_gps=0
 
-
 # MediaTek
 ro.soc.manufacturer=Mediatek
 ro.soc.model=MT6891
@@ -301,6 +296,7 @@ ro.vendor.mtk_nn_baseline_support=1
 ro.vendor.mtk_nn_quant_preferred=1
 ro.vendor.mtk_nn_support=1
 
+# Xiaomi DisplayFeature
 sys.displayfeature_hidl=true
 vendor.displayfeature.entry.enable=true
 vendor.hbm.enable=true
