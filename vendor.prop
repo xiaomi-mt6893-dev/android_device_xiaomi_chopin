@@ -205,14 +205,19 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 ro.hardware.consumerir=common
 
 # Media
+debug.stagefright.ccodec=1
+media.stagefright.thumbnail.prefer_hw_codecs=true
 debug.mediatek.disp_decompress=1
 media.c2.dmabuf.padding=3072
-ro.vendor.jpeg_decode_sw_opt=1
+ro.vendor.jpeg_decode_sw_opt=2
 ro.vendor.mtk_config_max_dram_size=0x800000000
 ro.vendor.mtk_mvpu_security_support=0
 ro.vendor.mtk_sec_video_path_support=1
 ro.vendor.mtk_video_hevc_enc_support=1
 ro.vendor.mtk_prefer_64bit_proc=0
+ro.vendor.mtk_omacp_support=1
+ro.vendor.mtk_flv_playback_support=1
+vendor.mtk_thumbnail_optimization=true
 vendor.mtk.vdec.waitkeyframeforplay=9
 
 # GNSS
