@@ -1581,7 +1581,7 @@ vendor/lib64/libmt_isee.so
 vendor/lib64/libmt_isee@1.2.so
 vendor/lib64/libmt_mitee.so
 vendor/lib64/libmt_mitee@1.2.so
-
+vendor/lib64/libwvkeybox.so
 
 # Mlipay
 vendor/bin/mlipayd_isee@1.1
