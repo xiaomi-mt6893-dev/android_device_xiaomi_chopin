@@ -2263,6 +2263,16 @@ vendor/mitee/ta/dba51a17-0563-11e7-93b16fa7b0071a51.ta
 vendor/mitee/ta/e5140b33-76fa-4c63-ab18062caab2fb5c.ta
 vendor/mitee/ta/f13010e0-2ae1-11e5-896a0002a5d5c51d.ta
 
+# Soter Service
+-vendor/app/SoterService/SoterService.apk:app/SoterService/SoterService.apk
+vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc
+vendor/etc/init/vendor.xiaomi.hardware.soterservice@1.0-service-gl.rc
+vendor/lib64/vendor.microtrust.hardware.soter@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.soterservice@1.0.so
+vendor/lib64/libsoter.so
+vendor/bin/soterd
+vendor/bin/SoterProvisioningTool_isee
+vendor/bin/SoterProvisioningTool_mitee
 
 # Connectivity - from Tecno_CK8N-user14-UP1A.231005.007-614108
 vendor/bin/conninfra_loader|dbc4ad0b50dcae82df45911cb93c8f6405832df5
