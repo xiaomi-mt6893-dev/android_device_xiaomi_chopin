@@ -160,11 +160,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl \
     android.hardware.bluetooth@1.1.vendor \
-    libbluetooth_audio_session \
-    libldacBT_enc \
-    libldacBT_abr \
-    libldacBT_bco \
-    libldacBT_bco.vendor 
+    libbluetooth_audio_session
 
 PRODUCT_COPY_FILES += \
      $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/bt/vendor,$(TARGET_COPY_OUT_VENDOR)/etc) \
