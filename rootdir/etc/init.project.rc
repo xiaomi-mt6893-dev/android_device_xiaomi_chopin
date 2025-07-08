@@ -82,8 +82,11 @@ on post-fs-data
     mkdir /mnt/vendor/persist/goodix 0770 system system
 
 on boot
+on boot
+    #GOODIX
     chmod 0666 /dev/goodix_fp
     chown system system /dev/goodix_fp
+    #fpc
     chown system system /sys/bus/platform/devices/fingerprint/clk_enable
     chmod 0660 /sys/bus/platform/devices/fingerprint/clk_enable
     chown system system /sys/bus/platform/devices/fingerprint/wakeup_enable
@@ -93,11 +96,16 @@ on boot
     chown system system /sys/bus/platform/devices/fingerprint/hw_reset
     chmod 0660 /sys/bus/platform/devices/fingerprint/hw_reset
     chown system system /sys/bus/spi/devices/spi5.0/authen_fd/performance
-    chmod 0660 /sys/bus/spi/devices/spi5.0/authen_fd/performance
     chmod 0660 /sys/bus/spi/devices/spi1.0/authen_fd/performance
+    chmod 0660 /sys/bus/spi/devices/spi5.0/authen_fd/performance
     chown system system /sys/class/drm/card0-DSI-1/disp_param
     chmod 0664 /sys/class/drm/card0-DSI-1/disp_param
     chown system system /sys/bus/platform/devices/fingerprint/fingerdown_wait
+    chmod 0666 /dev/input/event2
+    # xiaomi fingerprint
+    chmod 0666 /dev/xiaomi-fp
+    chown system system /dev/xiaomi-fp
+
  
  # cit led
     chown system system /sys/class/leds/torch-light0/brightness
