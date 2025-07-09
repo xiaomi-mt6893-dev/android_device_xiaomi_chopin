@@ -301,6 +301,10 @@ ro.vendor.mtk_nn_baseline_support=1
 ro.vendor.mtk_nn_quant_preferred=1
 ro.vendor.mtk_nn_support=1
 
+
+# BMS
+persist.vendor.accelerate.charge=true
+
 # Xiaomi DisplayFeature
 sys.displayfeature_hidl=true
 vendor.displayfeature.entry.enable=true
