@@ -5,6 +5,8 @@ allow hal_fingerprint_default vendor_sysfs_fingerprint:dir r_dir_perms;
 # Allow fingerprint HAL to setup fingerprint database files
 allow hal_fingerprint_default vendor_fingerprint_data_file:dir rw_dir_perms;
 allow hal_fingerprint_default vendor_fingerprint_data_file:file create_file_perms;
+allow hal_fingerprint_default system_data_root_file:dir { read open write add_name create };
+allow hal_fingerprint_default system_data_root_file:file { read write open getattr };
 
 # Allow fingerprint HAL to read battery info
 allow hal_fingerprint_default sysfs_batteryinfo:dir { search };
